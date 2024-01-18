@@ -136,10 +136,12 @@ Note: When using quotation marks never put a backslash at the end! (See "Known B
 Features" for details)
 
 Syntax:
-    LDIR [drive:][path][filename] [/?] [/A][/B][/S][/P]
-    [/C][/I][/Tn]
+
+        LDIR [drive:][path][filename] [/?] [/A][/B][/S][/P]
+        [/C][/I][/Tn]
 
 Example:
+
          D:\WINDOZE>LDIR "C:\new folder\*.txt"
 
          .       .    <DIR>       13.01.1999  19:49  .
@@ -171,9 +173,11 @@ numbers.
 
 
 Syntax:
-    LCD [drive:]pathmask [/?][/I][/Tn]
+
+        LCD [drive:]pathmask [/?][/I][/Tn]
 
 Example:
+
          D:\WINDOZE>LCD "C:\new folder"
 
          C:\NEWFOL~1>LCD ..
@@ -197,9 +201,11 @@ memory (~128 KB). To delete all files in a directory use ``LDEL *`` istead of ``
 
 
 Syntax:
-     LDEL [drive:][path\]file [/A][/F][/S][/P][/C][/?]
+
+         LDEL [drive:][path\]file [/A][/F][/S][/P][/C][/?]
 
 Example:
+
          C:\TEMP>LDEL *.txt
          Letter from Al.txt deleted
          My memories.txt deleted
@@ -209,9 +215,10 @@ Example:
          Trash 2.file deleted
 
 Use /s with extreme care!
-    LDEL D:\* /s /f          Deletes everything on drive D:
-    LDEL d:\temp /s          Removes all files called temp from all directories on D:
-    LDEL d:\temp\* /s        Removes all files from directory D:\TEMP and down
+
+         LDEL D:\* /s /f          Deletes everything on drive D:
+         LDEL d:\temp /s          Removes all files called temp from all directories on D:
+         LDEL d:\temp\* /s        Removes all files from directory D:\TEMP and down
 
 
 2.4 LREN
@@ -222,9 +229,11 @@ to a name containing unicode characters such as the Euro Symbol. Renaming to a s
 name does not remove the long name; its case is stored in this place for example. 
 
 Syntax:
-    LREN [drive:][path\]filename newfilename [/?]
+
+         LREN [drive:][path\]filename newfilename [/?]
 
 Example:
+
          C:\TEMP>LREN "An important file.txt" "Not so important any more.txt"
 
          C:\TEMP>
@@ -261,10 +270,12 @@ Note: When copying files from CD-ROM to hard drive, read-only attribute is NOT s
 default. 
 
 Syntax:
-    LCOPY [drive:][path\]sourcefile [drive:][destination] 
-    [/?][/S [/D]][/E][/A][/C][/V][/R][/Y][/B][/I][/Tn]
+
+        LCOPY [drive:][path\]sourcefile [drive:][destination] 
+        [/?][/S [/D]][/E][/A][/C][/V][/R][/Y][/B][/I][/Tn]
 
 Example:
+
          C:\TEMP>LCOPY "*.text" A:\BACKUP\
          A Secret.text
          An important.text
@@ -294,9 +305,11 @@ subdirectories are created.
 This command creates a new subdirectory (folder).
 
 Syntax:
-    LMD [drive:][path\]newdir [/?]
+
+         LMD [drive:][path\]newdir [/?]
 
 Example:
+
          C:\>LMD "Backup Folder"
          Ok.
          C:\>LCD Backup*
@@ -311,9 +324,11 @@ This creates a new Folder called "Apr 1,1999" in "Backup Folder" on drive C.
 This command removes a subdirectory (folder).
 
 Syntax:
-     LRD [drive:][path\]dirname [/?]
+
+         LRD [drive:][path\]dirname [/?]
 
 Example:
+
          C:\>LRD "Backup Folder"
          Ok.
 
@@ -325,9 +340,11 @@ information on how many tracks (sessions) are on the CD-ROM. Use the track numbe
 displayed for the /T switch of LCOPY, LDIR and LCD.
 
 Syntax: 
-    LCHK [drive:]
+
+        LCHK [drive:]
 
 Example: 
+
         C:\>LCHK D:
         Version 1.41
         Copyright (C) 1999 Ortwin Glueck
