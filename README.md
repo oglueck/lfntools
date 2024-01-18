@@ -422,25 +422,24 @@ See the license.txt file included in the ZIP archive.
 ### 8. Acknowledgements
 I would like to say thank you to:
 
-Marcin Frankowski (NZ) for Latin-2 support
-Geert Keteleer for valuable help and the cars :-)
-Kurt Salentin for the debugging
-Milan Stanik
-Wolf Bartels
-Silvio Vernillo
-Alfred Schumann
-Ralph E. Griffin 
-Herbert Schmidt, Martin Kunkel for the key hints on the bootable CD problem
-Martin Kunkel for his digging in my code
-Frank Littmann, Mario Latzig for hints on filename problem with Joliet
-(Odi can't code...)
-Bill Hall for some good hints
-Isy for two bug reports
-64.245.58.28 for cool sound (R.I.P.)
-H. Ellenberger for the bug report in 1.42
-Benjamin Wells for his note on LCOPY *.TXT C:\FUN /S
-Mark Marinac for his hints on ZIP drives and compression
-Michael Marquart for the hint on DOS 6 and extensive testing
-Leanne & Walt Smith for the IBM PC-DOS testing
-Gordon Chaffee for Unicode support (Linux kernel)
-The Linux people who helped me out with the ISO structs
+- Marcin Frankowski (NZ) for Latin-2 support
+- Geert Keteleer for valuable help and the cars :-)
+- Kurt Salentin for the debugging
+- Milan Stanik
+- Wolf Bartels
+- Silvio Vernillo
+- Alfred Schumann
+- Ralph E. Griffin 
+- Herbert Schmidt, Martin Kunkel for the key hints on the bootable CD problem
+- Martin Kunkel for his digging in my code
+- Frank Littmann, Mario Latzig for hints on filename problem with Joliet (Odi can't code...)
+- Bill Hall for some good hints
+- Isy for two bug reports
+- 64.245.58.28 for cool sound (R.I.P.)
+- H. Ellenberger for the bug report in 1.42
+- Benjamin Wells for his note on LCOPY *.TXT C:\FUN /S
+- Mark Marinac for his hints on ZIP drives and compression
+- Michael Marquart for the hint on DOS 6 and extensive testing
+- Leanne & Walt Smith for the IBM PC-DOS testing
+- Gordon Chaffee for Unicode support (Linux kernel)
+- The Linux people who helped me out with the ISO structs
