@@ -1,0 +1,10 @@
+del lfn-de.zip
+del lfnsrc.zip
+del *.exe
+del *.cpp
+del *.inc
+del *.h
+del ..\..\clrfile.cv4
+del ..\..\*.exe
+del ..\..\*.obj
+del ..\..\*.bsc

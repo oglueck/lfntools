@@ -1,0 +1,28 @@
+Quellcode für LFN Tools
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Jedes Tools ist eine monolithische Applikation. Die LFN Bibliothek (lfn.cpp) wird per
+#include in jede Applikation eingebunden.
+Es ist sicherlich kein ANSI C, ich weiss.
+Sie mögen komische Dinge antreffen wie: ((void*)&((char*)DATA[j])[i*sbpc]) , ich weiss,
+dass ich das mal bereinigen sollte.
+Einige Funktionen (z.B. FindMask) können ein kompliziertes Verhalten haben. Versuchen Sie
+es zu studieren. Einige Funktionen (z.B. FindMask) können missbraucht werden, um spezielle
+Aufgaben zu erfüllen. Schauen Sie sich für ein tieferes Verständnis die Tools an.
+Die CD-ROM Unterstützung erforderte einige unschöne Bastelei. Sorry, war halt nicht geplant.
+
+Beim Compilieren passen Sie auf die Stackgrösse auf (Ich habe 24kB verwendet) und benützen
+Sie das LARGE modell!
+Beachten Sie, dass das alles 16-bit Code geben soll, der ohne Windows auskommen muss.
+Ich habe MS-VC++ 1.51 zum compilieren benützt. Wenn Sie's mit Ihrem Lieblingscompiler nicht
+schaffen, kann ich Ihnen auch nicht weiterhelfen. Das ist dann wirklich IHR Problem.
+
+vmemory.h / .lib
+Diese Bibliothek ist bei MS-VC++ dabei. Wegen Copyrights darf ich diese Bibliothek nicht zur
+Verfügung stellen. Es genügt *nicht* das Header File zu haben; man braucht das Libary File
+zum Linken. Falls Sie diese Bibliothek nicht haben, müssen Sie in lfn.cpp die Zeile 
+#define VMEMORY auskommentieren. Dann wird der VCache nicht einkompiliert.
+
+Ach ja. Hat jemand Lust ein generalisiertes Objekt-Modell für Dateisysteme zu entwerfen?
+Dann könnte man viele Ding vermutlich viel eleganter lösen - immer auf Kosten der
+Performance versteht sich...

@@ -1,0 +1,532 @@
+Odi's DOS Tools fr lange Dateinamen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HOLEN SIE SICH DIE NEUESTE VERSION VON http://www.odi.ch/
+UND LESEN SIE DIES, BEVOR SIE MIR EIN EMAIL SCHREIBEN
+
+Inhalt
+------
+
+1. šbersicht
+2. Beschreibung
+3. Bekannte Probleme
+4. Wo kann ich Fehler melden und die neueste Version bekommen?
+5. FAQ
+6. Lizenz
+7. Danksagung
+
+1. šbersicht
+1.1 Was ist das?
+----------------
+Diese Toolsammlung bietet einfache Dateiverwaltung unter DOS fr Dateien mit 
+langen Dateinamen, die von Windows 9x erzeugt wurden. Die Dateisysteme FAT32, 
+FAT 16 und FAT12 werden untersttzt. Um alle Funktionen dieser Werkzeuge 
+benutzen zu k”nnen, mssen sie unter DOS gestartet werden - also nicht in 
+einem DOS-Fenster unter Windows. Soviel ich weiss ist dies die einzige frei 
+erh„ltliche L”sung fr lange Dateinamen unter DOS.
+
+Um zu demonstrieren was ich meine: ™ffnen Sie unter Windows ein DOS Fenster 
+und tippen Sie DIR ein - Sie erhalten lange Dateinamen auf der rechten Seite. 
+Tun Sie dasselbe im DOS-Modus und Sie bekommen nur die kurzen Dateinamen. 
+Kopieren Sie unter DOS eine Datei mit einem langen Namen, und sie wird ihren 
+langen Namen verlieren.
+Mit meinen LFN Tools k”nnen Sie arbeiten, als bef„nden Sie sich in einem DOS-
+Fenster, wenn Sie im DOS-Modus arbeiten. LDIR zeigt Ihnen das Verzeichnis mit 
+langen Dateinamen an. Sie k”nnen Verzeichnisse mit langen Namen erstellen 
+(LMD) oder Dateien mit langen Namen umbenennen.
+
+1.2 Was ist es nicht?
+---------------------
+Meine Tools sind kein DOS-Treiber. Alle Ihre DOS-Programme k”nnen deswegen 
+immer noch nicht mit langen Dateinamen umgehen. (Der Vollst„ndigkeit halber 
+sei erw„hnt, dass es einen Treiber mit Namen LFNDOS gibt, der das Microsoft 
+API fr lange Dateinamen unter DOS zur Verfgung stellt. Sie finden ihn im 
+WWW.) Andere Dateisysteme als FAT und ISO-9660/Joliet fr CD-ROMS werden noch 
+nicht untersttzt. Deshalb laufen diese Tools nicht auf Macintoshlaufwerken, 
+Windows NT-Partitionen, Linux-Partitionen etc. Sie k”nnen jedoch fr Iomega 
+ZIP Laufwerke und Disketten verwendet werden, da diese plattformabh„ngig 
+formatiert werden. Diese Tools sind weder fr ein DOS-Fenster unter Windows 
+gedacht noch sind sie gedacht um einfach Dateien mit kurzen Namen zu 
+handhaben. Bentzen Sie hier die normalen DOS-Kommandos.
+Nicht unter Windows NT oder Windows 2000 bentzen.
+
+1.3 Wer braucht diese Tools?
+----------------------------
+Eigentlich jeder, der Windows 9x/me bentzt. Jeder, der ein Backup seines 
+Systems machen will. Alle, die das gute alte DOS m”gen. Jeder, der im DOS-
+Modus arbeiten muss, um das Betriebssystem zu reparieren. Mssen Sie Windows 
+installieren, weil sie es zerkonfiguriert haben, und wollen Ihren 
+Datenbestand sichern? Haben Sie eine neue Harddisk gekauft und wollen einfach 
+alles von der alten Harddisk kopieren? Bentzen Sie doch LCopy! Wollen Sie 
+Ihre Windowsinstallation von einer ZIP Diskette oder CD-ROM wiederherstellen? 
+Versuchen Sie's.
+
+1.4 Was machen die Tools?
+-------------------------
+Jedes Programm entspricht einem DOS-Befehl, kann aber mit langen Dateinamen 
+umgehen und l„uft auf FAT32.
+
+LDIR.EXE	Verzeichnis/Ordner anzeigen wie DIR
+LCD.EXE	Wechselt das Verzeichnis/Ordner wie CD
+LREN.EXE	Benennt eine Datei um wie REN
+LDEL.EXE	L”scht eine Datei wie DEL
+LCHK.EXE	Zeigt Infos ber ein Laufwerk an
+LCOPY.EXE	Kopiert Dateien besser und schneller als COPY
+LMD.EXE	Erstellt ein neues Verzeichnis
+LRD.EXE	Entfernt ein Verzeichnis
+
+1.5 Wie funktionieren die Tools intern?
+---------------------------------------
+Sie bentzen nicht die normal DOS-Funktionen, um Dateien und Verzeichnisse zu 
+verwalten. Vielmehr sprechen sie das Laufwerk direkt an. Entweder durch den 
+BIOS Interrupt 25h und 26h oder durch Interrupt 21h Funktion 7305h, abh„ngig 
+von der Betriebssystemversion. Fr CD-ROM Zugriffe wird Interrupt 2Fh 
+Funktion 15h bentzt. Deshalb werden nur FAT und ISO-9660/Joliet Dateisysteme 
+untersttzt. Das sind immerhin 5 verschiedene Dateisysteme.
+
+1.6 Was ist neu in dieser Version?
+----------------------------------
+Um die Versionsnummer herauszufinden, starten Sie LCHK. Details erfahren Sie 
+in der Datei history.txt.
+
+1.7 Etwas ber CD-ROM Dateisysteme
+----------------------------------
+Unter Windows werden meist gleichzeitig zwei Dateisysteme fr CD-Roms 
+verwendet: ISO-9660 und Microsoft Joliet (welches optional ist). Windows 
+bentzt immer Joliet, sofern vorhanden. DOS verwendet immer ISO. ISO kann 
+entweder kurze oder l„ngere (31 Zeichen) Namen mit einem beschr„nkten 
+Zeichensatz darstellen. Lange Namen werden unter DOS in kurze umgewandelt. 
+Joliet verwendet immer lange Dateinamen, zudem k”nnen Unicode-Zeichen 
+verwendet werden. Dies ist der Grund fr die Option, immer ISO-9660 zu 
+bentzen - fr alle F„lle. Es wird eine entsprechende Warnung ausgegeben, 
+sollten Differenzen gefunden werden.
+
+1.8. Multisession CD-Roms
+-------------------------
+Mit LFN Tools k”nnen Sie auf frher aufgezeichnete Sessions einer 
+Multisession CD-R zugreifen. LCHK listet Ihnen alle Tracks einer CD auf. Ein 
+Track vom Typ DATA wird als Session bezeichnet und hat ein komplettes 
+Dateisystem. Sessions k”nnen Dateien von frheren Session beinhalten oder 
+"berschreiben". Eine neue Session kann auch Dateien "l”schen", indem sie sie 
+einfach nicht in die Verzeichnisstruktur aufnimmt. Mit LFN Tool k”nnen Sie 
+trotzdem auf solche "gel”schte" oder "berschriebene" Dateien zugreifen.
+
+1.9 Extended Memory EMS und XMS
+-------------------------------
+LCOPY versucht immer Erweiterungsspeicher als Zwischenspeicher zu bentzen 
+(2'393'300 Bytes). Dies kann die Geschwindigkeit bei sehr grossen 
+Verzeichnissen wie z.B. dem Windows\System Verzeichnis deutlich verbessern. 
+Allerdings mssen Sie einen Speichermanager wie EMM386 in der config.sys 
+installieren. Dies erreichen Sie am einfachsten indem Sie die folgende Zeile 
+in Ihre config.sys Datei aufnehmen:
+device=c:\windows\emm386.exe RAM
+Falls kein Speichermanager installiert ist, kann LCOPY keinen Speicher 
+oberhalb 640KB bentzen und verwendet dann seinen Standardcache. Verwenden 
+Sie die Option /V wenn Sie keinen Erweiterungsspeicher verwenden wollen.
+Alle anderen Programme verwenden KEINEN Erweiterungsspeicher, da sich dort 
+der Mehraufwand nicht auszahlt.
+
+2. Beschreibung
+
+Hinweis: Wenn Sie mit langen Dateinamen arbeiten, mssen Dateien nicht 
+unbedingt eine Dateierweiterung (alles nach dem Punkt) besitzen, oder k”nnen 
+sogar mehrere besitzen. Beispielsweise: "Briefkasten", "Brief von Mami.txt", 
+"Buch.doc.zip". Deshalb verhalten sich Jokerzeichen (*,?) leicht anders. 
+(Microsoft's DOS Fenster allerdings bleibt im Verhalten kompatibel mit dem 
+DOS-Modus.) Wenn Sie alle Dateien meinen, bentzen Sie einen einzelnen Stern 
+* statt *.*. Letzteres bezeichnet n„mlich alle Dateien, die einen Punkt 
+enthalten - und nur schon die meisten Verzeichnisse enthalten keinen Punkt!
+
+Optionen mssen nicht mehr durch einen Abstand getrennt werden. Nach Option 
+/Tnn muss allerdings ein Abstand stehen, wenn Sie weitere Optionen angeben 
+wollen. Andernfalls werden diese ignoriert!
+
+2.1 LDIR
+--------
+Dieser Befehl zeigt das angegebene Verzeichnis an, wenn ein langer 
+Verzeichnisname angegeben wird. Ohne Parameter wird nur das aktuelle 
+Verzeichnis angezeigt. Wenn der angegebene Pfad Leerzeichen enth„lt, mssen 
+Sie ihn in Hochkommas (") einschliessen. Sie k”nnen die gew”hnlichen 
+Jokerzeichen (*,?) verwenden, um die Anzeige auf bestimmte Dateien zu 
+beschr„nken. Bentzen Sie * ,um einen Pfadnamen abzukrzen. Die Option /a 
+zeigt auch versteckte Dateien an. Mit /b bekommen Sie eine verkrzte Ausgabe 
+ohne Datumsangaben. Die Option /s zeigt auch den Inhalt aller 
+Unterverzeichnis an. Wenn Sie l„ngere Verzeichnisse ansehen, ist die Option 
+/p hilfreich. Sie unterbricht die Ausgabe nach jeder Bildschirmseite solange 
+bis Sie eine Taste drcken. Mit /c k”nnen Sie den internen Cache abschalten. 
+Dies ist etwas langsamer, ben”tigt aber weniger Hauptspeicher (ca. 128KB). 
+Die /i und /t Optionen sind nur fr CD-Roms. /i zwingt LDIR dazu, immer das 
+ISO Dateisystem statt Joliet zu verwenden. /t muss von einer gltigen 
+Tracknummer eines Datentracks und einem Leerzeichen gefolgt werden. Die 
+Tracknummer sagt, welche Session verwendet wird. Wenn /t nicht angegeben 
+wird, wird automatisch die letzte aufgezeichnete Session verwendet. Mit LCHK 
+k”nnen Sie die gltigen Tracknummern der CD-R anzeigen lassen.
+
+Achtung: Machen Sie keinen Backslash am Schluss wenn Sie Anfhrungszeichen 
+verwenden. (siehe "Bekannte Probleme" fr Details)
+
+Syntax: LDIR [Laufwerk:][Pfad][Dateiname] [/?][/A][/B][/S][/P][/C][/I][/Tn]
+
+Beispiel: D:\WINDOSE>LDIR "C:\neuer ordner\*.txt"
+	.       .    <DIR>       13.01.1999  19:49  .
+	..      .    <DIR>       13.01.1999  19:49  ..
+	NEUETE~1.TXT        1247 13.01.1999  20:02  Neue Textdatei.txt
+
+	D:\>DIR w*
+	WINDOSE .    <DIR>       13.01.1999  19:49  Windose
+
+	D:\>LDIR w*\
+
+	.       .    <DIR>       13.01.1999  19:49  .
+	..      .    <DIR>       13.01.1999  19:49  ..
+	NEUETE~1.TXT        1247 13.01.1999  20:02  Neue Textdatei.txt
+
+2.2 LCD
+-------
+Dieser Befehl wechselt ins angegebene Verzeichnis. Anders als der 
+entsprechende DOS-Befehl, wechselt LCD auch das Laufwerk, wenn eines 
+angegeben wird. LCD wechselt zum ersten Verzeichnis, das auf die Suchmaske 
+passt; den Jokerzeichen drfen hier angegeben werden. So k”nnen 
+beispielsweise lange Verzeichnisnamen einfach mit * abgekrzt werden. Die /i 
+und /t Optionen sind nur fr CD-Roms. /i zwingt LDIR dazu, immer das ISO 
+Dateisystem statt Joliet zu verwenden. /t muss von einer gltigen Tracknummer 
+eines Datentracks und einem Leerzeichen gefolgt werden. Die Tracknummer sagt, 
+welche Session verwendet wird. Wenn /t nicht angegeben wird, wird automatisch 
+die letzte aufgezeichnete Session verwendet. Mit LCHK k”nnen Sie die gltigen 
+Tracknummern der CD-R anzeigen lassen.
+
+Syntax:  LCD [Laufwerk:]Pfadmaske [/?][/I][/Tn]
+
+Beispiel: D:\WINDOSE>LCD "C:\neuer ordner"
+
+         C:\NEUERO~1>LCD ..
+
+         C:\>LCD pro*\onli*
+
+         C:\PROGRA~1\ONLINE~1>
+
+2.3 LDEL
+--------
+Dieser Befehl l”scht die angegebene(n) Datei(en). Sie drfen die blichen 
+Jokerzeichen (*, ?) verwenden, um mehrere Dateien zu l”schen. Die Option /s 
+durchsucht auch die Unterverzeichnisse nach zu l”schenden Dateien. Leere 
+Verzeichnisse werden automatisch gel”scht. Die Option /a l”scht auch 
+schreibgeschtzte (read-only) Dateien, nicht aber versteckte und 
+Systemdateien. Um auch diese Dateien zu l”schen verwenden Sie /f. /f macht 
+automatisch /a. Wenn /a mit /s kombiniert wird, werden auch schreibgeschtzte 
+Verzeichnisse durchsucht. Versteckte und System-Verzeichnisse jedoch werden 
+nur mit /f angetastet. Die Option /p bewirkt, dass LDEL bei jeder Datei 
+nachfragt, ob sie gel”scht werden soll. Mit /c k”nnen Sie den internen Cache 
+abschalten. Dies ist etwas langsamer, ben”tigt aber weniger Hauptspeicher 
+(ca. 128KB). Um alle Dateien eines Verzeichnisses zu l”schen, bentzen Sie 
+bitte "LDEL *" statt "LDEL *.*"!
+
+Syntax:  LDEL [Laufwerk:][Pfad\]Dateiname [/A][/F][/S][/P][/C][/?]
+
+Beispiel: C:\TEMP>LDEL *.txt
+         Brief von Mama.txt gel”scht
+         Mein Buch.txt gel”scht
+
+         C:\TEMP>LDEL "E:\Mll Ordner\*"
+         Abfall 1.dat gel”scht
+         Geraffel 2.exe gel”scht
+
+Seien Sie vorsichtig wenn Sie /s verwenden!
+LDEL D:\* /s /f         L”scht alles auf Laufwerk D:
+LDEL d:\temp /s         L”scht alle Dateien mit Namen temp von D:
+LDEL d:\temp\* /s       L”scht alle Dateien in D:\TEMP und tiefer
+
+
+2.4 LREN
+--------
+Dieser Befehl weist einer Datei einen neuen langen Namen zu. Sie drfen keine 
+Jokerzeichen (*,?) verwenden; benennen Sie nur einzelne Dateien oder 
+Verzeichnisse um! Sie k”nnen keine Namen mit Unicode-Zeichen (z.B. Euro-
+Symbol) erstellen. Umbenennen in einen kurzen Namen entfernt keineswegs einen 
+langen Namen; dort wird z.B. die Gross-/Kleinschreibung gespeichert!
+
+Syntax: LREN [Laufwerk:][Pfad\]Dateiname Neuername [/?]
+
+Beispiel: C:\TEMP>LREN "Ein wichtiges Dokument.txt" "Nicht mehr so 
+wichtig.txt"
+
+	C:\TEMP>
+
+2.5 LCOPY
+---------
+Dieser Befehl kopiert eine oder mehrere Dateien in das gewnschte 
+Verzeichnis. Sie drfen Jokerzeichen (*,?) bentzen, um mehr als eine Datei 
+zu kopieren. Falls eine Datei im Zielverzeichnis bereits existiert, fragt 
+LCOPY nach, ob es die Datei berschreiben soll. Sie k”nnen das mit /y 
+umgehen; dann wird ohne zu fragen berschrieben. Ist die Zieldatei versteckt, 
+system oder schreibgeschtzt, wird sie nicht berschrieben. Sie k”nnen das 
+mit der Option /R aber erzwingen. Der ursprnglich DOS 8.3 Alias wird wenn 
+m”glich beibehalten. Sollte jedoch bereits eine Datei mit diesem Namen im 
+Zielverzeichnis existieren, wird ein neuer eindeutiger Alias generiert. Beim 
+Kopieren von CD wird normalerweise ein neuer 8.3 Name generiert. Mit der 
+Option /K aber wird LCOPY veranlasst, den kurzen Namen von der CD zu 
+verwenden.
+Falls kein Zielverzeichnis angegeben wird, wird das aktuelle Laufwerk und 
+Verzeichnis als Zielort bentzt. Mit der Option /s werden s„mtliche 
+Unterverzeichnisse mitbercksichtigt; fehlende Verzeichnisse am Zielort 
+werden erstellt. Die Option /E verhindert, dass leere Verzeichnisse erstellt 
+werden. Wenn Sie die Option /d zusammen mit /s verwenden, landen alle Dateien 
+im Zielverzeichnis, ohne das sie auf die ursprnglichen Unterverzeichnisse 
+verteilt werden. Beachten Sie, dass dabei Dateien mit gleichen Namen wieder 
+berschrieben werden! Mit der /a Option lassen sich auch versteckte Dateien 
+kopieren. Falls Sie /a mit /s kombinieren, werden sogar versteckte 
+Verzeichnisse kopiert. Dies macht einen separaten Ersatz fr XCOPY fast 
+berflssig. Mit /c k”nnen Sie den internen Cache abschalten. Dies ist etwas 
+langsamer, ben”tigt aber weniger Hauptspeicher (ca. 128KB). Wenn Sie 
+verhindern m”chten, dass Erweiterungsspeicher bentzt wird, setzen Sie die 
+Option /V. Sie k”nnen den Kopiervorgang jederzeit mit einer Taste abbrechen 
+(Leertaste). Die /b Option schaltet dieses Verhalten ab. Die /i und /t 
+Optionen sind nur fr CD-Roms. /i zwingt LDIR dazu, immer das ISO Dateisystem 
+statt Joliet zu verwenden. /t muss von einer gltigen Tracknummer eines 
+Datentracks und einem Leerzeichen gefolgt werden. Die Tracknummer sagt, 
+welche Session verwendet wird. Wenn /t nicht angegeben wird, wird automatisch 
+die letzte aufgezeichnete Session verwendet. Mit LCHK k”nnen Sie die gltigen 
+Tracknummern der CD-R anzeigen lassen.
+
+NB: Wenn Sie Dateien von CD-ROM auf die Harddisk kopieren, wird das 
+Schreibschutz-Attribut nicht gesetzt. 
+
+Syntax: LCOPY [Laufwerk:][Pfad\]Quelldatei [Laufwerk:][Zielpfad] 
+[/?][/S [/D]][/E][/A][/C][/V][/Y][/R][/B][/I][/Tn]
+
+Beispiel: C:\TEMP>LCOPY "*.text" A:\BACKUP\
+         Ein geheimer.Text
+         Ein wichtiger.Text
+         2 Datei(en) kopiert
+
+         C:\TEMP>LCOPY "Ein geheimer.text" "D:\WEB\Jetzt ”ffentlicher.text"
+         Ein geheimer.text
+         1 Datei(en) kopiert
+
+         C:\TEMP>LCOPY C:\WINDOWS\* "D:\Kaputte Systeme" /A /S /B
+
+Die letzte Zeile kopiert das gesamte Betriebssystem in ein anderes 
+Verzeichnis. Sie k”nnen den Vorgang nicht abbrechen.
+
+C:>LCOPY . D:\ /S
+
+Die letzte Zeile kopiert nur die Verzeichnisstruktur (ohne Dateien). Mit der 
+Option /s repliziert LCOPY die Verzeichnisstruktur auch wenn keine passenden 
+Dateien gefunden werden.
+
+C:\>LCOPY *.ZIP C:\ARCHIVE /S /D
+
+Die letzte Zeile durchsucht Laufwerk C nach allen .ZIP Dateien und kopiert 
+sie ins Verzeichnis \Archive. Es werden keine Unterverzeichnisse erstellt.
+
+2.6 LMD
+-------
+Dieser Befehl erstellt ein neues Verzeichnis (Ordner).
+
+Syntax: LMD [Laufwerk:][Pfad\]Verzeichnisname [/?]
+
+Beispiel: C:\>LMD "Backup Ordner"
+         Ok.
+         C:\>LCD Backup*
+         C:\BACKUP~1>D:
+         D:\>LMD "C:1. April 1999"
+         Ok.
+
+Diese Zeile erstellt einen neuen Ordner namens "1.April 1999" im Verzeichnis 
+"Backup Ordner" auf Laufwerk C (relative Pfadangabe!).
+
+2.7 LRD
+-------
+Dieser Befehl entfernt ein Verzeichnis (Ordner).
+
+Syntax: LRD [Laufwerk:][Pfad\]Verzeichnisname [/?]
+
+Beispiel: C:\>LRD "Backup Ordner"
+         Ok.
+
+2.8 LCHK
+--------
+Dieser Befehl zeigt Informationen ber den Datentr„ger an. Dieser Information 
+stammt aus dem Bootsektor des Datentr„gers. Der Befehl funktioniert auch auf 
+CD-Roms. Er zeigt detaillierte Informationen an, wieviele Tracks (Sessions) 
+auf der CD-ROM vorhanden sind. Bentzen Sie die angezeigten Tracknummern fr 
+die /t Option der Befehle LCOPY, LDIR und LCD.
+
+Syntax: LCHL [drive:]
+
+Beispiel: D:\>LCHK F:
+Version 1.76
+Copyright (C) 1999 Ortwin Glck
+Dies ist freie Software unter der GPL. Siehe readme Datei fr 
+Details.
+
+DOS Version: FF-7.10
+Laufwerk: 5
+Bytes pro Sektor: 2048
+Physikalische Datei Systeme:
+#       ID      Enc     Root
+01      CD001           19
+02      CD001   Uni     29
+CD-ROM Session Informationen:
+Tracks: 1 - 1
+Liste der Tracks:
+Track # Start    Typ
+01      00:02.00 DATA
+Erster Root Sektor: 29
+Session Gr”sse: 304149
+Session Start: 0
+Bezeichnung: NWN_PLAY
+Dateisystem: CD-ROM: Microsoft Joliet
+FAT32 kompatibler Zugriffsmodus wird bentzt
+Laufwerkssperrung wird bentzt
+
+D:\>LCHK C:
+Version 1.76
+Copyright (C) 1999 Ortwin Glck
+Dies ist freie Software unter der GPL. Siehe readme Datei fr 
+Details.
+
+DOS Version: FF-7.10
+Laufwerk: 2
+Bytes pro Sektor: 512
+Sektoren pro Cluster: 8
+Anzahl Clusters: 511062
+Anzahl FATs: 2   Anzahl Root Eintr„ge: 0
+Media Descriptor: f8
+Sektoren pro FAT: 3997
+Sektoren / reserviert: 4096512 / 32
+Erster Datensektor: 8026
+Erster Root Sektor/Cluster: 8026/2
+Root Sektoren: 0
+FAT-Eintr„ge pro Sektor: 128
+Bezeichnung:
+Dateisystem: FAT32
+FAT32 kompatibler Zugriffsmodus wird bentzt
+Laufwerkssperrung wird bentzt
+Freie Cluster: 337328   N„chster freier Cluster: 2
+
+
+3. Bekannte Probleme
+--------------------
+
+- LDIR "c:\Meine Dateien\" liefert nicht die erwarteten Ergebnisse. DOS 
+scheint das letzte \" immer in ein Anfhrungszeichen (") umzuwandeln. Lassen 
+Sie daher den Backslash weg.
+- Die DOS Kommandozeile kann nur 127 Zeichen lang sein. Selbst in 
+Stapelverarbeitungsdateien (.bat) werden nur 126 Zeichen pro Befehl 
+bertragen. Verwenden Sie * um Verzeichnisnamen abzukrzen.
+- Sie k”nnen mit LCOPY keine Datei im Hauptverzeichnis anlegen, deren Name 
+gleich der Datentr„gerbezeichnung ist. Unter DOS vor Version 6.22 fhrt der 
+DOS-Befehl LABEL zur Zerst”rung von langen Dateinamen. [MS KB Q118493]
+- Unicode Zeichen werden nur von den Codeseite 00h und 25h bersetzt. 
+Unbekannte Zeichen werden durch _ dargestellt. Dies kann zu uneindeutigen 
+Dateinamen fhren!
+- LRD: Es ist m”glich, das aktuelle Verzeichnis ohne Warnung zu entfernen.
+- Falls der Bootsektor einer Festplatte ein falsches FAT Format angibt, wird 
+die FAT besch„digt (LCOPY, LMD, LRD). Dies kann insbesondere bei alten 
+Disketten/ZIPs passieren, die mit alten DOS-Versionen formatiert wurden. 
+Prfen Sie vorher das Dateisystem mit LCHK. 1.44MB Disketten sollten immer 
+FAT12 aufweisen.
+- FAT32: Es wird ausschliesslich die erste Kopie der FAT zum Lesen bentzt. 
+nderungen werden IMMER in alle FAT Kopien geschrieben (Spiegelung).
+- Auf FAT32 Festplatten kann nur zugegriffen werden, falls das Betriebssystem 
+FAT32 untersttzt. Ansonsten wird dem Laufwerk kein Buchstabe zugeordnet. 
+Bentzen Sie im Zweifelsfall eine Startdiskette von Windows 95B oder h”her.
+- Auf CD-Roms kann nur zugegriffen werden, wenn ein CD-ROM Treiber geladen 
+ist ( und MSCDEX). Ansonsten wird dem CD-ROM kein Buchstabe zugewiesen.
+- Ich konnte einen kurzen Test mit einem ATAPI Iomega ZIP Laufwerk 
+durchfhren. Die Programme scheinen problemlos auch darauf zu funktionieren. 
+Trotzdem meldete ein Benutzer Probleme mit einem ZIP Laufwerk, welche ich 
+jedoch nie reproduzieren konnte.
+- Netzlaufwerke werden nicht untersttzt.
+- Wenn Sie den Cache im Erweiterungsspeicher verwenden wollen, muss himem.sys 
+geladen sein.
+
+4. Wo kann ich Fehler melden und die neueste Version bekommen?
+--------------------------------------------------------------
+Jeglicher Kommentar ist an die E-Mail-Adresse auf meiner Homepage zu senden. 
+Ich spreche Deutsch und Englisch.
+Odi's LFN Tools werden immer noch geringfgig weiterentwickelt. Halten Sie 
+deshalb regelm„ssig Ausschau nach Updates (alle 6 Monate oder so). Starten 
+Sie LCHK, um zu erfahren, welche Versionsnummer Sie besitzen.
+Die neueste Version gibt es unter: http://www.odi.ch/
+
+5. FAQ
+------
+F: Laufen die Tools mit Netzlaufwerken?
+A: Nein. Die LFN Tools ben”tigen Zugriff auf einzelne Sektoren des Laufwerks. 
+Dies wird von DOS Netzlauferken nicht untersttzt.
+
+F: Ich habe Probleme mit selbstgebrannten CDs. Ich sehe keine langen 
+Dateinamen.
+A: Lesen Sie das Handbuch Ihrer CD-Recordingsoftware und informieren Sie sich 
+ber die verschiedenen CD-ROM Standards. Vielleicht haben Sie ja eine CD nach 
+dem dunkelgrnmitgelbenpunkten-book gebrannt.
+
+F: Ich m”chte Ihre Arbeit mit Geld untersttzen.
+A: Jahh! Bitte lesen Sie schnell beim Abschnitt "Spenden" weiter.
+
+F: Ich habe ein selbstgeschriebenes DOS Programm. K”nnen Sie es fr lange 
+Dateinamen fit machen?
+A: Sicher nicht! Tun Sie das bitte selbst. Die Quellen der LFN Tools sind 
+schliesslich frei.
+
+F: LCOPY c:\*.* d:\ kopiert nicht alle Dateien.
+A: Bentzen Sie * statt *.* und lesen Sie die Dokumentation.
+
+F: Ich brauche einen 16-bit Compiler um Ihren Code zu kompilieren.
+A: Sie mssen Microsoft Visual C++ 1.51 verwenden. Am besten fragen Sie in 
+einer Newsgroup. Irgendjemand wird schon noch eine alte CD-ROM besitzen. Sie 
+k”nnen auch Borland C++ 5.0 verwenden, mssen allerdings einige Anpassungen 
+am Code vornehmen. Die vmemory Bibliothek ist von Microsoft und ist bei 
+anderen als MS Compilern gew”hnlich nicht dabei.
+
+F: Bitte tragen Sie Ihre Software auf meiner Website ein und informieren Sie 
+mich regelm„ssig ber updates.
+A: Tun Sie das bitte selbst, sie haben meinen Segen. Ich habe auch noch 
+andere Hobbies.
+
+F: Ich habe all meine Daten verloren, nachdem ich Ihre Tools eingesetzt habe.
+A: Das ist tragisch. Machen Sie regelm„ssig Backups. Ich kann keine 
+Verantwortung dafr bernehmen, dass die Software immer und berall fehlerlos 
+funktioniert. Informieren Sie mich aber darber und beschreiben Sie GENAU, 
+was sie getan haben. Siehe Abschnitt 4.
+
+6. Spenden
+----------
+Gebt mir euer Taschengeld. Unter http://www.paypal.com/ k”nnen Sie sich einen 
+Account einrichten. Damit berweisen Sie bitte den gewnschten Betrag an die 
+folgende Email-Adresse: odi@odi.ch
+
+7. Lizenz
+---------
+Dies ist freie Software unter der GNU General Public License. Keine Garantie 
+und Gew„hrleistung. Quellcode (C++) verfgbar unter http://www.odi.ch/
+Siehe license.txt Datei im ZIP Archiv.
+
+8. Danksagung
+-------------
+Herzlichen Dank an:
+
+Marcin Frankowski (NZ) fr Latin-2 Support
+Geert Keteleer fr die wertvolle Untersttzung und die Autos :-)
+Kurt Salentin fr die Fehlersuche
+Milan Stanik
+Wolf Bartels
+Silvio Vernillo
+Alfred Schumann
+Ralph E. Griffin
+Herbert Schmidt und Martin Kunkel fr die Schlsselhinweise zum Fehler bei 
+bootbaren CDs
+Martin Kunkel fr seine Fehlersuche in meinem Code
+Frank Littmann, Mario Latzig fr die Hinweise auf die Joliet Fehler
+(Programmieren sollte man k”nnen!)
+Bill Hall fr einige Tips
+Isy fr zwei Fehlerhinweise
+64.245.58.28 fr geilen Sound (R.I.P.)
+H. Ellenberger fr den Fehlerhinweis in 1.42
+Benjamin Wells fr seine Bemerkung ber LCOPY *.TXT C:\FUN /S
+Mark Marinac fr seine Hinweise bezglich ZIP Laufwerken und Kompression
+Michael Marquart fr seinen Hinweis auf DOS 6 und seine Tests
+Leanne & Walt Smith fr die IBM PC-DOS Tests
+Gordon Chaffee fr den Unicode Support (Linux Quellen)
+Den Linux Entwicklern, die mir die ISO Doku besorgt haben

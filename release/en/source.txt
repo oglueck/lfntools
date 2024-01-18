@@ -1,0 +1,21 @@
+Source code of LFN Tools
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each tool is a monolithic app. The LFN Library (lfn.cpp) is #included by each app.
+It's certainly not ANSI C, I know.
+You may see weird things like: ((void*)&((char*)DATA[j])[i*sbpc]) , I know that sometime I
+should make this a bit nicer.
+Some functions (i.e. FindMask) may have a complicated behaviour. Try to understand them.
+Some functions (i.e. SeekPath) can be abused to serve a specific task. See the apps for
+deeper understanding.
+The CD-ROM support required some work-arounds, which slightly messed up the code. Sorry.
+
+When building, mind the stack size (I used 24 kB) and use LARGE model!
+Keep in mind that this is 16-bit code, that does not use Windows.
+I used MS-VC++ 1.51 to compile. If you can not compile it using your favourite compiler I can not help you. This is considered as YOUR problem.
+
+vmemory.h / .lib
+This is a Microsoft library that ships with MS-VC++. Due to (c) I can not provide this library.
+It is *not* enough to have the header file. You need the library file to link.
+If you do not have the library comment out the #define VMEMORY in lfn.cpp. This prevents the VCache from
+beeing compiled into the binary.

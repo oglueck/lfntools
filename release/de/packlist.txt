@@ -1,0 +1,11 @@
+ldir.exe
+lcd.exe
+lchk.exe
+ldel.exe
+lren.exe
+lcopy.exe
+lmd.exe
+lrd.exe
+liesmich.txt
+history.txt
+license.txt
