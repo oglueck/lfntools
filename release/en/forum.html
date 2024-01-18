@@ -1,0 +1,3836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Forum</title>
+ 
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <meta name="author" content="Odi">
+ <style type="text/css">
+  ul {
+    list-style-type: none;
+  }   
+  ul li {
+      border: 1px solid black;
+      margin-bottom: -1px; /* avoid double lines */
+  
+  }
+  ul ul li {
+    border-bottom: 0;
+    border-right: 0;
+  }
+ </style></head>
+
+
+<body>
+   All Messages:
+   
+<ul><li><b>Error reading drive 17 sector 0 - 0!(0)</b> by <i>Carlos</i> 17.11.04<br>
+I am getting the following error when using lcopy:<br>
+<br>
+Error reading drive 17 sector 0 - 0!(0)<br>
+Could not read BPB!(16)<br>
+<br>
+Do you know what this means?<ul></ul></li><li><b>General Examples of syntax?</b> by <i>Dave</i> 15.11.04<br>
+can anyone tell me where I can get hold of examples of what you can do with LFN Tools e.g LCOPY etc<br>
+Regards<br>
+Dave<ul><li><b>Re: General Examples of syntax?</b> by <i>Odi</i> 15.11.04<br>
+&gt; can anyone tell me where I can get hold of examples of what you can do with LFN Tools e.g LCOPY etc<br>
+&gt; Regards<br>
+&gt; Dave<br>
+<br>
+Check out the readme file:<br>
+<br>
+http://www.odi.ch/prog/lfn/readme.txt<ul><li><b>Re: General Examples of syntax?</b> by <i>Dave</i> 15.11.04<br>
+&gt; &gt; can anyone tell me where I can get hold of examples of what you can do with LFN Tools e.g LCOPY etc<br>
+&gt; &gt; Regards<br>
+&gt; &gt; Dave<br>
+&gt; <br>
+&gt; Check out the readme file:<br>
+&gt; <br>
+&gt; http://www.odi.ch/prog/lfn/readme.txt<br>
+<br>
+No sorry, i didn't mean that, I've already looked at that thanks. I
+mean general examples e.g say you wanted for example to copy the
+windows folder without any files therein. How would you write the line
+of instruction. This is because, essentially I am not very good with
+DOS.<ul><li><b>Re: General Examples of syntax?</b> by <i>Odi</i> 15.11.04<br>
+&gt; No sorry, i didn't mean that, I've already looked at that thanks.
+I mean general examples e.g say you wanted for example to copy the
+windows folder without any files therein. How would you write the line
+of instruction. <br>
+<br>
+To copy the Windows directory structure without any files, use:<br>
+<br>
+LCOPY C:\WINDOWS D:\SOMEWHERE /S /A<br>
+<br>
+To copy also files, use:<br>
+<br>
+LCOPY C:\WINDOWS\* D:\SOMEWHERE /S /A<br>
+<br>
+<br>
+&gt; This is because, essentially I am not very good with DOS.<br>
+<br>
+Well, if you start messing around with the file system you better get very very good "at DOS"!<ul><li><b>Re: General Examples of syntax?</b> by <i>Dave</i> 15.11.04<br>
+&gt; &gt; No sorry, i didn't mean that, I've already looked at that
+thanks. I mean general examples e.g say you wanted for example to copy
+the windows folder without any files therein. How would you write the
+line of instruction. <br>
+&gt; <br>
+&gt; To copy the Windows directory structure without any files, use:<br>
+&gt; <br>
+&gt; LCOPY C:\WINDOWS D:\SOMEWHERE /S /A<br>
+&gt; <br>
+&gt; To copy also files, use:<br>
+&gt; <br>
+&gt; LCOPY C:\WINDOWS\* D:\SOMEWHERE /S /A<br>
+&gt; <br>
+&gt; <br>
+&gt; &gt; This is because, essentially I am not very good with DOS.<br>
+&gt; <br>
+&gt; Well, if you start messing around with the file system you better get very very good "at DOS"!<br>
+<br>
+POINT TAKEN! Many thanks for the info. I have been brought up on XP,
+Boot up and away you go!, in a word spoilt &amp; ignorant! I would also
+like thank you for your prompt response to my questions also. I have
+also constructed a 911 CD with drive image on and have incremental
+backups (tried &amp; tested) for reinstalls should need arise.<br>
+ <br>
+I would like to make a suggestion that would help Lamers like me, that
+general examples like those that have been very kindly forwarded to me
+could be posted, say beginners intermediate &amp; advanced. I know that
+kind of interactive help would be a great resource to gain confidence
+in what is an excellent set of tools. I will not clutter up your forum
+any longer with postings but just to say kind regards &amp; all the
+best!<br>
+Dave<ul><li><b>Re: General Examples of syntax?</b> by <i>Dave</i> 18.11.04<br>
+&gt; &gt; &gt; No sorry, i didn't mean that, I've already looked at
+that thanks. I mean general examples e.g say you wanted for example to
+copy the windows folder without any files therein. How would you write
+the line of instruction. <br>
+&gt; &gt; <br>
+&gt; &gt; To copy the Windows directory structure without any files, use:<br>
+&gt; &gt; <br>
+&gt; &gt; LCOPY C:\WINDOWS D:\SOMEWHERE /S /A<br>
+&gt; &gt; <br>
+&gt; &gt; To copy also files, use:<br>
+&gt; &gt; <br>
+&gt; &gt; LCOPY C:\WINDOWS\* D:\SOMEWHERE /S /A<br>
+&gt; &gt; <br>
+&gt; &gt; <br>
+&gt; &gt; &gt; This is because, essentially I am not very good with DOS.<br>
+&gt; &gt; <br>
+&gt; &gt; Well, if you start messing around with the file system you better get very very good "at DOS"!<br>
+&gt; <br>
+&gt; POINT TAKEN! Many thanks for the info. I have been brought up on
+XP, Boot up and away you go!, in a word spoilt &amp; ignorant! I would
+also like thank you for your prompt response to my questions also. I
+have also constructed a 911 CD with drive image on and have incremental
+backups (tried &amp; tested) for reinstalls should need arise.<br>
+&gt;  <br>
+&gt; I would like to make a suggestion that would help Lamers like me,
+that general examples like those that have been very kindly forwarded
+to me could be posted, say beginners intermediate &amp; advanced. I
+know that kind of interactive help would be a great resource to gain
+confidence in what is an excellent set of tools. I will not clutter up
+your forum any longer with postings but just to say kind regards &amp;
+all the best!<br>
+&gt; Dave<br>
+Sorry I'm back again! went away and tried the <br>
+LCOPY.EXE C:\WINDOWS D:\WINDOWS /S /A (&amp; then tried)<br>
+LCD.EXE D:\Windows<br>
+LREN.EXE D:\Windows Winmini<br>
+LCOPY.EXE D:\Winmini C:\ A/ /S (Is this right?)<br>
+to copy the folders only and it copied everything, it also also copied
+the rest os the folders My Docs, Program files etc. What I would like
+to do is copy the windows only folder to D:\ rename it to Winmini and
+then copy it back to the C:\PTN. the only other way I can think of is
+to build the Winmini folder using LMD.EXE but some of the folders are
+in some cases many DIR's deep &amp; there is loads of em, very time
+consuming. How would you do this?<br>
+Regards<br>
+Dave<ul></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li><li><b>LFN - Dateien wiederherstellen... Geht das?</b> by <i>Thomas</i> 12.10.04<br>
+Wir haben ein grosses Problem! Nach einem Servercrash haben wir
+festgestellt, dass sich das Backup-Programm im Juli selbst auf 8.3
+zurückgestellt hat. Nun mussten wir nach einem kompletten Datenverlust
+das Backup zurückholen. <br>
+<br>
+Wir haben ein altes Backup vom Juli, auf dem noch die LFN-Dateien sind,
+also ist alles dazwischen 8.3. Wenn ich nun eine Datei vom Juni, die
+8.3 ist, zurückschiebe reklamiert Windows, die Datei sei schon
+vorhanden. Also gehe ich davon aus, dass irgendwo die Information noch
+vorhanden ist?!<br>
+<br>
+Gibt es eine Möglichkeit, oder ein Programm welches die 8.3 Dateien in LFN umzuwandeln kann?<br>
+<br>
+<br>
+Herzlichen Dank für Eure Hilfe!!!<br>
+Gruss Thomas<ul></ul></li><li><b>Sorting files in a directory in Windows 2000</b> by <i>Ahmed</i> 06.10.04<br>
+Can any one have the idea, how different files can be arranged (sorted)
+in date,name,size order in Windows-2000 or Windows-XP as lfnsort
+utility used to do in Windows-95. Can anyone knows any utility of
+software like that. The same task was done in PC-Tools deluxe when
+FAT-16 was used under DOS 6.XX or DOS 5.x.<br>
+Thanks.<ul></ul></li><li><b>LDIR switch to show directories only ?  Possible ?</b> by <i>Ron Clarke</i> 29.09.04<br>
+Hi Folks,<br>
+<br>
+    Is there, or is there likely to be, a switch for LDIR<br>
+that will list ONLY directory names, as there is in MS-DOS'<br>
+DIR command ?<br>
+<br>
+Regards,<br>
+         Ron<ul></ul></li><li><b>Lcopy memory requirements</b> by <i>Gary Potwin</i> 27.06.04<br>
+Before anything else, thanks to Odi for creating these extremely useful
+tools. How much memory does Lcopy need to function, and what kind? In
+the readme, I saw that without the cache, it needs about 128K: what
+does it need with the cache? Since using the cache requires both himem
+and emm386, it appears that lcopy uses only expanded memory, as opposed
+to extended memory. Is this correct? Thanks in advance.<ul></ul></li><li><b>lmd: not enough memory cache (4)</b> by <i>hsu</i> 02.06.04<br>
+Under DOS a C program (size approx. 100kb) should create a directory by
+using lmd. The path of the directory has a size greater than 64 byes.<br>
+<br>
+When creating directories with a very large path length lmd gives the message "not enough memory cache (4)".<br>
+<br>
+Calling lmd directly from the command line, lmd works fine. <br>
+<br>
+All recommendations about himem and emm386 have no effect.<br>
+<br>
+Where can be the problem ?<ul></ul></li><li><b>Change codepage</b> by <i>Max</i> 01.06.04<br>
+I use Hiren's.BootCD.6.0 ( Universal TCP/IP Network 4.80<br>
+MSDOS Network Client to connect via TCP/IP to a Microsoft based)<br>
+<br>
+Can I change codepage to 866 after boot from command line?<br>
+mode con codepage prepare=((866)B:\ega3.cpi)<br>
+~this operation not support (my bad translate )<br>
+<br>
+mode con codepage select=866<br>
+~this operation ...<ul></ul></li><li><b>lmd: Nicht genügend Speicher für Cache (4)</b> by <i>hsu</i> 31.05.04<br>
+Unter DOS soll aus einem C-Programm (ca. 100kB groß) mit Hilfe von lmd
+ein Verzeichnis angelegt werden, dessen Pfadangabe &gt; 64 Bytes ist.<br>
+<br>
+Bei sehr langen Pfadangaben meldet lmd "Nicht genügend Speicher für Cache (4)".<br>
+<br>
+Beim direkten Aufruf von lmd klappt das Anlegen des Verzeichnisses.<br>
+<br>
+Alle Empfehlungen auf himem und emm386 haben das Problem nicht lösen können.<br>
+<br>
+Wo liegt das Problem ?<ul></ul></li><li><b>Help!</b> by <i>Gab</i> 29.03.04<br>
+I have noticed when LCOPY'ing mp3's , the sample rate changes to 48000.
+Which it should be 44000 . How do you fix this? The mp3's skip. please
+help.<br>
+<br>
+Gab<ul><li><b>Re: Help!</b> by <i>Odi</i> 29.03.04<br>
+This should not happen! LFN Tools do not modify the contents of the
+file. I guess not only the sample rate changed, but your MP3 files are
+severely damaged. How that happened I am unable to tell. You should
+consider restoring your file system from the backup.<br>
+<br>
+Please make sure that you always operate LFN Tools on a consistent file
+system. If the file system is corrupt, LFN Tools will cause even more
+damage to it. Also past reports suggest that LFN Tools fail in rare
+cases where the file system is even in a consistent state. However I
+have no idea what could be the cause. I have never experienced such a
+behaviour on my test systems.<br>
+<br>
+Odi<ul><li><b>Re: Help!</b> by <i>Gab</i> 29.03.04<br>
+&gt; This should not happen! LFN Tools do not modify the contents of
+the file. I guess not only the sample rate changed, but your MP3 files
+are severely damaged. How that happened I am unable to tell. You should
+consider restoring your file system from the backup.<br>
+&gt; <br>
+&gt; Please make sure that you always operate LFN Tools on a consistent
+file system. If the file system is corrupt, LFN Tools will cause even
+more damage to it. Also past reports suggest that LFN Tools fail in
+rare cases where the file system is even in a consistent state. However
+I have no idea what could be the cause. I have never experienced such a
+behaviour on my test systems.<br>
+&gt; <br>
+&gt; Odi<br>
+<br>
+<br>
+Welp the file system is not corrupt, although the excessive volume made
+it inoperable. It is accessible in some cases. I was using EasyRecovery
+from ontrack.com , and it got most of my mp3's back. But the only
+problem was it did not support long file names. And some had the same
+characters, even though in LFN format it didn't. So it would overwrite
+some. But the mp3's came out all workable with the annoying shortnames.
+Anyways I really don't know what the problem is in this case, but I'd
+rather spend a few hours renaming mp3 files then having to re-download
+10 gigs worth of music on a 56k modem. Thanks for your time anyway Odi.
+Too bad it did not work correctly with my system. Good program anyway.<br>
+<br>
+Gab<ul></ul></li></ul></li><li><b>Re: Help!</b> by <i>Gab</i> 29.03.04<br>
+&gt; I have noticed when LCOPY'ing mp3's , the sample rate changes to
+48000. Which it should be 44000 . How do you fix this? The mp3's skip.
+please help.<br>
+&gt; <br>
+&gt; Gab<br>
+<br>
+Sorry, I meant it should be 44100 hz . How do one fix this? Because these mp3's skip, and there are like 5,000 worth of songs.<br>
+<br>
+Gab<ul></ul></li></ul></li><li><b>error starting computer: missing file- hal.dll</b> by <i>Idrees</i> 27.03.04<br>
+My computer won't load windows xp. says I've got missing hal.dll file.
+I've managed to get the named file from elsewhere onto a floppy, now
+what I really want to know is from dos, how can I copy the file from
+the floppy to the system 32 folder in windows?<ul><li><b>Re: error starting computer: missing file- hal.dll</b> by <i>Odi</i> 29.03.04<br>
+Boot to DOS mode and insert the diskette / CD with the file into the
+drive. Since the file does not have a long file name, you will not need
+LFN Tools at all. You can just use plain old DOS commands. That is:<br>
+<br>
+copy A:\hal.dll C:\winnt\system32<br>
+<br>
+Assuming that the diskette is in drive A and Windows is installed on drive C in the winnt folder.<br>
+<br>
+Cheers<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>LCopy to more than 2 folder depth?</b> by <i>Shel</i> 23.02.04<br>
+Either I'm doing something wrong, or LCopy doesn't copy to a folder
+depth more than 2-3 deep. I can copy to X:AAA, or X:AAABBB. But I can't
+seem to LCopy to X:AAABBBCCC or further.<br>
+<br>
+Is this a limitation of LCopy, or it one of mine? 8-0<br>
+<br>
+Shel<ul><li><b>Re: LCopy to more than 2 folder depth?</b> by <i>Shel</i> 24.02.04<br>
+&gt; Either I'm doing something wrong, or LCopy doesn't copy to a
+folder depth more than 2-3 deep. I can copy to X:AAA, or X:AAABBB. But
+I can't seem to LCopy to X:AAABBBCCC or further. &lt;<br>
+<br>
+First... I guess this forum doesn't support the back-slashes that I entered in between AAA and BBB and CCC.<br>
+<br>
+But I guess I solved my problem. It seems LCopy doesn't accept the
+shortened file names with a tilde (I'll replace the back slash with a
+dash):<br>
+<br>
+LCopy textfile.txt X:-AAAAAA~1-BBBBBB~1-CCCCCC~1<br>
+<br>
+Entering the full path with long file/folder names in quotes seems to work:<br>
+<br>
+LCopy textfile.txt "X:-AAAA AAAA AAA-BB BBBB BBB-CCCC CCCCCCC CC"<br>
+<br>
+I'm still interested in any other processes that can be used to
+transfer files in DOS for one system to another and retain long file
+names.<br>
+<br>
+Thanks for any feedback,<br>
+<br>
+Shel<ul><li><b>Re: LCopy to more than 2 folder depth?</b> by <i>Odi</i> 01.03.04<br>
+&gt; It seems LCopy doesn't accept the shortened file names with a tilde<br>
+<br>
+Uhm... I thought the documentation was very clear about that. LFN Tools
+are all about *long* file names. The user interface does not deal with
+short names at all.<br>
+<br>
+BTW: I will get this damn PHP escaping fixed very soon.<ul></ul></li></ul></li></ul></li><li><b>Codepage 720</b> by <i>Zubair</i> 17.02.04<br>
+What Is This Actually<br>
+I Was Using V1.54 It working Till Now<br>
+I Downloaded The New Version I Am Getting <br>
+"CodePage 720 Not Supported"<br>
+<br>
+Will Be There A New Version For This<ul><li><b>Re: Codepage 720</b> by <i>Odi</i> 21.02.04<br>
+&gt; What Is This Actually<br>
+&gt; I Was Using V1.54 It working Till Now<br>
+&gt; I Downloaded The New Version I Am Getting <br>
+&gt; "CodePage 720 Not Supported"<br>
+<br>
+Newer versions of LFN Tools try to use the right character encoding for
+your drive. The least you want on your hard drive is a character set
+mess :-)<br>
+<br>
+So LFN Tools check which character set you are using (mode con cp
+commands in your autoexec). LFN Tools have support build in for some
+widely used ones but not for all character sets. Especially asian and
+all double byte charsets are completely unsupported unfortunately. All
+supported character sets are compiled statically into the code. Because
+of the memory limitations under DOS it is not possible to support but a
+few character sets. Otherwise one would need to dynamically load the
+support in at runtime. But this would require a rewrite of the
+character set support code.<br>
+<br>
+&gt; &gt; Will Be There A New Version For This<br>
+<br>
+No. Development of LFN Tools has discontinued. If you would like CP 720
+support you must first find somebody who is willing to continue to work
+on LFN Tools. The code is all openly available in CVS on sf.net<br>
+<br>
+Odi<ul></ul></li><li><b>Re: Codepage 720</b> by <i>zubair</i> 19.02.04<br>
+Please Sombody<ul></ul></li></ul></li><li><b>My Documents BackUp</b> by <i>Zubair</i> 16.02.04<br>
+Hello I Am Wondering How To BackUp "My Documents" In Dos<br>
+Using Lcopy<br>
+I Tried Many None Still Works I Am Using Win98 But I Want To BackIt Up If My System Crashes.<br>
+<br>
+I Want To Backup "My Documents" "Favorites" &amp; "Desktop" So I Can Star By A Floppy And Start a Batch File To DO All Of This.<br>
+<br>
+C:\My Documents<br>
+C:\WINDOWS\Desktop<br>
+C:\WINDOWS\Favorites<br>
+<br>
+LCOPY C:\WINDOWS\desktop\* D:\backeuro\desk /A /S<br>
+LCOPY C:\WINDOWS\Favorites\* D:\backeuro\favo /A /S<br>
+<br>
+For Mydocuments I Tries<br>
+<br>
+LCOPY C:\mydocu~1\* D:\backeurodocu /A /S<br>
+LCOPY C:\my documents\* D:\backeuro\docu /A /S<br>
+LCOPY C:\mydocuments\* D:\backeuro\docu /A /S<br>
+LCOPY C:\"my documents"\* D:\backeuro\docu /A /S<br>
+LCOPY C:\"my documents" D:\backeurodocu /A /S<br>
+But None Worked One I Got Only Directory Structure Of C: But No Files<br>
+<br>
+All Others Are Ok But Not "My Documents"<br>
+<br>
+If Some One ALready Got This Please Reply To Me Zubair4148@yahoo.com<ul><li><b>Re: My Documents BackUp</b> by <i>Odi</i> 16.02.04<br>
+&gt; &gt; For Mydocuments I Tries<br>
+&gt; &gt; LCOPY C:mydocu~1* D:ackeurodocu /A /S<br>
+&gt; LCOPY C:my documents* D:ackeurodocu /A /S<br>
+&gt; LCOPY C:mydocuments* D:ackeurodocu /A /S<br>
+&gt; LCOPY C:"my documents"* D:ackeurodocu /A /S<br>
+&gt; LCOPY C:"my documents" D:ackeurodocu /A /S<br>
+&gt; But None Worked One I Got Only Directory Structure Of C: But No Files<br>
+<br>
+You need to pass the whole path in double quotes like so:<br>
+<br>
+LCOPY "C:My Documents*" D:ackeurodocu /A /S<br>
+<br>
+The double quote stuff is a feature of the DOS command line interpreter
+(shell) and is used to group together parameters that contain spaces.
+This has nothing to do with LFN tools really but rather how parameters
+are processed and passed on to programs.<ul><li><b>Thanks</b> by <i>Zubair</i> 17.02.04<br>
+Thank You Very Much It Really Worked.<ul></ul></li></ul></li></ul></li><li><b>Any Extration utility available?? if not, make one</b> by <i>Oxtie</i> 07.02.04<br>
+I have *.RAR DOS SFx files any problem available that can extract these files in LONG format???<ul><li><b>Re: Any Extration utility available?? if not, make one</b> by <i>(unknown)</i> 08.02.04<br>
+Use UNRAR 3.x to extract *.RAR files under LFN-enabled MS-DOS 7.10,
+then it will extract these files in LONG format. MS-DOS 7.10 Full
+Installation Set is available from:<br>
+<br>
+http://newdos.yginfo.net/msdos71/index.htm<br>
+<br>
+&gt; I have *.RAR DOS SFx files any problem available that can extract these files in LONG format???<ul></ul></li><li><b>Re: Any Extration utility available?? if not, make</b> by <i>Odi</i> 08.02.04<br>
+You will make a RAR extractor? Cool, tell me when it's ready...<ul></ul></li></ul></li><li><b>LFN-Tools On A Cd</b> by <i>Pricelessware</i> 23.01.04<br>
+To whom it may concern,<br>
+<br>
+We at http://www.pricelessware.org would like to start offering a CD
+that contains all of the freeware programs listed on our site. We are
+doing this to help out those that have dial up. We would only be
+charging for the cost of the materials. In the USA it would not exceed
+$3 We would like your permission to include your program LFN-Tools on
+the Pricelessware CD.<ul><li><b>Re: LFN-Tools On A Cd</b> by <i>Odi</i> 24.01.04<br>
+The issue is clearly defined by the GPL. I don't see any problem with
+that. The tools have been included in other freeware collections
+(Walnut creek, ct) as well. If you like, you can send a message to lfn
+at odi. ch and I will send you a written permission.<ul></ul></li></ul></li><li><b>Download Error</b> by <i>hep</i> 18.01.04<br>
+When I try to download the LFN Tools from<br>
+<br>
+http://www.odi.ch/prog/prog.php<br>
+<br>
+I always get error "403 forbidden".<ul><li><b>Re: Download Error</b> by <i>Odi</i> 18.01.04<br>
+permissions fixed. Thanks.<ul></ul></li></ul></li><li><b>Extension to LCopy?</b> by <i>Jeff</i> 30.12.03<br>
+I understand that LCopy is intended to be a long file name version of
+the DOS copy command, But when used for backups I seriously miss the
+XCopy commands that:<br>
+1. compares files dates and only copies if younger than the copy already on the backup disk, and<br>
+2. recurses into subdirectories if found and recreates them on the
+target disk even if they are not there at the start of the session.<br>
+<br>
+I am not literate enough to take the code and do it myself. Could I
+persuade Odi to add this functionality to the next version of LCopy?<br>
+<br>
+Many thanks if you would.<br>
+<br>
+Jeff<ul><li><b>Re: Extension to LCopy?</b> by <i>Odi</i> 06.01.04<br>
+&gt; Could I persuade Odi to add this functionality to the next version of LCopy?<br>
+<br>
+I will not make a next version of LFN Tools unfortunately. If you
+really need to backup important data you should look for alternatives.<ul><li><b>Re: Extension to LCopy?</b> by <i>Shel</i> 23.02.04<br>
+&gt; If you really need to backup important data you should look for alternatives. &lt;<br>
+<br>
+I've been looking and looking for something that will recover files on
+a FAT32 HDD booted from a MS-DOS boot FD, and manage to perserve long
+file names But LCopy.exe is the best I've found so far.<br>
+<br>
+Would  you have any suggestions for alternatives?<br>
+<br>
+Thanks,<br>
+<br>
+Shel<ul></ul></li></ul></li></ul></li><li><b>Does LCOPY work to copy files from network?</b> by <i>HORIZON</i> 03.12.03<br>
+Hello<br>
+<br>
+Does LCOPY work to copy files comming from network?<br>
+<br>
+Thank you.<ul><li><b>Re: Does LCOPY work to copy files from network?</b> by <i>HORIZON</i> 03.12.03<br>
+Here what i wanted to do<br>
+<br>
+NET USE Z: \\MYSERVER\MYSHARE<br>
+LCOPY Z:\REP1\* C:\REP2\ /S /E<br>
+NET USE Z: /DELETE<br>
+<br>
+but, it seems (and i can understand it) that LCOPY cannot read from a share drive. Can you confirm that it is not possible ?<ul><li><b>Re: Does LCOPY work to copy files from network?</b> by <i>Odi</i> 04.12.03<br>
+Right. You can NOT use LFN Tools on network drives.<ul></ul></li></ul></li></ul></li><li><b>Bug or HD broken?</b> by <i>THIEF15</i> 29.11.03<br>
+I have a partition that doesnt work in windows xp (FAT32) but in dos it
+works. I heard about this program, LFN Longfilename and thoughtL: lets
+try it to see if i can copy the files and preserve the long file names.
+When I typed "Lcopy G:\* E:\Gdir /s /a" I got this message<br>
+<br>
+ambiguous dpb!(50)<br>
+<br>
+run-time error r6003<br>
+- integer divide by 0<br>
+<br>
+What does this mean? Thanks in advance. It is a nice program :-).<ul><li><b>Re: Bug or HD broken?</b> by <i>Odi</i> 30.11.03<br>
+&gt; &gt; ambiguous dpb!(50)<br>
+&gt; &gt; What does this mean? Thanks in advance. It is a nice program :-).<br>
+<br>
+The very first sector (DPB = disk parameter block) of a FAT file system
+contains meta information about the file system such as how large it is
+and where the root directory is and so on. You can display that
+information with the LCHK tool.<br>
+<br>
+LFN Tools check if the information presented in the DPB is consitent or
+if it just contains random values. This is to ensure that LFN Tools are
+only run on the supported file systems and that they do not operate on
+plain wrong information and possibly destroy the filesystem. So this is
+a security feature actually.<br>
+<br>
+In your case it seems that the DPB is incorrect. You can check with
+LCHK. Maybe the drive is not FAT32 as you believe! You can try and
+repair the information with scandisk.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>codepage 862</b> by <i>amos</i> 12.11.03<br>
+it tells me codepage 862 is not supported <br>
+even after setting another codepage<ul></ul></li><li><b>LCopy und CD-ROM unter VMware</b> by <i>Henryk</i> 16.10.03<br>
+Wenn ich versuche LCopy in meiner VMware auszuführen, um Dateien von
+dem CDROM-Laufwerk auf die Festplatte zu kopieren, bekomme ich folgende
+Fehlermeldung:<br>
+"Fehler beim Lesen der Laufwerksinfos: 2!(7)"<br>
+Woran liegt das?<ul><li><b>Re: LCopy und CD-ROM unter VMware</b> by <i>Odi</i> 01.11.03<br>
+Habe ich noch nie versucht.<br>
+<br>
+VMware unter Linux? Warum willst du da die LFN Tools benützen? Linux
+kann mit FAT Laufwerken doch besser umgehen als die LFN Tools.<ul></ul></li></ul></li><li><b>( long LFNs) X (lots of files) ?= subdir limit</b> by <i>Bert</i> 13.10.03<br>
+A recent hdd crash makes me suspicious of an (unknown to me)<br>
+limit in max length of a subdir file filled with long LFNs<br>
+<br>
+In the drive that failed, I had a flat structure with lots of files in
+one subdir, each file with a longish LFN. Somehow it gagged out, and I
+lost all files above a certain value, but files below that value are
+just fine.<br>
+<br>
+Am I on the wrong track?<br>
+<br>
+thanks if you can help.<ul><li><b>Re: ( long LFNs) X (lots of files) ?= subdir limit</b> by <i>Odi</i> 01.11.03<br>
+A subdirectory (not root) is only limited by the disk's size.<ul></ul></li></ul></li><li><b>LFN Tools - will it work in DOS 6.22 OS?</b> by <i>lee g.</i> 11.10.03<br>
+LFN Tools - will it work in DOS 6.22 OS?<br>
+If so how do I install?<br>
+If not, what will work?<br>
+Thanks.<ul><li><b>Re: LFN Tools - will it work in DOS 6.22 OS?</b> by <i>lee g.</i> 11.10.03<br>
+&gt; LFN Tools - will it work in DOS 6.22 OS?<br>
+&gt; If so how do I install?<br>
+&gt; If not, what will work?<br>
+&gt; Thanks.<br>
+<br>
+I tried it running it off of a floppy in DOS 6.22.<br>
+The ldir worked, I was able to see the top level lfn<br>
+directories of a cd. But I was not able to open the<br>
+directory and see and manipulate files in the lfn<br>
+dirs on the CD. I tired lcd in every way I could<br>
+think of but could not enter the directories.<br>
+<br>
+IS there any way to navigate to a lfn directory on a CD?<br>
+I tried D:\&gt;a:\lcd d:\bootdisks  I get d:\&gt; prompt back,<br>
+or I try D:\&gt;a:\lcd d:\bootdi~5 and I get d:\&amp;&gt; prompt<br>
+back - w/a strange symbol - nothing usable.<br>
+<br>
+help appreciated.<ul><li><b>Re: LFN Tools - will it work in DOS 6.22 OS?</b> by <i>ACW</i> 13.10.03<br>
+MS-DOS 6.22 is too old to be of use. you should use a newer version of
+DOS, such as MS-DOS 7.10 + DOSLFN(optional), with LFN support.<ul></ul></li></ul></li></ul></li><li><b>funktioniert es auch unter win2000 oder XP???</b> by <i>Theo</i> 11.10.03<br>
+Ich habe es unter Win98 ausprobiert, aber ich mußte feststellen, das
+nich alles rüberkopiert wurde. Vieleicht lag es an den Atributen?
+/a/s/y. auf jedenfall habe ich dann in der anderen Partition das Win
+gestartet und es lief.<br>
+Ich will meinen künftig mit Win2000 austatten und frage deshalb, ob dieses auch mit NTFS funktioniert.<br>
+<br>
+Danke Theo<ul><li><b>Re: funktioniert es auch unter win2000 oder XP???</b> by <i>Theo</i> 11.10.03<br>
+&gt; Ich habe es unter Win98 ausprobiert, aber ich mußte feststellen,
+das nich alles rüberkopiert wurde. Vieleicht lag es an den Atributen?
+/a/s/y. auf jedenfall habe ich dann in der anderen Partition das Win
+gestartet und es lief.<br>
+&gt; Ich will meinen PC künftig mit Win2000 austatten und frage deshalb, ob dieses auch mit NTFS funktioniert.<br>
+&gt; <br>
+&gt; Danke Theo<ul></ul></li></ul></li><li><b>save/restore win98se copies w/o gui</b> by <i>itest</i> 06.10.03<br>
+bat-files, used arj, doslfnbk, lren<br>
+http://www.geocities.com/iiwbackup/<br>
+im user only.<ul></ul></li><li><b>Bug with Ghost 2003 and LFN</b> by <i>Dennis Hartley</i> 01.10.03<br>
+There seems to be a bug here. Ghost will let me type in a LFN but the
+resultant saved filename is fine except all the spaces are removed.
+Ghost will allow me to restore from a LFN with spaces though.<br>
+<br>
+BTW Vernon D. Buerg's List works fine in every respect.<br>
+<br>
+Dennis<ul><li><b>Re: Bug with Ghost 2003 and LFN</b> by <i>Odi</i> 06.10.03<br>
+Sorry, no idea what you are talking about...<ul></ul></li></ul></li><li><b>does not support codepage 737 error</b> by <i>Nick Valman</i> 28.09.03<br>
+Hi, i sent an email but received no response. So i decided to post here just in case my email didn't reach its destination.<br>
+<br>
+Should i hope for a future version that will support codepage 737? It this something you can fix easily?<ul><li><b>Re: does not support codepage 737 error</b> by <i>Odi</i> 06.10.03<br>
+In general you should not hope for ANY future version. Stuff like the Knoppix CD has made LFN Tool obsolete basically.<ul><li><b>Re: does not support codepage 737 error</b> by <i>Nick Valman</i> 08.10.03<br>
+&gt; In general you should not hope for ANY future version. Stuff like the Knoppix CD has made LFN Tool obsolete basically.<br>
+<br>
+Hmmmm k. I  will check Knoppix CD out.<br>
+<br>
+Still, i would be interested in the source code of LFN tools so that i
+could edit it and add Greek support. I haven't been able to download
+the source from sourceforge (i ve only found final releases?) so i
+wander if you could send me the source code via email or provide me a
+direct link. It will only take you a couple of minutes.<br>
+<br>
+Once i update it i can send it back to you if you still want to publish a new final version in the official site.<br>
+<br>
+My email is:<br>
+         valeonti@otenet.gr  <br>
+<br>
+Thank you for your time<ul><li><b>Re: does not support codepage 737 error</b> by <i>Nick Valman</i> 01.11.03<br>
+Any hope for an answer:(?<ul></ul></li></ul></li></ul></li></ul></li><li><b>Readme file needs reworking</b> by <i>Serge</i> 13.09.03<br>
+I do not mean to critize, but the unzipped readme.txt file displays
+very badly in Notepad (Win98)- very ragged text at left margin, making
+it very hard to read. The History.txt file could be improved in a few
+lines. The License.txt is fine.<ul><li><b>Re: Readme file needs reworking</b> by <i>Odi</i> 06.10.03<br>
+This is a DOS tool. Hence the readme file is optimized to display well
+in DOS mode. Furthermore Notepad is the worst editor on earth.<ul></ul></li></ul></li><li><b>lfn in dos</b> by <i>znayman</i> 08.09.03<br>
+I am looking for a program that will let me read long files names in dos.<ul><li><b>Re: lfn in dos</b> by <i>ACW</i> 15.09.03<br>
+Use:<br>
+1: MS-DOS 7.10 + DOSLFN 0.32o<br>
+2: ROM-DOS 7.10<br>
+<br>
+&gt; I am looking for a program that will let me read long files names in dos.<ul></ul></li></ul></li><li><b>LFN changes some chars in a filename</b> by <i>crassius</i> 05.09.03<br>
+I recently found that I had a file that in winME appeared to have a
+single quote character in it's name &lt;'&gt;. Your directory listing
+for the directory replaced the quote with an underscore &lt;_&gt;.<br>
+<br>
+After some investigation, I found that the quote was actually an ANSI
+char &lt;180decimal&gt; It shows as an ANSI char in windows explorer,
+but pulling the name into an editor, it shows as a DOS graphic char.<br>
+<br>
+Redirecting the output of your ldir.exe into a perl script to select
+certain files then copy them to another location fails when the file
+with the strange char can't be found.<br>
+<br>
+Have you any suggestions? At least now when it fails, I'll know to look
+for strange chars, but it would be nicer if it just came out in the DOS
+output as the graphic char and then it would copy OK as I've tested
+typing the char into the perl script by hand.<ul></ul></li><li><b>Ambiguous DPB (50)</b> by <i>JG</i> 03.09.03<br>
+I'm getting this message when trying to use lcopy from a win98 startup floppy.  Any ideas?<br>
+<br>
+This would be a lifesaver, thanks!<ul><li><b>Re: Ambiguous DPB (50)</b> by <i>Odi</i> 06.09.03<br>
+Check the drive's integrity with scandisk before you use LFN Tools.<ul></ul></li></ul></li><li><b>Parallel port transfer.</b> by <i>Colin</i> 22.08.03<br>
+Please pardon intrusion.<br>
+Could anyone advise, will LFNtools enable me to transfer files between two machines and preserve long filenames?<br>
+TIA.<ul><li><b>Re: Parallel port transfer.</b> by <i>Kaj</i> 31.08.03<br>
+Hi Colin,<br>
+a simple way, to copy the content of a harddisk to another PC, is to
+use INTERLNK.EXE/INTERSVR.EXE from DOS6 or W95. Tranfere with a
+LaplinkCable (parallel port).<br>
+You boot first the sourcePC under plain DOS with the command:
+PATH\INTERSVR. Then you start a destinationPC that runs under W95/98
+and edit into the CONFIG.SYS DEVICE=PATH\INTERLNK.EXE /AUTO /NOPRINTER<br>
+Connect the PCs with the LaplinkCable and restart the destinationPC.
+Now you should have new drives (eg F:;G:) that wors normaly but
+slower...<br>
+By, Kaj from Germany<br>
+<br>
+&gt; Please pardon intrusion.<br>
+&gt; Could anyone advise, will LFNtools enable me to transfer files between two machines and preserve long filenames?<br>
+&gt; TIA.<ul></ul></li></ul></li><li><b>LCOPY  kopieren von Verzeichnissen / hier Windows</b> by <i>maneich at onlinehome dot de</i> 16.08.03<br>
+Hallo,<br>
+<br>
+habe mir Ihre Lfn-Tools runtergeladen und heute versucht C:\Windows nach G:\Windows im DOS zu kopieren.<br>
+<br>
+Da der Ordner Windows von LCOPY nicht automatisch erstellt wird, habe ich das Verzeichnis mit md vorher erstellt.<br>
+<br>
+Den Kopiervorgang habe ich durchgeführt mit <br>
+LCOPY C:\Windows\* G:\Windows /A /S&gt;nul.<br>
+<br>
+Die folgende Prüfung nach Kopieren-Ende ergab:<br>
+<br>
+Quell-Ordner 4.411 Ordner 122.231 Dateien 3.34 GB Größe<br>
+Ziel-Ordner  1.776 Ordner  29.421 Dateien 1.66 GB Größe<br>
+<br>
+also eine Diffenenz von über 50 %.<br>
+<br>
+Eine weitere Prüfung ergab, daß das direkt unter Windows liegende
+Verzeichnis korrekt und komplett kopiert wurde, also mit allen
+Unterverzeichnissen und Dateien oder ganz übersprungen wurde; also z.B.<br>
+<br>
+C:\Windows\Inf ist in G:\Windows überhaupt nicht aufgeführt,
+C:\Windows\System ist samt Inhalt korrekt und komplett aufgeführt. Bei
+den kopierten Daten sind die langen Dateinamen korrekt.<br>
+<br>
+Eine Systematik ist dabei nicht zu erkennen, da mal 1 mal 2 oder auch
+mal 3 oder mehr Unterverzeichnisse übersprungen wurden und das ganz
+unterschiedlich innerhalb des Verzeichnisbaums.<br>
+<br>
+Das Fehlen des Parameters /b kann ja nicht Schuld daran sein, dieser soll ja nur das Abbrechen durch Tastendruck verhindern.<br>
+<br>
+Ich bitte um entsprechende Informationen ob ich in der Befehlszeile einen Fehler gemacht habe oder worandas sonst liegen könnte.<br>
+<br>
+MfG  maneich<ul><li><b>Re: LCOPY  kopieren von Verzeichnissen / hier Wind</b> by <i>Odi</i> 06.10.03<br>
+BTW:<br>
+<br>
+da ich nicht denke dass du gern SPAM bekommst, mache ich deine Email Adresse unkenntlich.<ul></ul></li><li><b>Re: LCOPY  kopieren von Verzeichnissen / hier Windows</b> by <i>maneich at onlinehome dot de</i> 17.08.03<br>
+&gt; Hallo,<br>
+<br>
+ich habe vergessen noch zu erwähnen, daß diese Arbeit mit LCOPY aus LFN-Tools Version 1.78 durchgeführt wurde.<br>
+<br>
+Mein System ist WinME. Das Ziellaufwerk hatte noch genügend freien
+Speicher (ca. 8 GB) um alle Daten aufzunehmen. Das Kopieren mit LCOPY
+wurde im reinen DOS durchgeführt.<br>
+<br>
+Über entsprechende Antworten würde ich mich freuen.<br>
+<br>
+MfG  maneich<ul><li><b>Re: LCOPY  kopieren von Verzeichnissen / hier Windows</b> by <i>maneich at onlinehome dot de</i> 18.08.03<br>
+&gt; &gt; Hallo,<br>
+<br>
+also bei mir klappt nichts.<br>
+<br>
+ich habe jetzt versucht nur die Verzeichnisstruktur zu kopieren mit
+LCOPY C:\Windows\* G:\Windows /S, da kopiert er aber auch die Dateien
+mit außer den geschützten Dateien. Außerdem fehlen noch mehr
+Unterverzeichnisse und er stoppt kurz vor Ende mit der Fehlermeldung
+"zu wenig Speicherplatz"; obwohl noch ca. 8 GB zur Verfügung stehen.<br>
+<br>
+MIT C:\Windows&gt;Lcopy G:\Windows /S passiert gar nichts.<br>
+Diesen Befehl akzeptiert er nicht.<br>
+<br>
+Kann mir niemand hier sagen ob und was ich falsch mache, oder ist das ein Problem von LCOPY.<br>
+<br>
+MfG maneich<ul><li><b>Re: LCOPY  kopieren von Verzeichnissen / hier Wind</b> by <i>Odi</i> 06.10.03<br>
+Vielleicht ist das Filesystem kaputt. Du solltest mal ein scandisk
+laufen lassen. Wenn alles nichts hilft: Knoppix runterladen, brennen,
+booten.<ul></ul></li></ul></li></ul></li></ul></li><li><b>[ANN] Release 1.79</b> by <i>Odi</i> 14.08.03<br>
+The new release fixes two minor problems. No big deal.<br>
+<br>
+Odi<ul><li><b>Re: [ANN] Release 1.79</b> by <i>Willyanto</i> 24.01.04<br>
+I have a problem with copying<br>
+I've got an error message<br>
+"Out of memory!(22).<br>
+I tried to copy a windows dir,with<br>
+a lot "long name" files. It's<br>
+ca. 10000 Files.<ul></ul></li></ul></li><li><b>Copying LFN from CD to HDD</b> by <i>Seb</i> 05.08.03<br>
+Hi,<br>
+<br>
+I'm trying to crate a bootable CD which contains a 1:1 copy of my HDD.
+During start-up I want the system to copy all files from the CD to a
+RAM-disk and then start Windows from there.<br>
+Problem is that the long file names (which are fine on the Joliet-CD)
+get changed into the short Joliet-names during copying with Lcopy D:\*
+C:\ /s /a /r<br>
+Example: "Program Files" (on CD) -&gt; "PROGRA~6" (in RAM-disk).<br>
+How can I prevent Lcopy from doing this and tell it to use the long
+Joliet-name or at least link "PROGRA~6" with the name "Program Files"
+so Windows can recognise it as such? <br>
+I've tried both Nero and WinOnCD for burning Joliet CDs - the result is the same.<br>
+<br>
+I'm kinda lost. Hints are greatly appreciated!<br>
+Greets. Seb :o)<ul><li><b>Re: Copying LFN from CD to HDD</b> by <i>Dabus</i> 26.08.04<br>
+Actualy have same problem. When i copy hdd&gt;hdd lcopy work fine, but
+when from cd&gt;hdd he change all my 866 codepage symbols to "_". CD-R
+disk recorded by WinOnCD in iso9660 format.<ul></ul></li><li><b>Re: Copying LFN from CD to HDD</b> by <i>Odi</i> 12.08.03<br>
+I have no idea what is the problem here. LCOPY by default creates long
+file name entries in the directory. If LDIR shows the long file names
+on your CD, then LCOPY should create the correct long names on the
+target file system. <br>
+<br>
+Odi<ul><li><b>RAM drives</b> by <i>Odi</i> 12.08.03<br>
+Maybe the problem is the RAM disk! I have never tried this before. But
+I can imagine that the DOS calls I use do not work correctly with RAM
+drives. One user reported a problem with RAM drives as well.<br>
+<br>
+Odi<ul><li><b>Re: RAM drives</b> by <i>Seb</i> 14.08.03<br>
+Thanks Odi.<br>
+I'm still fiddling around ... will let you know if I've found out what's wrong.<br>
+Greets Seb.<ul></ul></li></ul></li></ul></li><li><b>Klaus (02.02.02)</b> by <i>Seb</i> 06.08.03<br>
+Hi Odi,<br>
+me agian.<br>
+I've just read the message from Klaus (02.02.02) - he seems to have a very similar problem ... gibt es inzwischen eine Loesung?<br>
+<br>
+Seb<ul></ul></li></ul></li><li><b>LFN on an NTFS volume?</b> by <i>Dick</i> 26.07.03<br>
+Are there any utilities similar to LFN which allow the writing of long file names on NTFS volumes as well?<br>
+<br>
+Thanks,<br>
+Dick<ul></ul></li><li><b>LCOPY Error Runtime R6003</b> by <i>Fabrice69</i> 17.07.03<br>
+I have this problem with the LCOPY command :<br>
+C:\&gt;lcopy * c:\USB<br>
+<br>
+run-time error R6003<br>
+- integer divide by 0<br>
+<br>
+C:\&gt;_<br>
+<br>
+Can U help me ???<ul><li><b>Re: LCOPY Error Runtime R6003</b> by <i>steve</i> 01.09.03<br>
+&gt; I have this problem with the LCOPY command :<br>
+&gt; C:\&gt;lcopy * c:\USB<br>
+&gt; <br>
+&gt; run-time error R6003<br>
+&gt; - integer divide by 0<br>
+&gt; <br>
+&gt; C:\&gt;_<br>
+&gt; <br>
+&gt; Can U help me ???<br>
+<br>
+I got the same error. I would appreciate if someone could help.<ul></ul></li></ul></li><li><b>Binary copy using LCOPY</b> by <i>Ramin</i> 08.07.03<br>
+Lcopy would be the greatest utility if you add Binary copy capability
+into it. Or if any one knows how I can have this accomplished. I have
+about 352 LFN that need to assemble and can copy them into one file. <br>
+<br>
+Any help is greatly appreciated.<ul><li><b>Re: Binary copy using LCOPY</b> by <i>Odi</i> 18.07.03<br>
+Try and use the DOS copy command and the short names for this task:<br>
+<br>
+copy a.txt+b.txt+c.txt all.txt<br>
+<br>
+Then use LREN to assign the new file a long name.<ul></ul></li></ul></li><li><b>lcopy doesn´t copy files which have no extension</b> by <i>Richard Kotte</i> 03.07.03<br>
+Hello,<br>
+i used lcopy to move windows xp from my old harddisk to my new (bigger and faster) one.<br>
+I had to copy some files like ntldr (no file extension) manually,
+because lcopy hadn´t noticed them (there are some files in the
+\system32\config\ folder, too. It´s the same here.)<br>
+<br>
+How to make lcopy to copy really ALL files ?<br>
+<br>
+Richard<ul><li><b>Re: lcopy doesn´t copy files which have no extension</b> by <i>Richard</i> 03.07.03<br>
+&gt; Hello,<br>
+&gt; i used lcopy to move windows xp from my old harddisk to my new (bigger and faster) one.<br>
+&gt; I had to copy some files like ntldr (no file extension) manually,
+because lcopy hadn´t noticed them (there are some files in the
+\system32\config\ folder, too. It´s the same here.)<br>
+&gt; <br>
+&gt; How to make lcopy to copy really ALL files ?<br>
+&gt; <br>
+&gt; Richard<br>
+<br>
+Yes, I am newbie.<br>
+Yes, I typed "*.*" instead of "*" <br>
+:-)<ul></ul></li></ul></li><li><b>Long file names gone - any idea how to restore?</b> by <i>Roman</i> 27.06.03<br>
+Hi,<br>
+<br>
+I have just been experiencing an unbelievable error, that was able to
+damage *ALL* FAT's of all physical HD's FAT32-partitions connected to
+my system (Win XP, most probably a promise-controller driver conflict).
+Lucky that I am, I had a system image and I access all data on the
+disks using DOS and save all files, but: the LFN's are gone. <br>
+Win XP just shows unformatted drives, DOS shows me all files, but of
+course crippled to 8+1. Scandisk says, the drive was fine (!), so the
+DOS-cake seems to be OK. When using LDIR to see/get LFN's, it says: DLP
+unglaubwürdig!(50), as far as I remember the error-message correctly.<br>
+<br>
+It will need weeks to restore all important project-data names and links, so that the project-files will run properly again.<br>
+<br>
+Is there any way to restore the long file names? I am sorry if I bug
+you with this, but I assume, that IF there was any hope, someone over
+here WILL know. Thank you.<br>
+<br>
+Roman Beilharz<ul><li><b>Re: Long file names gone - any idea how to restore</b> by <i>Odi</i> 18.07.03<br>
+Unfortunately it seems that your only chance is your backup tape.<ul></ul></li></ul></li><li><b>Copy LFN from server disk in LANMAN DOS client</b> by <i>Petr Macek</i> 28.05.03<br>
+Please need suppor copy long file name from server Windows NT or Samba to DOS by MS LANMAN client<ul><li><b>Re: Copy LFN from server disk in LANMAN DOS client</b> by <i>(unknown)</i> 30.05.03<br>
+Please need help mawing lawn behind big house.<ul></ul></li></ul></li><li><b>Lcopy and NTFSDOS</b> by <i>Behzad</i> 25.05.03<br>
+Hello Odi,<br>
+<br>
+I'm using a 98se bootdisk to boot to dos. Then via dos I use NTFSDOS (writeable version) to mount an NTFS formatted harddisk.<br>
+<br>
+The problem arises when I try to use Lcopy to copy something from E:
+(NTFS) to C: (FAT). I get an error that the disk does not have direct
+i/o or something.<br>
+<br>
+Please advise.<br>
+Thank you.<ul><li><b>Re: Lcopy and NTFSDOS</b> by <i>Max Sanzharov</i> 25.05.03<br>
+&gt; &gt; I'm using a 98se bootdisk to boot to dos. Then via dos I use
+NTFSDOS (writeable version) to mount an NTFS formatted harddisk.<br>
+&gt; &gt; The problem arises when I try to use Lcopy to copy something
+from E: (NTFS) to C: (FAT). I get an error that the disk does not have
+direct i/o or something.<br>
+<br>
+AFAIK, NTFSDOS mounts NTFS drives as network drives. LFN Tools use only
+direct I/O, but it is not possible for network drives. Even if direct
+I/O is supported, LFN Tools do not support NTFS. Therefore, you can not
+use NTFS drives with Odi's LFN tools.<ul></ul></li></ul></li><li><b>Bought a Turkish MP3 CD and cant read it!</b> by <i>ConfusedTurk</i> 17.05.03<br>
+The OS I have is Windows ME (Eng) and I still haven't found how to set
+the damn cpmode to turkish. I have installed MultiLanguage Support from
+the Control Panel, and added Turkishkeyboard from the keyoard settings.
+But as soon as I say, "set Default" on Turkish keyboard it says, "you
+have the wrong CP" Any help???<br>
+<br>
+Pls!<ul><li><b>Re: Bought a Turkish MP3 CD and cant read it!</b> by <i>(unknown)</i> 30.05.03<br>
+&gt; The OS I have is Windows ME (Eng)<br>
+<br>
+So. Please tell me how is that related to LFN Tools????<ul></ul></li></ul></li><li><b>LFN &amp; Volkov Commander</b> by <i>Wlodziu</i> 08.05.03<br>
+How to force Volkov Commander 4.99 (or another Dos Commander) to use LFN and display long names in pure DOS?<ul><li><b>Re: LFN &amp; Volkov Commander</b> by <i>ACW</i> 13.05.03<br>
+Use:<br>
+<br>
+MS-DOS 7.x + DOSLFN 0.32n + Volkov Commander 4.99<br>
+<br>
+<br>
+&gt; How to force Volkov Commander 4.99 (or another Dos Commander) to use LFN and display long names in pure DOS?<ul></ul></li></ul></li><li><b>Archive attribute</b> by <i>Phil Calvert</i> 29.04.03<br>
+I did a test to see if LCOPY will work for me.  I tried this:<br>
+<br>
+LCOPY C:\WINDOWS\* D:\WINBACK /A /S /B<br>
+<br>
+This seemed to work the way I expected it, except for one thing. When I
+checked the file attributes of the copied files (the copies, not the
+originals), they had changed. It seems as though the archive attribute
+was set on every file. I think it would be better if the attributes
+were maintained as they were and not changed. Is this the way LCOPY is
+supposed to work, or did I miss something?<br>
+<br>
+-Phil<ul></ul></li><li><b>Error message DPB</b> by <i>Tom</i> 15.04.03<br>
+Hi,<br>
+<br>
+when I try to copy files I get the error<br>
+message DPB unglaubwürdig!(50)<br>
+<br>
+Any suggestions?<br>
+<br>
+Thanks,<br>
+<br>
+Tom<ul><li><b>Re: Error message DPB</b> by <i>Odi</i> 30.04.03<br>
+As posted many times in this forum this error message means:<br>
+The Disk Parameter Block (DPB) looks weird somehow. The reason could be<br>
+- unsupported file system<br>
+- damaged file system<br>
+<br>
+See output of LCHK<ul></ul></li></ul></li><li><b>gui</b> by <i>beerman</i> 06.04.03<br>
+has anyone made a gui for these tools. damn they are wonderful. if someone had please give me a link.<ul><li><b>Re: gui</b> by <i>Odi</i> 09.04.03<br>
+&gt; has anyone made a gui for these tools. <br>
+<br>
+Well, Microsoft has. Unfortunately they are not open source and you can
+not download them freely - well not from MS at least :-) They are
+called "Windows".<ul></ul></li></ul></li><li><b>Lcopy and PC-DOS 7.1</b> by <i>Enthusiast</i> 14.03.03<br>
+(with FAT32) when you use Lcopy, on the screen everething seem to be Ok, all the files copied...<br>
+But actually none of them were really copied<br>
+?????????????????????????????????????<br>
+?????????????????????????????????????<br>
+?????????????????????????????????????<ul></ul></li><li><b>LCOPY and big partitions</b> by <i>Nicklas</i> 10.03.03<br>
+I use GDISK to create a 4 GB partition in DOS, and format it of course.
+I try to copy files using LCOPY and get Integer Divided by 0 as a
+result. If I make partition 2 GB LCOPY works beautifully. Is there
+anything I can do? LCOPY would solve my problems but I really need the
+4 GB.<br>
+<br>
+//Nicklas<ul><li><b>Re: LCOPY and big partitions</b> by <i>Nicklas</i> 11.03.03<br>
+ALso important is that the partition is FAT16<ul><li><b>Re: LCOPY and big partitions</b> by <i>Odi</i> 13.03.03<br>
+It's not possible to have a 4GB Partition with FAT 16!<br>
+The maximum partition size of FAT16 is 2GB. <br>
+<br>
+Why?<br>
+<br>
+Because a FAT can hold 65535 cluster entries. The maximum cluster size
+is 32KB. 65535 * 32KB = 2GB. I have never heard of 64KB clusters, which
+would be necessary to achieve 4GB.<ul><li><b>Re: LCOPY and big partitions</b> by <i>ACW</i> 14.03.03<br>
+WinNT can create a 4GB partition with FAT16 with 64KB clusters. However, DOS will never recognize it.<br>
+<br>
+<br>
+&gt; It's not possible to have a 4GB Partition with FAT 16!<br>
+&gt; The maximum partition size of FAT16 is 2GB. <br>
+&gt; <br>
+&gt; Why?<br>
+&gt; <br>
+&gt; Because a FAT can hold 65535 cluster entries. The maximum cluster
+size is 32KB. 65535 * 32KB = 2GB. I have never heard of 64KB clusters,
+which would be necessary to achieve 4GB.<ul><li><b>Re: LCOPY and big partitions</b> by <i>Nicklas</i> 26.03.03<br>
+We are using Symmantec GDISK (part of Ghost) to create the 4GB FAT16
+partition. After that we use a standard MSDOS 6.22 bootdisk to boot up,
+copy files from CD to the partition. After copy we install NT which
+converts the partition to NTFS. It works just fine except for the long
+filenames, which is what we try to solve. Any ideas on other tools
+which can handle it if lcopy will not?<br>
+// Nicklas<br>
+<br>
+&gt; WinNT can create a 4GB partition with FAT16 with 64KB clusters. However, DOS will never recognize it.<br>
+&gt; <br>
+&gt; <br>
+&gt; &gt; It's not possible to have a 4GB Partition with FAT 16!<br>
+&gt; &gt; The maximum partition size of FAT16 is 2GB. <br>
+&gt; &gt; <br>
+&gt; &gt; Why?<br>
+&gt; &gt; <br>
+&gt; &gt; Because a FAT can hold 65535 cluster entries. The maximum
+cluster size is 32KB. 65535 * 32KB = 2GB. I have never heard of 64KB
+clusters, which would be necessary to achieve 4GB.<ul><li><b>Re: LCOPY and big partitions</b> by <i>ACW</i> 31.03.03<br>
+The solution is to use MS-DOS 7.10 + DOSLFN 0.32n.<br>
+Try my MS-DOS 7.10 boot disk(with full FAT12/16/32 and LFN support):<br>
+<br>
+http://newdos.yginfo.net/dosware/mdos71bd.zip<br>
+<br>
+&gt; We are using Symmantec GDISK (part of Ghost) to create the 4GB
+FAT16 partition. After that we use a standard MSDOS 6.22 bootdisk to
+boot up, copy files from CD to the partition. After copy we install NT
+which converts the partition to NTFS. It works just fine except for the
+long filenames, which is what we try to solve. Any ideas on other tools
+which can handle it if lcopy will not?<br>
+&gt; // Nicklas<br>
+&gt; <br>
+&gt; &gt; WinNT can create a 4GB partition with FAT16 with 64KB clusters. However, DOS will never recognize it.<br>
+&gt; &gt; <br>
+&gt; &gt; <br>
+&gt; &gt; &gt; It's not possible to have a 4GB Partition with FAT 16!<br>
+&gt; &gt; &gt; The maximum partition size of FAT16 is 2GB. <br>
+&gt; &gt; &gt; <br>
+&gt; &gt; &gt; Why?<br>
+&gt; &gt; &gt; <br>
+&gt; &gt; &gt; Because a FAT can hold 65535 cluster entries. The
+maximum cluster size is 32KB. 65535 * 32KB = 2GB. I have never heard of
+64KB clusters, which would be necessary to achieve 4GB.<ul></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li><li><b>LFN and NTFSDOS</b> by <i>Bentel</i> 14.02.03<br>
+Hello <br>
+<br>
+When i try to use LFN-Tools on a Drive mounted with NTFSDOS i get an
+error, because of not enough memory. What kund of memory do i have to i
+have enable. To goal ist to back up data on a networkdrive. Is this
+possible with these Tools ?!?<br>
+<br>
+Thanks in advance<ul><li><b>Re: LFN and NTFSDOS</b> by <i>Odi</i> 19.02.03<br>
+&gt; To goal ist to back up data on a networkdrive. Is this possible with these Tools ?!?<br>
+<br>
+<br>
+You did not read the F.A.Q. in the readme, did you?<ul></ul></li></ul></li><li><b>Problems reading Joliet CD</b> by <i>_Lewellyn</i> 08.02.03<br>
+I'm having issues with trying to read long filenames off a CD. I have
+zipped some supporting information (including the output of LCHK) and
+made it available at:<br>
+<br>
+http://mlewellyn.greenviolet.net/ldir.zip<br>
+<br>
+I have also included background information on how the disc was burned, etc.<br>
+<br>
+If you have any thoughts, I'd appreciate it. In the mean time, I'll just use the full directory names.<br>
+<br>
+Thanks,<br>
+<br>
+--Matt &lt;matt AT greenviolet DOT net OR lewellyn AT greenviolet DOT net&gt;<br>
+<br>
+P.S. Brief synopsis: LDIR displays \, LDIR . displays another
+directory. The only way to display the current directory is with a
+command like LDIR \dirname<ul><li><b>Re: Problems reading Joliet CD</b> by <i>Odi</i> 19.02.03<br>
+What is "doslfn.com t+" in your autoexec?<ul><li><b>Re: Problems reading Joliet CD</b> by <i>ACW</i> 21.02.03<br>
+DOSLFN 0.32n is the best LFN TSR for DOS. It's very stable and useful.
+The switch "T+" means to enable "tunnel effect". See here for more
+information about this program:<br>
+<br>
+http://www.simtel.net/pub/pd/62342.html<br>
+<br>
+<br>
+<br>
+&gt; What is "doslfn.com t+" in your autoexec?<ul><li><b>Re: Problems reading Joliet CD</b> by <i>Odi</i> 24.02.03<br>
+I'm not sure if it's a good idea to use DOSLFN and LFN Tools at the same time.<ul></ul></li></ul></li></ul></li><li><b>Re: Problems reading Joliet CD</b> by <i>_Lewellyn</i> 13.02.03<br>
+Also, recreating the disc from scratch and using Track-At-Once instead of Disc-At-Once/96 mode made no discernible difference.<br>
+<br>
+--Matt<ul></ul></li></ul></li><li><b>Please help me</b> by <i>arimul at yahoo dot com</i> 05.02.03<br>
+I have trouble with LFN. After running Scandisk for Windows in Win 98,
+all my files and folders' name converting to 8.3 name. How to repair
+this ?? <br>
+<br>
+Thanx..<ul><li><b>Re: Please help me</b> by <i>Odi</i> 19.02.03<br>
+As I did not write Scandisk I can not help you.<ul></ul></li></ul></li><li><b>problem with lfn</b> by <i>yvan</i> 29.01.03<br>
+when i launch lcopy *.* c:\. lcopy answer "ambiguous dbp!(50)"<br>
+could you tell me what does it mean.<br>
+<br>
+tank you<ul><li><b>Re: problem with lfn</b> by <i>Odi</i> 29.01.03<br>
+You are probably trying to access a drive with either a damaged or an
+unsupported file system. File systems supported are: FAT, Joliet,
+ISO-9660. NTFS is not supported. If the drive is a supported file
+system and you still get this error, try running scandisk.<br>
+<br>
+Run LCHK to get the DPB dumped to the screen. You can easily spot funny figures.<ul><li><b>Re: problem with lfn</b> by <i>yvan</i> 30.01.03<br>
+&gt; You are probably trying to access a drive with either a damaged or
+an unsupported file system. File systems supported are: FAT, Joliet,
+ISO-9660. NTFS is not supported. If the drive is a supported file
+system and you still get this error, try running scandisk.<br>
+&gt; <br>
+&gt; Run LCHK to get the DPB dumped to the screen. You can easily spot funny figures.<br>
+<br>
+in fact, i boot with a dos 6.22 floppy disk and try to copy some files on a fat32 hard disk partition.<br>
+is fat32 supported by LFN<ul><li><b>Re: problem with lfn</b> by <i>Odi</i> 30.01.03<br>
+Post your LCHK output of the problem drive and I will tell you what's wrong.<ul></ul></li><li><b>Re: problem with lfn</b> by <i>ACW</i> 30.01.03<br>
+&gt; in fact, i boot with a dos 6.22 floppy disk and try to copy some files on a fat32 hard disk partition.<br>
+&gt; is fat32 supported by LFN<br>
+<br>
+MS-DOS 6.22 doesn't support FAT32 drives at all,only MS-DOS 7.10+ does.<ul><li><b>Re: problem with lfn</b> by <i>ValShaq</i> 26.03.03<br>
+&gt; &gt; MS-DOS 6.22 doesn't support FAT32 drives at all,only MS-DOS 7.10+ does.<br>
+You might try FreeDOS instead:<br>
+http://www.freedos.org<ul></ul></li></ul></li></ul></li></ul></li></ul></li><li><b>CSC (Offline synchronized Files)</b> by <i>Wim</i> 27.01.03<br>
+It looks like LCopy /a /s does not copy the contents of the WINNT\CSC
+directory, which contains the Client-Side Cache (directories d1, d2,
+... all empty).<br>
+This may have helped recovering from a harddisk crash.<br>
+<br>
+Fine tool! Keep up the good work.<ul><li><b>Re: CSC (Offline synchronized Files)</b> by <i>Odi</i> 19.02.03<br>
+&gt;  WINNT\CSC directory all empty<br>
+<br>
+Maybe this is sort of a Windows "special folder" like the "Downloaded
+Program Files" folder. It might appear only in Explorer but may not be
+a real physical folder or contain real phyical files. So there's
+nothing I can do.<ul><li><b>Re: CSC (Offline synchronized Files)</b> by <i>Wim</i> 23.02.03<br>
+Could be. Are "system" files copied by default? (or with /h)<ul><li><b>Re: CSC (Offline synchronized Files)</b> by <i>Odi</i> 01.03.03<br>
+&gt; Are "system" files copied by default?<br>
+<br>
+Yes. Only hidden files are not copied unless you use /a.<ul></ul></li></ul></li></ul></li></ul></li><li><b>Simtel is back level !</b> by <i>Cifrane</i> 22.01.03<br>
+I have done last weekend a search on Simtel on long filenames in DOS software. I have found LFN tools but at version 1.60 !!!!<br>
+Who is responsible for updates of softwares? Simtel? the Author?<ul><li><b>Re: Simtel is back level !</b> by <i>Odi</i> 27.01.03<br>
+&gt; Who is responsible for updates of softwares? Simtel? the Author?<br>
+<br>
+I am. But since the upload process for Simtel is a PITA I ceased to keep it uptodate.<ul></ul></li></ul></li><li><b>long folder names - dos batch file</b> by <i>RC</i> 19.01.03<br>
+I have a dos batch file that deletes empty folders. I puts together a
+list of all the folders on the PC and then adds a RD (remove directory)
+in front of each listing.<br>
+Example:   RD C:\temp\my long folder name\<br>
+<br>
+It doesn't work in dos because dos thinks the word that follows the space is a parameter for the command.<br>
+<br>
+Will this batch file work with LFN??<ul><li><b>Re: long folder names - dos batch file</b> by <i>Jason</i> 20.01.03<br>
+&gt; I have a dos batch file that deletes empty folders. I puts
+together a list of all the folders on the PC and then adds a RD (remove
+directory) in front of each listing.<br>
+&gt; Example:   RD C:\temp\my long folder name\<br>
+&gt; &gt; It doesn't work in dos because dos thinks the word that follows the space is a parameter for the command.<br>
+&gt; &gt; Will this batch file work with LFN??<br>
+<br>
+No, you still have to quote the filename (and remove the trailing backslash). ie:<br>
+<br>
+[L]RD "C:\temp\my long folder name"<br>
+<br>
+Jason &lt;jadoxa@yahoo.com.au&gt;<ul></ul></li></ul></li><li><b>DOSLFN now fully supports DBCS LFN!</b> by <i>ACW</i> 15.01.03<br>
+The latest version of DOSLFN 0.32l(dated on Jan 15,2003) can now fully
+support DBCS long file names(such as Chinese LFNs).It can be downloaded
+from:<br>
+http://www-user.tu-chemnitz.de/~heha/hs_freeware/doslfn.zip<ul></ul></li><li><b>LCOPY and drvspace</b> by <i>RGriffin</i> 08.01.03<br>
+can you lcopy to a drive that is compressed with drvspace and retain the long file names?<ul><li><b>Re: LCOPY and drvspace</b> by <i>Odi</i> 09.01.03<br>
+&gt; can you lcopy to a drive that is compressed with drvspace and retain the long file names?<br>
+<br>
+Have not tried that. Make sure the driver is loaded okay and try it out. But make sure you have backup if something goes wrong!<ul></ul></li></ul></li><li><b>Lost Long File Names</b> by <i>Ron</i> 31.12.02<br>
+I had a system crash and unable to restart Windows 98. Using a boot
+disk I got my system up to DOS. Using XCOPY unders DOS I copied all of
+my data files from my C: drive to a spare D: drive and lost all of my
+long file names. I have reloaded 98 on my C: drive and all is working.
+Is there anyway to get the long file names back?<ul><li><b>Re: Lost Long File Names</b> by <i>Odi</i> 01.01.03<br>
+I guess no, unfortunately. You should have used LCOPY instead of XCOPY.<ul><li><b>Re: Lost Long File Names</b> by <i>Cifrane</i> 03.01.03<br>
+If you use COPY , XCOPY , or LCOPY for back up you have the problem
+that they give the name of each file they copy that is too many lines
+on the screen! XXCOPY has not this drawback : a parameter suppress the
+names. <br>
+Can we have a Quiet (parameter Q) version of LCOPY that does not show all the names?<br>
+I think that you should include LCOPY.exe in your recovery diskette (see my rescue kit).<ul></ul></li></ul></li></ul></li><li><b>My rescue kit with LCOPY</b> by <i>Cifrane</i> 22.12.02<br>
+I have the normal Windows 98 recovery diskette, the better boot
+diskette as defined in XXCOPY technical bulletin 32 (see 33 for NT
+family), Norton antivirus diskettes for rescuing boot record partition
+and virus, Total (formerly Windows) Commander a shareware far better
+than Explorer (and with zip/unzip integrated), CDs with a copy of whole
+C:\Windows\ (except temp*) in uncompressed format and whole C:\Program
+Files\ in ziped format. I use LCOPY to replace crashed C:\Windows by
+the good copy on CD and then Total Cmdr unzip function to replace
+C:\Program Files\. My programs (including Total Commander which is
+reinstallation proof : just need a new shortcut) are on D: and my data
+on E: (saved on CD with the downloads of programs that have not their
+particular CD). Total Cmdr is used to copy, zip, unzip under Windows.<br>
+The gain with LCOPY is 540Mo (in C:) of the previous copy WINOK
+(waiting to be renamed) of the windows directory : long time saved to
+Defrag and virus check C: !<br>
+Improvements can be : LCOPY with unzip function to have a Ziped copy of
+Windows (1 Cd saved), a silent LCOPY that does not give all the names
+of the files!<br>
+Now that I have this full kit my Windows does not crash!<ul><li><b>Re: My rescue kit with LCOPY</b> by <i>(unknown)</i> 26.12.02<br>
+&gt; a silent LCOPY that does not give all the names of the files!<br>
+I propose Q as Quiet as the parameter used as other programs do for this sort of option.<ul></ul></li></ul></li><li><b>Norton Commander</b> by <i>PimpDaddy</i> 22.12.02<br>
+Is it possible to use LFN-Tools with Norton Commander.<br>
+<br>
+Kann man die LFN-Tools in den Norton Commander einbinden?<ul><li><b>Re: Norton Commander</b> by <i>ACW</i> 24.12.02<br>
+&gt; Is it possible to use LFN-Tools with Norton Commander.<br>
+<br>
+I don't think so.<ul></ul></li></ul></li><li><b>lcopy lonf names incorrect</b> by <i>macmonroe</i> 13.12.02<br>
+I had a backup of Win95 on a rewritable Joliet CDR. I copied it with <br>
+LCOPY X:\WIN95\* C:\WIN95 /A /S /K /C<br>
+where X is the CD-Drive. The directory WIN95 was akready available on the c: drive.<br>
+He copied all but after i started my WIN98 on this system i started to
+check what lcopy did, i had more than 200 errors with worng lenghts of
+data, wrong filenames ... <br>
+What have i done wrong. It was a FAT 32 partition with 4 GB on a ASUS laptop with a 20 GB HD and XP 1600+ Processor.<ul><li><b>Re: lcopy lonf names incorrect</b> by <i>Odi</i> 13.12.02<br>
+If you were using LFN Tools prior to release 1.76 this can happen
+unfortunately. Prior to version 1.76 there was a horrible bug that
+damaged a file system and/or data if the target directory already
+existed. Please use the latest version, reformat the damaged hard drive
+and restore your backups.<ul></ul></li></ul></li><li><b>LCOPY problem</b> by <i>Olivier</i> 12.12.02<br>
+Hello, <br>
+Your LFN tools work great. However, I want to LCOPY files with long
+file names from a bad sector hard drive to another drive, and LCOPY
+doesn't work... <br>
+LCHK tells me 'Ambiguous DPB(50)!'. Do you know what could be the
+problem ? I succeeded to copy the bad drive files with short name
+(using xcopy), but I'd like to do this with long file names. <br>
+If you see something special to do, please tell me. <br>
+Thank you for your support and your tools! <br>
+Olivier<ul><li><b>Re: LCOPY problem</b> by <i>Odi</i> 12.12.02<br>
+Well, this is the wrong tool for your problem.<br>
+<br>
+Ambiguous DPB means that the data in the Disk Parameter Block (DPB, the
+1st sector on that drive) is strange and probably corrupt. The message
+occurs if either:<br>
+- bytes per sector &lt; 256 or &gt; 65535 (normal is 512)<br>
+- bytes per sector is not a multiple of 256<br>
+- sectors per cluster is &gt; 1024 or 0 (normal is 8 - 64)<br>
+- number of FATs exceeds 8 (normal is 2)<br>
+<br>
+You do not want LFN Tools to read bad data off your disk.<br>
+You should use Norton Ghost or similar to mirror your bad disk to a
+stable disk (with all known good sectors). Then repair the filesystem
+(Norton Utilities or Scandisk).<br>
+Then use LFN Tools or Windows to rescue your data.<br>
+<br>
+<br>
+Odi<ul><li><b>Re: LCOPY problem</b> by <i>Olivier</i> 13.12.02<br>
+Thanks Odi, I'll try this...<ul><li><b>Re: LCOPY problem</b> by <i>GodDamn</i> 13.03.03<br>
+I've experienced Bad Blocks in HD, and the only way to access it, is to
+Boot in Dos but not In MS-DOS because it refuse to boot...<br>
+The only way I Found is to Boot With DR-DOS 7.05 (who support FAT32) but guess what....<br>
+Dr-DOS 7.05 is incompatible With GHOST 7.5, damn!<br>
+Dr-DOS 7.03 and Ghost 7.5 work Fine (but Forgot FAT32)<br>
+Therefore I want to copy Files in DR-DOS 7.05 but with LFN support and I thought Lcopy is the best Way -&gt;<br>
+<br>
+WARNING, actually it copies files but they loose integrity, so most of them have bad CRC now...<br>
+Whereas Files that were copied with Xcopy loose only Long names but are Safe!!!!!<br>
+<br>
+Dig it!!!<ul></ul></li></ul></li></ul></li></ul></li><li><b>LFN Tools V1.78 was compiled as debug!</b> by <i>SoB</i> 06.12.02<br>
+All the info's in the Topic :D LCOPY.EXE was compiled as a debug versions so it's 160k.<ul><li><b>Re: LFN Tools V1.78 was compiled as debug!</b> by <i>Odi</i> 12.12.02<br>
+I just uploaded a corrected build. <br>
+Thanks for the hint.<ul></ul></li></ul></li><li><b>Compressing an installation in DOS with LFN?</b> by <i>Tageot</i> 22.11.02<br>
+As I understand it is possible to copy a complete Win9x installation
+with LFN tools and restore it later (besides MBR, which can be handled
+by FDISK /MBR).<br>
+<br>
+If this is true, only one thing is missing to make LFN an quite equal
+solution in this respect to Ghost &amp; Co. Imaging programs:
+Compression of the backuped files.<br>
+<br>
+Can this be accomplished on the DOS command line with a (free?)
+ZIP-Tool that preserves the long file names, too? Or is it risky/not
+possible to do this, even with e.g. WinZip, because the long file names
+could be messed up with?<ul><li><b>Re: Compressing an installation in DOS with LFN?</b> by <i>Pjotter</i> 05.01.03<br>
+Try using Ldzip (http://ldzip.port5.com). With Ldzip it is possible to
+create a zip file in DOS with long filenames (FAT16/FAT32/NTFS). To
+unzip it in Dos on a FAT16/FAT32 drive use Sam Hawker's lunzip which
+can be found at http://www.geocities.com/shawkie_geo/ under Programming
+- Borland C++.<br>
+Never tried it myself, but just give it a try.<ul></ul></li><li><b>Re: Compressing an installation in DOS with LFN?</b> by <i>Cifrane</i> 19.12.02<br>
+&gt; If this is true, only one thing is missing to make LFN an quite
+equal solution in this respect to Ghost &amp; Co. Imaging programs:
+Compression of the backuped files.<br>
+Info-zip code (see info-zip.org) is available freely and modifiable)
+but does not support long names from plain dos (only from dos in
+windows box). If you replace in it the normal calls to disk by
+equivalent functions written from Odi's coding you'll probably obtain
+the possibility to zip and unzip with long names. I am not a programmer
+: do not ask me to do it!<ul><li><b>Re: Compressing an installation in DOS with LFN?</b> by <i>Odi</i> 19.12.02<br>
+Not quite that easy. You would have to write a resident program out of
+my code that adds the missing functions to the DOS Kernel. It's not so
+hard to do, but a pain in the ass to debug.<ul><li><b>Re: Compressing an installation in DOS with LFN?</b> by <i>Cifrane</i> 22.12.02<br>
+Is it easier to put the info-zip coding between the read and the write actions in LCOPY?<ul></ul></li></ul></li></ul></li></ul></li><li><b>File  with exotic name becomes unaccessible</b> by <i>Vincent Poreye</i> 15.11.02<br>
+After naming a file with exotic characters (accents, @, #, ...) which
+are perfectly legal in Windoze, the file has one day become
+unaccessible even though is was still perfectly visible in Windows
+Explorer. So I could not open it, remove it or simply rename it.<br>
+<br>
+LREN saved my ass when I used the full name of the file as it appeared
+in the Windows list: the file was effectively renamed and I could
+access it again.<ul></ul></li><li><b>Where Norton Ghost fails, LFN tools can help !!</b> by <i>Vincent Poreye</i> 15.11.02<br>
+I have an old P100 with a Seagate 20 GB disk and I had to install the
+Ontrack utility to make it fully usable because the total capacity was
+not identifiable by the BIOS. It seems that this utility has placed
+special low-level information on the disk that even FDISK does not
+affect. <br>
+<br>
+The result is that Norton Ghost does not recognize the file system in
+use and is then incapable of creating a backup image of the right
+partition.<br>
+<br>
+That's where the LFN tools came into play. I was able to fully backup a
+Win 98 partition thanks to LCOPY and restore it after formatting.<ul></ul></li><li><b>LFN Tools 1.78</b> by <i>Odi</i> 14.11.02<br>
+A new version is out.<br>
+<br>
+Odi<ul></ul></li><li><b>XP Version?</b> by <i>Coronos</i> 26.10.02<br>
+Are you planning a lfn version compatible with Win XP?<ul><li><b>Re: XP Version?</b> by <i>marcin_f</i> 11.11.02<br>
+Windows ME was the last OS from M$ that was based on DOS. XP is based
+on NT (as a matter of fact it is a development of Windows 2000) and
+does not use pure DOS. Besides, even when XP is installed on FAT32
+partition and booted to command line - i.e. no GUI, it natively
+supports long file names.<ul><li><b>Re: XP Version?</b> by <i>Odi</i> 13.11.02<br>
+&gt; booted to command line - i.e. no GUI, it natively supports long file names.<br>
+<br>
+Thanks for putting an end to this discussion.<ul></ul></li></ul></li><li><b>Re: XP Version?</b> by <i>Odi</i> 29.10.02<br>
+I thought XP wasn't based on DOS? And is it still using plain old FAT and not NTFS? So how can you Boot XP to a Real-Mode DOS?<br>
+You can always use some "old" DOS 7 (from Win98) on a diskette.<br>
+So no update to XP is necessary. And we can't handle NTFS drives anyway.<br>
+<br>
+And, although I have an XP license that came with my new Acer notebook, I didn't install it.<br>
+I didn't even run it once. I wasn't curious.<br>
+Yes, I installed Linux (and only Linux) on it. And I am happy.<br>
+<br>
+Odi<ul><li><b>Re: XP Version?</b> by <i>Dave</i> 30.10.02<br>
+&gt; I thought XP wasn't based on DOS? And is it still using plain old
+FAT and not NTFS? So how can you Boot XP to a Real-Mode DOS?<br>
+&gt; You can always use some "old" DOS 7 (from Win98) on a diskette.<br>
+&gt; So no update to XP is necessary. And we can't handle NTFS drives anyway.<br>
+&gt; <br>
+&gt; And, although I have an XP license that came with my new Acer notebook, I didn't install it.<br>
+&gt; I didn't even run it once. I wasn't curious.<br>
+&gt; Yes, I installed Linux (and only Linux) on it. And I am happy.<br>
+&gt; <br>
+&gt; Odi<br>
+<br>
+Odi, New PC's are shipped with XP running on NTFS, but I have been told
+that there is an option to install XP on FAT 32! I hope that - that is
+correct, regards ...Dave<ul><li><b>Re: XP Version?</b> by <i>Odi</i> 04.11.02<br>
+&gt; there is an option to install XP on FAT 32! <br>
+<br>
+That is not the problem here. The question is:<br>
+Is there a newer DOS version in Windows XP that requires a new release
+of LFN Tools? If there is no DOS in XP then LFN Tools can not run on XP.<ul></ul></li></ul></li></ul></li><li><b>Re: XP Version?</b> by <i>Wengier</i> 29.10.02<br>
+&gt; Are you planning a lfn version compatible with Win XP?<br>
+<br>
+That's useless.<ul></ul></li></ul></li><li><b>Codepage 857</b> by <i>Ahmet</i> 19.10.02<br>
+it say code page 857 not supported<br>
+please help me<br>
+what can i do<br>
+?<br>
+thank u<ul><li><b>Re: Codepage 857</b> by <i>Odi</i> 23.10.02<br>
+You could send me a proper mapping between character Cp857 character codes and Unicode.<br>
+And I need to know the upper / lower case pairs for Cp857.<br>
+Then I can include this.<br>
+<br>
+Alternatively you can use a different codepage (850, 437).<br>
+Use DOS' mode command to set it.<ul></ul></li></ul></li><li><b>Lcopy and upper memory</b> by <i>Dave</i> 14.10.02<br>
+Hello, I restore an entire system from d: to c: from a boot floppy, I
+know that /v will disable the upper memory, but I want the transfer to
+go faster with ems/xms, I have put the memory manager on the boot
+floppy but don't know how to edit my himem.sys to make it work, any
+help will be appreciated....Dave<ul><li><b>Re: Lcopy and upper memory</b> by <i>marcin_f</i> 11.11.02<br>
+In order to speed up transfer between disks under pure DOS load
+SMARTDRV.EXE with appropriate options first. See also here:
+http://vernon.frazee.net/ms-dos/6.22/help/smartdrv.exe.htm<ul></ul></li><li><b>Re: Lcopy and upper memory</b> by <i>Odi</i> 15.10.02<br>
+Make sure you have the following in your config.sys. You may have to specify the full path to himem and emm386.<br>
+<br>
+dos=high,umb<br>
+device=himem.sys<br>
+device=emm386.exe ram<ul><li><b>Re: Lcopy and upper memory</b> by <i>Dave</i> 17.10.02<br>
+&gt; Make sure you have the following in your config.sys. You may have to specify the full path to himem and emm386.<br>
+&gt; <br>
+&gt; dos=high,umb<br>
+&gt; device=himem.sys<br>
+&gt; device=emm386.exe ram<br>
+<br>
+Thank you Odi, that did load emm386 but the copy took about 30% longer.
+This was for a an entire operating system, I thought that it would be
+faster? Am I still getting it wrong or would I have better results with
+XMS? I thank you for the time that you spend answering these questions,
+and even without upper memory Lcopy is one of the most useful files I
+have ever found. Thank you,...... Dave<ul></ul></li></ul></li></ul></li><li><b>some hidden files not copied</b> by <i>Ernest</i> 26.09.02<br>
+First, thank you for creating and supporting such a great free tool!<br>
+<br>
+I tried to email this message, but it bounced back, so here it is in the forum.<br>
+<br>
+Here is some output I got from a DOS prompt under windows 98 se,<br>
+but I really see this problem after resetting to a "Command Prompt"<br>
+and trying to copy the hidden file below.<br>
+<br>
+I noticed this problem after realizing that LCOPY did not copy<br>
+about 85 files when I was trying to copy my OS using<br>
+LCOPY D:\*.* G:\X /a /s /y /r<br>
+<br>
+After using that command, the file shown below (among other files)<br>
+was not copied.  It is a hidden file.<br>
+<br>
+A few things to note that may help:<br>
+  it is the first file in the directory, and it is hidden.<br>
+  it is a 1028 multiple (4096) in size.<br>
+<br>
+Version 1.77.2<br>
+Copyright (C) 1999 Ortwin Glueck<br>
+This is free software under GPL. See the readme file for details.<br>
+<br>
+DOS Version: FF-7.10    Code page: 437<br>
+Drive: 3<br>
+Bytes per Sector: 512<br>
+Sectors per Cluster: 8<br>
+Number of Clusters: 1653460<br>
+Number of FATs: 2   Number of Root entries: 0<br>
+Media Descriptor: f8<br>
+Sectors per FAT: 12931<br>
+Sectors / reserved: 13253562 / 32<br>
+First Data Sector: 25894<br>
+First Root Sector/Cluster: 25894/2<br>
+Root Sectors: 0<br>
+Fat entries per Sector: 128<br>
+Label:<br>
+File System: FAT32<br>
+FAT32 compatible disk access enabled<br>
+Volume locking enabled<br>
+Cache: virtual, areas: 50, pages per area: 91, mem used:2393300 bytes<br>
+Free clusters: 1587858   Next free cluster: 2<br>
+-----------------------------<br>
+<br>
+D:\Program Files\Uninstall Information\IE.HKCUZoneInfo&gt;c:ldir /a<br>
+<br>
+Disk in drive D: is labeled<br>
+Directory of D:\Program Files\Uninstall Information\IE.HKCUZoneInfo\<br>
+<br>
+.       .    &lt;DIR&gt;       09.19.2002  14:38  .<br>
+..      .    &lt;DIR&gt;       09.19.2002  14:38  ..<br>
+AINF0000.          4096  09.19.2002  14:38  AINF0000<br>
+         1 Files        4096 Bytes<br>
+         2 Directories<br>
+<br>
+D:\Program Files\Uninstall Information\IE.HKCUZoneInfo&gt;<ul><li><b>Re: some hidden files not copied</b> by <i>Odi</i> 27.09.02<br>
+This is not a bug.<br>
+<br>
+&gt; LCOPY D:\*.* G:\X /a /s /y /r<br>
+&gt; AINF0000.          4096  09.19.2002  14:38  AINF0000<br>
+<br>
+It is a typical beginner's misstake to write *.* instead of * only!<br>
+This issue is clearly addressed in:<br>
+- the manual<br>
+- several postings to this forum<br>
+- LCOPY's built-in help message<br>
+<br>
+Shame on you for asking this question :-)<ul></ul></li></ul></li><li><b>long filenames under DOS</b> by <i>ruice</i> 25.09.02<br>
+How can I display lon filenames under Dos. I don't mean the dos-prompt
+under windows. the question is how to realize this in dos-mode<br>
+<br>
+<br>
+I would be greateful, if someone could help me.<br>
+<br>
+with best regards <br>
+<br>
+<br>
+ruice<ul><li><b>Re: long filenames under DOS</b> by <i>Odi</i> 25.09.02<br>
+Download LFN Tools. RTFM.<ul></ul></li></ul></li><li><b>compiler</b> by <i>Roy</i> 05.09.02<br>
+re: "It's your problem"<br>
+<br>
+Where can I get MS-VC++ ver 1.51<br>
+ or is there an alternative?<ul><li><b>Re: compiler</b> by <i>Odi</i> 06.09.02<br>
+- ask in a Newsgroup (what I did)<br>
+- ask MS<br>
+- search www<br>
+- search P2P networks :-)<ul></ul></li></ul></li><li><b>LCOPY LFN$$$16char$lfn.$$$</b> by <i>Thenasty</i> 03.09.02<br>
+I followed the instruction of how to copy this file but the file is
+ZERO BYTE and DOS dones not want to copy it. I use LCOPY to copy and it
+keep saying 0 copied. How do you lcopy a ZERO byte file ?<ul><li><b>WFM</b> by <i>Odi</i> 07.09.02<br>
+Works for me:<br>
+<br>
+E:\test&gt;ldir<br>
+1       .    &lt;DIR&gt;       07.09.2002  12:31  1<br>
+NEWFIL~1.TXT          0  07.09.2002  12:29  New File.txt<br>
+<br>
+E:\test&gt;lcopy "New File.txt" 1\<br>
+New File.txt<br>
+1 file(s) copied<br>
+Flushing cache...<br>
+<br>
+E:\test&gt;cd 1<br>
+<br>
+E:\test\1&gt;ldir<br>
+<br>
+Disk in drive E: is labeled<br>
+ Directory of E:\test\1\<br>
+<br>
+.       .    &lt;DIR&gt;       07.09.2002  12:31  .<br>
+..      .    &lt;DIR&gt;       07.09.2002  12:31  ..<br>
+NEWFIL~1.TXT          0  07.09.2002  12:29  New File.txt<br>
+         1 Files        0 Bytes<br>
+         2 Directories<ul></ul></li></ul></li><li><b>Latin-2</b> by <i>Odi</i> 03.09.02<br>
+Codepage 852 is now supported thanks to Marcin Frankowski from NZ.<br>
+<br>
+Odi<ul></ul></li><li><b>DBCS support</b> by <i>Odi</i> 30.08.02<br>
+At the moment I can not provide DBCS support.<br>
+But it may arrive later this year.<br>
+<br>
+If you like, just look at the unicode2.inc file and<br>
+contribute a patch for DBCS support.<br>
+<br>
+Sorry guys.<ul><li><b>Re: DBCS support</b> by <i>ACW</i> 31.08.02<br>
+The latest version of Chris Jone's LFNDOS(ver:1.07a2) support DBCS codepages(incl. CP936). <br>
+<br>
+Here is the source code of LFNDOS 1.07a2:<br>
+http://firststep.ahwww.com/dianbo/lfndosrc.zip<ul></ul></li></ul></li><li><b>Korean LFN support(?), Plase</b> by <i>Lee</i> 30.08.02<br>
+Korean LFN support<br>
+<br>
+Could you please add Korean LFN support <br>
+in the LFN tools,too? I have tried many times,but I still can't do that. Thanks. <br>
+<br>
+The code page 949(HANGUL - 2Byte)<ul><li><b>Re: Korean LFN support</b> by <i>ACW</i> 30.08.02<br>
+&gt; Korean LFN support<br>
+<br>
+Oh! Also the DBCS codepage, like the<br>
+Chinese one(CP936).<ul></ul></li></ul></li><li><b>Lcopy to novell netware drive</b> by <i>Borderman</i> 27.08.02<br>
+im using a network boot disk that maps up a novell network drive. When
+trying to copy files from the local drive to that share i get : Error
+reading drive 7 sector 0 - 0!(0) Could not read BPB!(16)<ul><li><b>Re: Lcopy to novell netware drive</b> by <i>Odi</i> 28.08.02<br>
+As pointed out in the documentation, the FAQ and in <br>
+several postings in this forum LFN Tools do not<br>
+support network drives.<ul><li><b>Re: Lcopy to novell netware drive</b> by <i>mrMR</i> 31.08.02<br>
+I understand and have read alla about the trouble to get Lcopy to work with networkdrivers/shares.<br>
+But its a feature that would be a 100% upgrade to this indeed great product.<br>
+It Would save soo mutch time to be able to dump out file through a dos networkshare<br>
+As you said earlier "its not inpossibe..." ...<br>
+Perhaps to mutch to ask i know but it would be GREAT !<br>
+<br>
+Another solution would be to make some kind of client server system .. hummm ...<br>
+#1 make the Ldir dir the files in both "ms-way"<br>
+and "ldir" way saving the output to an special file.<br>
+Then copy the files normally to the destination...<br>
+(perhaps to a networkshare..) then have the program <br>
+rename all the files backwords using the list made earlier.<br>
+<br>
+This would REaly solve a problem to... if some one with the skill can make this reality...<br>
+<br>
+Regards Martin    mr-mr@hotpop.com  (Do no abuse please)<br>
+<br>
+&gt; As pointed out in the documentation, the FAQ and in <br>
+&gt; several postings in this forum LFN Tools do not<br>
+&gt; support network drives.<ul><li><b>Re: Lcopy to novell netware drive</b> by <i>Odi</i> 01.09.02<br>
+Erm... Networking in DOS must be a pain in the ass for a programmer...<br>
+<br>
+I definitely will never do that.<br>
+<br>
+Listen, I am a Java developer and I dislike C. This DOS shit is "only" to<br>
+provide *simple* means to fix a broken Windows installation and<br>
+to rescue data before you do re-install. Adding more and more<br>
+functionality is completely beyond scope. I will try and eliminiate<br>
+existing bugs from the tools and maybe add small features like this<br>
+charset stuff. But debugging and testing network code on a "OS" like DOS<br>
+(with almost no memory, no multitasking, no protected mode) with<br>
+a poor language (compared to Java) and an ice age IDE just can't be fun.<br>
+<br>
+If you need network, using a Linux diskette distr will give you less headache.<ul></ul></li></ul></li></ul></li></ul></li><li><b>Numerische Erweiterung?</b> by <i>charanor</i> 26.08.02<br>
+Hi!<br>
+<br>
+Ich habe ein Problem beim Installieren des Win 98ME auf meinen alten
+Laptop(Panasonic CF-41, 100MHz, 16MB RAM, 2,1 GB HD, Win 98SE)<br>
+Beim Setup kommt sofort die Meldung: "Für alle Dateinamen mit mehr als
+8 Zeichen sollen kürzere Dateinamen mit numerischer Erweiterung
+erstellt werden, aktivieren sie die entsprechende Option".<br>
+<br>
+Kann mir jemand bitte erklären, wie und wo  ich diese Option aktivieren kann?<ul></ul></li><li><b>Lcopy error message</b> by <i>Dave</i> 24.08.02<br>
+Hi, I tried to copy an entire system from D: to C: from a floppy boot
+disk, and had a message saying that the drive did not support direct
+i/o I don't know if there is a way to overcome this problem. I would
+really appreciate some help......Dave<ul><li><b>Re: Lcopy error message</b> by <i>Dave</i> 25.08.02<br>
+&gt; Hi, I tried to copy an entire system from D: to C: from a floppy
+boot disk, and had a message saying that the drive did not support
+direct i/o<br>
+<br>
+I have think that lcopy is unable to access the the hard drive through
+the bios, as I have Win98 se on fat 32, I am still unable to see why it
+does'nt work? Dave.....<ul><li><b>Re: Lcopy error message</b> by <i>Odi</i> 28.08.02<br>
+What DOS version are you booting?<ul><li><b>Re: Lcopy error message</b> by <i>Dave</i> 15.09.02<br>
+&gt; What DOS version are you booting?<br>
+<br>
+Thanks for your replies Odi and Roberto, sorry for my late reply, I
+have had to replace power supply to my computer and have been
+offline... Roberto, I disabled the higher memory "/v" and that did'nt
+help, but thank you. Odi, I was using the wrong DOS version from Win95
+on a Win98 system and everything is now working well, thank you. I am
+sorry to have made a stupid mistake, we are all of different levels of
+ability and try very hard to make things work, I am glad that people
+have the time to help each other on this site, GREAT SITE, GREAT
+PEOPLE.....These files have changed the way that I will use "Windows"
+Forever, Thanks Odi...<ul></ul></li></ul></li><li><b>Re: Lcopy error message</b> by <i>Roberto</i> 25.08.02<br>
+&gt; &gt; Hi, I tried to copy an entire system from D: to C: from a
+floppy boot disk, and had a message saying that the drive did not
+support direct i/o<br>
+&gt; <br>
+&gt; I have think that lcopy is unable to access the the hard drive
+through the bios, as I have Win98 se on fat 32, I am still unable to
+see why it does'nt work? Dave.....<br>
+<br>
+no, i have Win98SE and Fat32 and Lcopy workin fine a lot of time to backup C: to d: and<br>
+restore d: to C:<br>
+looking better the boot floppy disk for memory manager Himem.sys<ul></ul></li></ul></li></ul></li><li><b>Russion support</b> by <i>Odi</i> 23.08.02<br>
+Thanks to a Russian friend who supplied excellent Unicode &lt;-&gt;
+8-bit Mapping support for code page 866 has finally made it into the
+latest build.<br>
+<br>
+Be sure you set the codepage in your autoexec.bat :<br>
+mode con codepage prepare=((866) C:\WINDOWS\COMMAND\ega.cpi)<br>
+mode con codepage select=866<br>
+<br>
+and a Russian keyboard driver.<ul><li><b>Re: Russian support</b> by <i>ACW</i> 24.08.02<br>
+Does it support DBCS code pages?<ul><li><b>Re: Russian support</b> by <i>Odi</i> 24.08.02<br>
+&gt; DBCS code pages<br>
+<br>
+No idea what you are talking about, sorry. I'm not an expert with code pages. It supports code pages 437, 850 and 866.<ul><li><b>Re: Russian support</b> by <i>ACW</i> 24.08.02<br>
+&gt; &gt; DBCS code pages<br>
+<br>
+DBCS stands for "Double-byte character sets",<br>
+including Japanese,Korean,Chinese,etc.<br>
+<br>
+What I want to know is if I can add those<br>
+DBCS codepages(e.g. CP936) to UNICODE.INC directly so LFN tools can support them?<ul><li><b>Re: Russian support</b> by <i>Odi</i> 28.08.02<br>
+With the latest version you can add the new code page<br>
+directly to unicode2.inc !<br>
+<br>
+You can use CVS and send me the diff.<ul></ul></li></ul></li></ul></li></ul></li></ul></li><li><b>Chinese LFN support</b> by <i>ACW</i> 21.08.02<br>
+Could you please add Chinese LFN support<br>
+in the LFN tools,too? I have tried many times,but I still can't do that. Thanks.<br>
+<br>
+The code page 936(GB2312) list is here:<br>
+http://firststep.ahwww.com/dianbo/cp936-gb.txt<ul><li><b>Re: Chinese LFN support</b> by <i>Odi</i> 23.08.02<br>
+Could you please give an explanation on how to read these tables. For me it's just numbers.<br>
+<br>
+I expect a mapping like:<br>
+<br>
+ASCII 0x41   =   A   =  Unicode 0x0041<br>
+<br>
+or arrays like<br>
+<br>
+asc2uni = { ..., 0x0041 , ... }  at position 65<br>
+<br>
+and<br>
+<br>
+uni2asc = { ..., 0x41 , ... } at position 65 for unicode codepage 00<ul><li><b>Re: Chinese LFN support</b> by <i>ACW</i> 23.08.02<br>
+How about the following table:<br>
+<br>
+http://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WINDOWS/CP936.TXT<br>
+<br>
+&gt; <br>
+&gt; I expect a mapping like:<br>
+&gt; <br>
+&gt; ASCII 0x41   =   A   =  Unicode 0x0041<ul><li><b>Re: Chinese LFN support</b> by <i>Odi</i> 28.08.02<br>
+Uh... I see DBCS the first time! I will need to change some<br>
+of the code first in order to support them.<br>
+<br>
+What about lower- to upper-case mapping? This might become<br>
+a PITA with DBCS, no?<ul><li><b>Re: Chinese LFN support</b> by <i>ACW</i> 28.08.02<br>
+&gt; What about lower- to upper-case mapping? This might become<br>
+&gt; a PITA with DBCS, no?<br>
+<br>
+Here are some details on DBCS:<br>
+http://www-919.ibm.com/developer/dbcs/guide5.html<ul></ul></li></ul></li></ul></li></ul></li><li><b>Re: Chinese LFN support</b> by <i>ACW</i> 21.08.02<br>
+&gt; Could you please add Chinese LFN support in the LFN tools,too? I have tried many times,but I still can't do that. Thanks.<br>
+&gt; <br>
+&gt; The code page 936(Unicode to GB2312) list is here:<br>
+&gt; http://firststep.ahwww.com/dianbo/cp936-gb.txt<br>
+<br>
+And the code page 936(GB2312 to Unicode) list is here:<br>
+http://firststep.ahwww.com/dianbo/cp936-un.txt<ul></ul></li></ul></li><li><b>Russian LFN support</b> by <i>Andrew</i> 17.08.02<br>
+Do you plan to support Russian LFNs? I saw a message in which you
+propose to include the corresponding UNICODE tables into the source
+code. Where these tables can be found? The site www.unicode.org is
+down... ;(<ul><li><b>Re: Russian LFN support</b> by <i>Andrew</i> 17.08.02<br>
+DosLFN(http://www-user.tu-chemnitz.de/~heha/hs_freeware/freew.html) has
+the tables needed. Could you, please, incorporate at least cp866 into
+your programs? Or give instructions on how to do it, please.<ul><li><b>Re: Russian LFN support</b> by <i>Odi</i> 20.08.02<br>
+I can easily do that. All I need is the mapping between the 886 code
+page and Unicode (16 bit value). If you can send me such a list I will
+be glad to add the support you are asking for.<br>
+<br>
+Trying to find this out manually on my PC is a pain in the ass...<ul></ul></li></ul></li></ul></li><li><b>Lcopy problems</b> by <i>Glav</i> 10.08.02<br>
+I am having some problems getting LCOPY to work. <br>
+It seams to just copy the dir and no files. I used the /r and the /s
+but still no good. But I need the sub dir also so I used the /s. I can
+get one dir of files but only when I run the lcopy from that dir. <br>
+<br>
+Then I can not read any of the files in the dest dir. They are only
+word docs so it should be easy to view them but they are all mumble
+jumble. <br>
+<br>
+Can you post some examples of the LCOPY command for me to see.<br>
+<br>
+Thanks,<br>
+Glav<ul><li><b>Re: Lcopy problems</b> by <i>Andrew</i> 17.08.02<br>
+&gt; It seams to just copy the dir and no files. <br>
+<br>
+Use "sourcedir\*" syntax.<ul></ul></li></ul></li><li><b>LCOPY Win XP</b> by <i>Roberto</i> 07.08.02<br>
+Can i use Lcopy for backup the drive with<br>
+installed Win XP by FAT32 ?<br>
+Thanks<br>
+rg@libero.it<ul></ul></li><li><b>lcopy contents of entire drive to dir on another</b> by <i>Ken</i> 06.08.02<br>
+What would the proper syntax be to copy all files and directories from
+a drive (including all subdirs) to a directory on another drive?
+Example: copy everything from Drive F: to 'E:\Arc\DriveF'.<br>
+<br>
+Also, is there any way to backup the boot files in a Windows
+2000/Windows 98 dual boot situation? I am planning to get a new drive
+soon and use LFN tools to help me copy the data from the old drive to
+the new after booting from a DOS boot disk. I can use the 'sys' command
+to get the drive bootable for the backup of Win98 I guess, but I will
+have to re-install Windows 2000 after this to get the dual boot back,
+then try to restore the Win2K backup from DOS or Win98.<ul></ul></li><li><b>lcopy from 1.76 corrupted my drive</b> by <i>Perry</i> 29.07.02<br>
+Hi,<br>
+<br>
+I was running lcopy /a /s /v /b c:\* d:\<br>
+and after it copied about 10 files, it started getting "Write drive 3 sector failed .... 131!" I believe.<br>
+<br>
+In any case, I had himem.sys disabled, as I had ntfspro loaded. When I
+tried to read the drive after cancelling the lcopy (^C), the directory
+entries existed, but when I tried to read them, I got a sector not
+found error...<br>
+<br>
+I was copying from a "bad" drive at the time....  Win2k won't read the disk, but a DOS disk does.<ul><li><b>Re: lcopy from 1.76 corrupted my drive</b> by <i>Odi</i> 31.07.02<br>
+Do not use LFN Tools on drives whose file structure is corrupt. LFN
+Tools can not cope with situations like that. Read/Write errors
+indicate bad drives.<ul></ul></li></ul></li><li><b>ldir doesn't show long names !</b> by <i>philippe</i> 27.07.02<br>
+ldir from latest versiondoesn't display lfn but the infamous namexx~1 format names !<br>
+<br>
+Is thsi normal ???<ul><li><b>Am ashamed !</b> by <i>(unknown)</i> 07.08.02<br>
+&gt; ldir from latest versiondoesn't display lfn but the infamous namexx~1 format names !<br>
+&gt; <br>
+&gt; Is thsi normal ???<br>
+<br>
+Hummmmm !!<br>
+Seems I have not looked well at display of the dir listing !<br>
+<br>
+I am so acustomed to look at the left, where the names are in
+??????~n.ext format when long names used, that I have overlooked the
+rightest column wher I just now have noticed some long names !<br>
+I am going to hide myself !<br>
+Think you can stop searching the millenary bug !<br>
+Thanks.<ul></ul></li><li><b>Re: ldir doesn't show long names !</b> by <i>(unknown)</i> 27.07.02<br>
+&gt; ldir from latest versiondoesn't display lfn but the infamous namexx~1 format names !<br>
+&gt; <br>
+&gt; Is thsi normal ???<br>
+<br>
+Precision : in a DOS window under win98SE.<br>
+Have not yet tested in pure DOS since son surfing for now through my PC as server.<br>
+WIll try later.<br>
+<br>
+Philippe<ul><li><b>Re: ldir doesn't show long names !</b> by <i>Odi</i> 29.07.02<br>
+Please post a screenshot.<ul><li><b>Have tried in DOS-reboot : nope !</b> by <i>philippe</i> 07.08.02<br>
+&gt; Please post a screenshot. ========= How ????<br>
+<br>
+Have now tried in DOS ( reboot in DOS mode) : ldir does not show long
+file names but the infamous 8.3 short names in ??????~n.ext form.<br>
+<br>
+Haven't yet tried older version of lfn ( had them earlier).<ul></ul></li><li><b>Re: ldir doesn't show long names !</b> by <i>philippe</i> 04.08.02<br>
+&gt; Please post a screenshot.<br>
+<br>
+How do I do that here ?<ul></ul></li></ul></li></ul></li></ul></li><li><b>LFN on network shares</b> by <i>ryan</i> 17.07.02<br>
+In an earlier posting you said that LFN Tools doesn't support network
+shares. Is this something your working towards or is it impossible?<ul><li><b>Re: LFN on network shares</b> by <i>Odi</i> 24.07.02<br>
+It's not possible. DOS network drives do not allow physical access to
+the disk. And on a logical drive only short names are provided.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Thanks</b> by <i>Lee</i> 16.07.02<br>
+I really appreciate these utilties, they just<br>
+saved me alot of time/frustration in pulling<br>
+some files off a semi-dead system.<ul></ul></li><li><b>Please upgrade to 1.76</b> by <i>Odi</i> 09.07.02<br>
+Everybody should upgrade unconditionally to version 1.76 as it fixes a severe bug.<br>
+<br>
+Odi<ul></ul></li><li><b>Is a TSR version planned?</b> by <i>Rod Pemberton</i> 08.07.02<br>
+Hello,<br>
+<br> I have a large hard drive with many files and directories. I
+constantly have problems with Chris Jones's lfndos TSR. He no longer
+supports his driver.<br>
+Do you plan to produce a TSR LFN driver?<br>
+<br>
+<br>
+Sincerely,<br>
+<br>
+Rod Pemberton<ul><li><b>Re: Is a TSR version planned?</b> by <i>Odi</i> 09.07.02<br>
+I actually *did* have plans for a TSR version. But I simply do not have
+the time for it. Moreover debugging a TSR in DOS is a pain in the ass.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Dateisysteme nicht synchronisiert</b> by <i>Andreas Weidner</i> 08.07.02<br>
+Bezueglich der unsynchronisierten Joliet- bzw. ISO-Dateisysteme kam die
+Frage auf, mit welcher Software man denn die CDs brenne, die
+anschliessend nicht mehr mit den LFN-Tools lesbar sind.<br>
+<br>
+Ich habe bisher sowohl WinOnCD (in einer zwei Jahre alten Version) als
+auch einen neuen Easy-CD-Creator verwendet - BEIDE Programme erzeugten
+unsynchronisierte Dateisysteme (unter Windows 98), und irgendwelche
+Optionen zur Beeinflussung der Sortierreihenfolge oder so habe ich
+nicht gefunden. Mag sein, dass beide Programme nichts taugen, aber es
+sollte zumindest ein recht bekanntes Problem sein - oder gibt es
+irgendwelche Einstellungen, von denen mir nichts bekannt ist, und mit
+denen man sinnvolle CDs brennen kann (z.Z. brauche ich kein Backup auf
+CD zu machen, weil ich es unter DOS sowieso nicht wiederherstellen
+kann).<br>
+<br>
+Danke fuer die Hilfe.<br>
+Andreas Weidner<ul><li><b>Re: Dateisysteme nicht synchronisiert</b> by <i>Odi</i> 09.07.02<br>
+Ja es ist so. Die CD's die die Programme brennen sind schon okay. Nur
+sind die LFN Tools momentan noch ein bisserl dumm diesbezüglich. Ich
+habe aber momentan keine Zeit um das zu ändern. Bin dankbar um Mithilfe.<br>
+<br>
+Odi<ul><li><b>I changed my mind</b> by <i>Odi</i> 09.07.02<br>
+Okay this stuff is important. I just fixed this and a related bug.
+Check out the new version 1.76. The code has now been transfered to
+Sourceforge.net. So everybody can access it easily through CVS. You can
+get old versions there as well.<br>
+<br>
+Odi<ul></ul></li></ul></li></ul></li><li><b>Rename 8.3 files, leaving LFN intact?</b> by <i>Peter</i> 07.07.02<br>
+Hi, I was wondering if you knew of a way that I could rename an 8.3
+filename, but not change the LFN. Windows 98 appears not to have this
+capability.<br>
+<br>
+The reason I would like to do this is that the ~1 ~2... suffixes
+windows adds to the dos name are incompatible with a dos program I am
+using; but I would still like the LFN to be available to the windows
+programs. (Would also like to have 8.3 rather than 6.3!)<br>
+<br>
+Most of the names I need to change are of directories.<br>
+<br>
+Thanks in advance.<ul><li><b>Re: Rename 8.3 files, leaving LFN intact?</b> by <i>Odi</i> 07.07.02<br>
+Use the DOS ren command under DOS (not a DOS Window).<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Lcopy copying to the same drive</b> by <i>Brian</i> 28.05.02<br>
+I am trying to use lcopy (version 1.75) to copy from one directory to
+another directory on the same drive on a fat32 drive in DOS 7.1
+(Windows 98 native DOS). In other words, I use "lcopy d:\dira\*
+d:\dirb\ /s /a". The files will not go to "dirb" but they will try to
+overwrite "dira" files. If I use "lcopy d:\dira\* c:\dirb\ /s /a",
+lcopy works just fine copying to drive C.<br>
+<br>
+Any help would be appreciated.<br>
+<br>
+Thank You,<br>
+Brian<br>
+<br>
+bpoole2@yahoo.com<ul></ul></li><li><b>Ambiguous DPB!(50)</b> by <i>Tony</i> 26.05.02<br>
+Hi there,<br>
+<br>
+I am really stumped about this problem that I am having.<br>
+<br>
+I have 4 hds in my system, 20gb (C:), 80gb (D:), 2x40 (raided 0, F: G: H:)<br>
+<br>
+C:, D:, E:. and F: are all Fat32 and G: is NTFS. Windows XP is
+installed on the G: drive and Windows 2000 is installed on the C: drive.<br>
+<br>
+Everything has been running just great, last night I stepped away from
+my computer for a few and when I got back I had a 'delayed write on D:
+Failure' (or something to that effect relating to delayed hard drive
+writing) and the computer was locked up. (I was running edonkey at the
+time and thats my save all drive).<br>
+<br>
+Since the computer was completely locked up I had to reset it and it
+started up just fine, no problems. EXCEPT when I tried looking on my D:
+it tells me this. 'The disk in drive D is not formatted. Do you want to
+format it now?'. It does the same thing in Windows 2000.<br>
+<br>
+WHOA! not a good thing. Nothing I do will get it to recognize the
+drive. So, I know what you all are thinking. The boot sector is all
+messed up and the drive is no good anymore.<br>
+<br>
+Here is where the wierd thing is, if I boot up with a win95 bootup
+disk, I can read the directory and files 100% without ANY failure, no
+problems what so ever!<br>
+<br>
+So then I figured, fine, I will copy all the stuff or most of the stuff
+to a seperate drive from dos, but ofcourse then we have the longfile
+name problem, so I downloaded a long file name support program called
+LFN at www.odi.ch thinking this would solve my woes. The program works
+great on all my other drives/partitions (not G: (NTFS)) except for
+drive D: which it reports an Ambiguous DPB!(50), supposedly this is a
+standard network drive error except this drive is not networked, it is
+physically in my machine, I am looking at it right now.<br>
+<br>
+Any help here would certainly make my day, I went from working
+flawlessly to not at all in a matter of minutes (welcome to computer
+world per say), its just that it works flawlessly in dos that really
+freaks me out.<br>
+<br>
+Thank you,<br>
+<br>
+Tony Lindskog<br>
+Rockford Web Design<br>
+lindskog@rockfordwebdesign.com <br>
+www.rockfordwebdesign.com<ul></ul></li><li><b>liefert lcopy errorlevel zurück?</b> by <i>Juergen Klein</i> 17.05.02<br>
+ich möchte lcopy in einer batch datei einsetzen. liefert lcopy nach erfolgtem kopiervorgang einen errorlevel zurück?<br>
+gruß   jürgen<ul><li><b>Re: liefert lcopy errorlevel zurück?</b> by <i>Odi</i> 17.05.02<br>
+Ja.<br>
+Alle LFN Tools liefern bei einem Fehler grundsätzlich 1 zurück. Bei normalem Programmende 0.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Windows Datei kopieren auf 2 Zip</b> by <i>Dr Pest</i> 25.04.02<br>
+Hallo Leute,<br>
+<br>
+habe ein riesiges Problem. Möchte gerne den Windows Ordner auf Zip
+kopieren. Dazu möchte ich oder mu´ß ich sogar Lfn benutzen also LCOPY.
+Nun dies habe ich probiert doch das klappt nicht. Meldung. ...drive
+does not support direct I/O (51). Was soll ich tun. Muß eine bootbare
+CD erstellen mit Unserer Geräte Software und brauche diese Datei!!<br>
+<br>
+Help<ul></ul></li><li><b>lunzip</b> by <i>Sam Hawker</i> 22.04.02<br>
+I am working on a new derived work. Actually, it is more directly derived from LBACK, but...<br>
+<br>
+It's a very basic unzipper.<br>
+<br>
+http://www.geocities.com/shawkie_geo/files/lunzip.zip<ul></ul></li><li><b>LFN On network Share's?</b> by <i>Henk-Jan</i> 02.04.02<br>
+I subject I read not much aboutm but 1. Does the DOS verssion 7.xx support LFN on network shares?<br>
+And do the Tools support that?<ul><li><b>Re: LFN On network Share's?</b> by <i>Odi</i> 08.04.02<br>
+LFN Tool can not handle remote drives.<ul></ul></li></ul></li><li><b>Techwork Bootdisk problems</b> by <i>braydond</i> 02.04.02<br>
+HI, Probs with lcopy on the techworm v5.4 boot disk..i selected default startup...<br>
+x: cdrom drive<br>
+c: fat32 partition<br>
+i made dir called win2k on c: drive<br>
+and i ran a:\\lcopy x:\\*.* c:\\win2k /s /a<br>
+now on the cd i got hidden files and sub directories which i wish to copy to my hd ..so yeah.. :)<br>
+then it gives me cannot copy multiple files to one file...its not
+recognizing the win2k dir as a dir but a file..plz help me..thnx...<br>
+<br>
+braydond@hotmail.com braydond@yaoo.com<ul><li><b>Re: Techwork Bootdisk problems</b> by <i>W0rm</i> 06.04.02<br>
+Why do you use two slashes instead of one? Have you tried adding a
+slash after win2k? Even if this is a problem with LCOPY I'm sure
+there's a way around it :D<br>
+ - W0rm<br>
+ - http://dos.li5.org<br>
+<br>
+&gt; HI, Probs with lcopy on the techworm v5.4 boot disk..i selected default startup...<br>
+&gt; x: cdrom drive<br>
+&gt; c: fat32 partition<br>
+&gt; i made dir called win2k on c: drive<br>
+&gt; and i ran a:\\lcopy x:\\*.* c:\\win2k /s /a<br>
+&gt; now on the cd i got hidden files and sub directories which i wish to copy to my hd ..so yeah.. :)<br>
+&gt; then it gives me cannot copy multiple files to one file...its not
+recognizing the win2k dir as a dir but a file..plz help me..thnx...<br>
+&gt; <br>
+&gt; braydond@hotmail.com braydond@yaoo.com<ul></ul></li></ul></li><li><b>Vorschläge</b> by <i>Reto</i> 29.03.02<br>
+Hallo<br>
+<br>
+Diese Programme sind spitze.<br>
+<br>
+Jedoch sollte es ein Programm geben<br>
+LFN.exe das sich in den Speicher einnistet und die orginalbefehle (dir xcopy copy ...) abfängt und selber übernimmt.<br>
+(Möglich wäre ja auch ein Command.com 720kb gross mit allen befehlen)<br>
+<br>
+Noch besser währe ein Dateimanager der wie ein OS startet<br>
+<br>
+FAT / FAT32 /NTFS /HPFS /ext2 partitionen und den CD-Rom-Treiber lädt.
+Zwecks Datensicherung einen CD-Brenner steuern und sich wie WINFILE.EXE
+mit einer Maus bedienen läst.<br>
+<br>
+Optionell wäre ein Datei-Editor um Autoexec.bat Config.sys oder auch ander Dateien zu bearbeiten.<br>
+<br>
+So wie in der Taskleiste ein C:\\_ prompt für die Direkte befehlseingabe.<br>
+<br>
+<br>
+Komprimiert so Gross um sich von einer 3,5 Zoll Diskette zu booten.<br>
+<br>
+Habe selber mit mangelden erfolg probiert eine miniversion von Win95 auf einer CD-ROM zum laufen zu bringen.<br>
+<br>
+Danke für\'s lesen.<br>
+<br>
+MfG Reto Baumer<br>
+enjoy@surfeu.ch<ul></ul></li><li><b>lcopy bei kurzen Verzeichnisnamen</b> by <i>Sindbad Siefahrer</i> 20.03.02<br>
+Hi Odi,<br>
+deine Tools sind echt klasse.<br>
+<br>
+Kann ich lcopy dazu kriegen, mit kurzen Verzeichnisnamen zu arbeiten? <br>
+Beispiel: Ich will 1.txt nach C:\Programme kopieren.<br>
+Gebe ich ein: <br>
+lcopy 1.txt C:\Programme <br>
+ist alles ok.<br>
+Gebe ich aber ein: <br>
+lcopy 1.txt C:\Progra~1 <br>
+oder<br>
+lcopy 1.txt C:\Progra~1\<br>
+landet 1.txt auf C:\, also genau so, als würde der Zielordner nicht
+existieren. Er existiert aber und heißt unter DOS wirklich Progra~1.
+Lcopy findet Ordner unter ihrem Kurznamen einfach nicht.<br>
+Das ist ungünstig, weil man unter DOS die langen Dateinamen von Ordnern nicht immer auswendig kennt.<ul><li><b>Re: lcopy bei kurzen Verzeichnisnamen</b> by <i>Odi</i> 24.03.02<br>
+Wenn du kurze Dateinamen willst, dann benütze doch einfach die standard DOS Befehle. Die können das sehr gut.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Chinese long file name</b> by <i>Wengier</i> 17.03.02<br>
+There are many Unicode translation<br>
+tables located at:<br>
+http://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WINDOWS/<br>
+but how can I use them to let<br>
+LFN tools to display Chinese(936)<br>
+long file names?<ul><li><b>Re: Chinese long file name</b> by <i>Odi</i> 18.03.02<br>
+Look at the unicode.inc source file.<br>
+You must provide the missing tables for your code pages.<ul></ul></li></ul></li><li><b>Please report bugs by email not forum</b> by <i>Odi</i> 15.03.02<br>
+I remind you that this forum is not meant to be used for bug reports because I do not guarantee to read it.<br>
+<br>
+Please send bug reports to lfn-bugs@odi.ch only!<br>
+<br>
+Thanks<br>
+<br>
+Odi<ul></ul></li><li><b>korean long file name</b> by <i>(unknown)</i> 12.03.02<br>
+//vmemory.h present ?<br>
+#define VMEMORY<br>
+<br>
+Cannot compile(no file: vmemory.h )<br>
+<br>
+e-mail : kim7179kim@hotmail.com<br>
+<br>
+<br>
+note : sorry, my poor english<ul><li><b>Re:V Memory</b> by <i>Odi</i> 13.03.02<br>
+just remove the #define VMEMORY if you haven't got vmemory.h<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>korean long file name</b> by <i>Lee</i> 10.03.02<br>
+&amp;#50504;&amp;#45397;&amp;#54616;&amp;#49464;&amp;#50836;<br>
+<br>
+&amp;#50668;&amp;#44592;&amp;#45716;
+&amp;#54620;&amp;#44397;(korea)&amp;#51077;&amp;#45768;&amp;#45796;.
+&amp;#51060;
+&amp;#54532;&amp;#47196;&amp;#44536;&amp;#47016;&amp;#51012;
+&amp;#51217;&amp;#54616;&amp;#47732;&amp;#49436;
+&amp;#54620;&amp;#44032;&amp;#51648; &amp;#51228;&amp;#50504;
+&amp;#49324;&amp;#54637;&amp;#51060; &amp;#51080;&amp;#50612;
+&amp;#44544;&amp;#50900;&amp;#51012;
+&amp;#50732;&amp;#47549;&amp;#45768;&amp;#45796;.
+&amp;#54532;&amp;#47196;&amp;#44536;&amp;#47016;&amp;#49345;
+&amp;#49324;&amp;#50857;&amp;#50640;
+&amp;#47928;&amp;#51228;&amp;#51216;&amp;#51008;
+&amp;#50630;&amp;#51004;&amp;#45208;
+&amp;#54620;&amp;#44397;&amp;#50640;&amp;#49436;&amp;#45716;
+2&amp;#48148;&amp;#51060;&amp;#53944;(byte)
+&amp;#52404;&amp;#44228;&amp;#51032;
+&amp;#50616;&amp;#50612;&amp;#47484;
+&amp;#49324;&amp;#50857;&amp;#54616;&amp;#45796;&amp;#48372;&amp;#45768;
+&amp;#46020;&amp;#49828;&amp;#47784;&amp;#46300;(DOS
+MODE)&amp;#50640;&amp;#49436;
+&amp;#54620;&amp;#44544;(Hangeul)&amp;#44284; &amp;#44057;&amp;#51060;
+&amp;#49324;&amp;#50857;&amp;#54624; &amp;#44221;&amp;#50864;
+&amp;#54620;&amp;#44544;&amp;#47196; &amp;#46108; &amp;#44596;
+&amp;#54868;&amp;#51068;&amp;#47749;&amp;#51008;
+&amp;#48373;&amp;#49324;&amp;#47484; &amp;#54624; &amp;#49688;
+&amp;#50630;&amp;#49845;&amp;#45768;&amp;#45796;.
+&amp;#50612;&amp;#46523;&amp;#44172;
+&amp;#54644;&amp;#44208;&amp;#54624; &amp;#49688;
+&amp;#51080;&amp;#45716; &amp;#48169;&amp;#48277;&amp;#51008;
+&amp;#50630;&amp;#51021;&amp;#45768;&amp;#44620;?<ul><li><b>Re: korean long file name</b> by <i>(unknown)</i> 11.03.02<br>
+You can contribute and provide a Unicode translation table for Korean
+code pages. However I will not be able to test it on my machine since I
+do not speak any Korean nor can I read those characters. Look at the
+tables in the unicode.inc file. What I need is a table<br>
+<br>
+static unsigned char pageXX[256]<br>
+<br>
+for every Unicode page XX that is used.<ul></ul></li></ul></li><li><b>A small bug</b> by <i>Wengier</i> 09.03.02<br>
+If the name of a directory in the root directory is the same as the
+label of the drive, maybe LDIR will not be able to access that
+directory at all(Instead,it will display files in the root directory).<ul></ul></li><li><b>locking bug in msdos 7</b> by <i>Shades</i> 06.03.02<br>
+ms-dos 7 disables direct disk access, I figure you can add in a
+function (ax=7303h i think?) to lock the drive to be copied to...its
+quite a pain remembering to do "LOCK C:" before using LCOPY, else the
+system freezes<ul><li><b>Re: locking bug in msdos 7</b> by <i>Odi</i> 07.03.02<br>
+Locking is performed with the int0x21h / AX=0x440Dh, CX=0x084Ah function at the moment.<br>
+<br>
+There is a function AH=0x73h but it is poorly documented:<br>
+http://www.ctyme.com/intr/rb-3225.htm<br>
+<br>
+Can you send LCHK output?<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Size jump!</b> by <i>Bub</i> 06.03.02<br>
+I like these tools and have been using version 1.71.  <br>
+<br>
+I just downloaded vers. 1.75 and, woah!  LDIR and LDEL are 250% bigger!  What happened?  Will they be reduced in the future?  <br>
+<br>
+I use them on an emergency boot floppy, and don't have that much room to spare.<ul><li><b>Re: Size jump!</b> by <i>Odi</i> 07.03.02<br>
+Oops. I didn't realize that. Maybe there is something wrong with the
+make file, but actually I didn't touch it. I will check that.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>LCOPY</b> by <i>OT1</i> 06.03.02<br>
+I have got some trebles with LCOPY v1.75.<br>
+My example:<br>
+LCOPY z:\diskc\windows\* c:\windows.ame /s<br>
+where:<br>
+z: - CD (burned)<br>
+in directory "windows" is one directory and in this directory is one file (LFN)<br>
+c: - local disk<br>
+c:\windows.ame - directory on local disk<br>
+in directory "windows.ame" is the same directory as in "windows" on CD<br>
+<br>
+Problem:<br>
+if I run LCOPY (see example) everything looks fine on my screen is a message:<br>
+1 file(s) copied<br>
+Flushing cache...<br>
+But in directory on local disk is no file.<br>
+If I use v.1.71 the file is on local disk.<br>
+Any ideas???<ul><li><b>Re: LCOPY</b> by <i>John</i> 14.03.02<br>
+&gt; I have got some trebles with LCOPY v1.75.<br>
+&gt; My example:<br>
+&gt; LCOPY z:\diskc\windows\* c:\windows.ame /s<br>
+&gt; where:<br>
+&gt; z: - CD (burned)<br>
+&gt; in directory "windows" is one directory and in this directory is one file (LFN)<br>
+&gt; c: - local disk<br>
+&gt; c:\windows.ame - directory on local disk<br>
+&gt; in directory "windows.ame" is the same directory as in "windows" on CD<br>
+&gt; <br>
+&gt; Problem:<br>
+&gt; if I run LCOPY (see example) everything looks fine on my screen is a message:<br>
+&gt; 1 file(s) copied<br>
+&gt; Flushing cache...<br>
+&gt; But in directory on local disk is no file.<br>
+&gt; If I use v.1.71 the file is on local disk.<br>
+&gt; Any ideas???<br>
+<br>
+<br>
+I too have this problem. Can someone please send me V1.71 or whatever
+version that (LCopy) works. Send to TurnerJL@MyCompuCity.com<ul></ul></li><li><b>Re: LCOPY</b> by <i>Odi</i> 07.03.02<br>
+Have you tried adding a backslash at the end of the target directory?<br>
+<br>
+Odi<ul><li><b>Re: LCOPY</b> by <i>OT1</i> 13.03.02<br>
+&gt; Have you tried adding a backslash at the end of the target directory?<br>
+&gt; &gt; Odi<br>
+<br>
+With the backslash it's OK.<br>
+But why when I ran LCOPY ....(see my example in the my last message) I got on screen a message:<br>
+<br>
+A:\LCOPY .....<br>
+Directory\<br>
+Long File Name.exe<br>
+1 file(s) copied<br>
+Flushing cache...<br>
+<br>
+and the file was not in Directory.<br>
+This is a little bit strange.<ul><li><b>Re: LCOPY</b> by <i>(unknown)</i> 13.03.02<br>
+&gt; &gt; Have you tried adding a backslash at the end of the target directory?<br>
+&gt; &gt; &gt; Odi<br>
+&gt; &gt; With the backslash it's OK.<br>
+&gt; But why when I ran LCOPY ....(see my example in the my last message) I got on screen a message:<br>
+&gt; &gt; A:\LCOPY .....<br>
+&gt; Directory\<br>
+&gt; Long File Name.exe<br>
+&gt; 1 file(s) copied<br>
+&gt; Flushing cache...<br>
+&gt; &gt; and the file was not in Directory.<br>
+&gt; This is a little bit strange.<br>
+<br>
+I'm sorry, I tried it several times again and the problem is elsewhere. (the backslash has no influence on the problem).<br>
+<br>
+!!!The Directory exists before copying!!!<br>
+If I want to copy a directory with some file(s) and on a destination is
+a directory with the same name I got the directory w/o new file(!!!)
+but with information that the file was copied (see above).:-(<ul><li><b>Re: LCOPY</b> by <i>OT1</i> 13.03.02<br>
+The previous message was from me.<br>
+Sorry.<ul></ul></li></ul></li></ul></li></ul></li></ul></li><li><b>v1.75: Underscore problem solved!</b> by <i>Odi</i> 02.03.02<br>
+The ubiquitous bug on some CD-ROMs caused all filenames to consist of
+underscores only. This nasty thing is now fixed. Thanks to Geert from
+Belgium.<br>
+<br>
+Odi<ul></ul></li><li><b>Windows 95/98 running from RAMDISK</b> by <i>Soedesh</i> 26.02.02<br>
+I think this program is what I need to make my Win9x system running from RAM.<br>
+I also have downloaded some other programs like XXCOPY and LFNDOS, but I will try LCOPY first...<br>
+I also use XMSDSK to make a larger RAM disk then 32 Mb.<br>
+<br>
+I am also posting in the Windows 3.1 forum at computing.net.<br>
+Running 3.1 from RAM is easy ;-)<br>
+<br>
+I hope the guy from Calmira will succeed in implementing LFN.<br>
+<br>
+s.n.l.jankie@wanadoo.nl<ul><li><b>Re: Windows 95/98 running from RAMDISK</b> by <i>spamtrap</i> 10.07.02<br>
+&gt; I think this program is what I need to make my Win9x system running from RAM.<br>
+<br>
+I am also trying but have struck problems unrelated to lcopy. Basically
+I install windows on one drive eg r:, using the subst command in
+autoexec.bat, create a ramdisk with xmsdsk, then lcopy files to r: and
+remove the subst command before starting windows. Works fine except
+user.dat and system.dat that windows uses is from original drive and
+not ramdrive. I have attempted to load windows into the ram drive with
+lfn pkzip prog but the unzip doesn't recreated the lfn's. This is
+probably not the correct forum for this so if you are interested in
+discussing this feel free to email me at spamtrap@paradise.net.nz.<br>
+<br>
+ps Thanks to ODI for doing what microsoft won't. Yes, DOS does exist even if microsoft refuses to acknowledge it.<ul></ul></li></ul></li><li><b>How do I install this program? in DOS mode</b> by <i>Mpatel</i> 25.02.02<br>
+Hello,<br>
+<br>
+I am stuck in DOS mode and need to view all my long file names in order
+to make correction to the a file so I can get windows to start. I
+downloaded and unzipped the files (on another computer) but how do I
+install these files in my bad computer?<ul><li><b>Re: How do I install this program? in DOS mode</b> by <i>Odi</i> 28.02.02<br>
+You do not need to "install" anything.<br>
+Just copy them onto a diskette and use them from there.<br>
+You might want to include the location of the tools in your PATH environment variable like so:<br>
+<br>
+SET PATH=A:\LFNTOOLS;%PATH%<br>
+<br>
+where A:\LFNTOOLS is where the system can find the LFN Tools.<br>
+Afterwards you can use the tools from anywhere.<br>
+<br>
+HTH<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>LCOPY</b> by <i>McSAM</i> 20.02.02<br>
+I've used LFN utilities for months &amp; would be lost without them.
+Invaluable tools! However, I've observed a small annoyance with LCOPY
+which showed up in v1.73. When copying directories/subdirs, the
+Time/Date structure used to be maintained. In v1.73 the parent
+directory uses the original file time/date, but not in the directory
+itself. I have reverted back to v1.71 as I use this feature several
+times daily.<br>
+<br>
+Please advise.  Thanks.<ul></ul></li><li><b>Calmira and LFN's</b> by <i>Erwin Dokter</i> 16.02.02<br>
+Hi Odi,<br>
+<br>
+I am the developer of Calmira (http://www.calmira.org), a 16-bit
+Windows shell replacement. One of my long-standing wished is
+implementing Long Filename support.<br>
+<br>
+I have searched the net, and there are many DOS LFN implementations,
+either as command line utilities or DOS drivers. There is even a Pascal
+version, but not with source :( (Calmira is written in Delphi).<br>
+<br>
+How hard would it be to build a 16-bit Windows DLL, so Calmira (and
+otehr apps) can use LFN functions? I have absolutely no clue about
+C(++), I'm a Pascal man myself...<ul><li><b>Re: Calmira and LFN's</b> by <i>Odi</i> 17.02.02<br>
+So you need a 16-bit LFN-DLL huh?<br>
+Actually I am not so into C either. I work with Java mainly. C was just
+the onyl thing available at the time I started this. Maybe you better
+ask a real C crack.<br>
+I am porting the LFN library to object oriented at the moment. So I am
+not sure how future releases will be compatible with delphi.<br>
+<br>
+Odi<ul><li><b>Re: Calmira and LFN's</b> by <i>Erwin Dokter</i> 19.02.02<br>
+&gt; I am porting the LFN library to object oriented at the moment. So
+I am not sure how future releases will be compatible with delphi.<br>
+<br>
+What do you mean by porting to OO? Delphi is object oriented... it can also import any DLL writen in any language.<ul><li><b>Re: Calmira and LFN's</b> by <i>Odi</i> 22.02.02<br>
+At the moment LFN is *not* OO.<br>
+In the future there will *only* be the OO version (if everything goes
+right). But as I said you should better ask someone that has worked a
+lot with C / C++. <br>
+<br>
+Odi<ul></ul></li></ul></li></ul></li></ul></li><li><b>how to copy the i386</b> by <i>Jimson</i> 06.02.02<br>
+let say we are in the DOS.<br>
+and want to copy the i386 on the e:\i386, what to do.<br>
+<br>
+i try<br>
+lcopy e:\i386\* c:\i386<br>
+what it did was it simply copy all the file in many directories and put the all in c:\i386 without the subfolder.<br>
+<br>
+any idea?<ul><li><b>Re: how to copy the i386</b> by <i>Odi</i> 09.02.02<br>
+Please refer to the excessive documentation. Thanks.<ul></ul></li></ul></li><li><b>Version 1.72 is out</b> by <i>Odi</i> 03.02.02<br>
+The new version fixes a small bug in LREN and supports developers that don't use Microsoft Compilers.<br>
+<br>
+Odi<ul></ul></li><li><b>"Falsche" 8.3-Namen nach LCOPY von CD</b> by <i>Klaus</i> 02.02.02<br>
+Hallo Odi,<br>
+<br>
+durch einen Hinweis in der c't kam ich zu deinen guten Tools, die ich gerne für Backups einsetzen möchte.<br>
+<br>
+LCOPY übernimmt von CD bei mir den "falschen" 8.3-Namen. Mein Test verlief so:<br>
+<br>
+Testverzeichnis auf Harddisk:<br>
+<br>
+D:\neuePCInfo\NotCD\x\test1&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk D: 1L4_FAT16B<br>
+ Seriennummer des Datenträgers: 373C-8B69<br>
+ Verzeichnis von D:\neuePCInfo\NotCD\x\test1<br>
+<br>
+A23456~2 X              38  20.01.02  16:45 A2345678B_REA.x<br>
+A23456~3 X              38  20.01.02  16:45 A2345678C_ARC.x<br>
+A23456~4 X              38  20.01.02  16:45 A2345678D_HID.x<br>
+A23456~5 X              38  20.01.02  16:45 A2345678E_SYS.x<br>
+A23456~6 X              38  20.01.02  16:45 A2345678F_NOR.x<br>
+VC       BAT            38  20.01.02  16:45 vc.bat<br>
+VCX      BAT            38  20.01.02  16:45 VCX.BAT<br>
+         7 Datei(en)                   266 Bytes<br>
+         0 Verzeichnis(se)     180.355.072 Bytes frei<br>
+<br>
+Die Dateien wurden mitteld WinOnCD gebrannt, und zwar mit ISO und
+Joliet File System. Unter WINDOWS98 liefert die DOS-Box folgende Info:<br>
+<br>
+V:\X\TEST1&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk V: 0202012224<br>
+ Seriennummer des Datenträgers: B16A-441B<br>
+ Verzeichnis von V:\x\test1<br>
+<br>
+A23456~6 X              38  20.01.02  16:45 A2345678B_REA.x<br>
+A23456~8 X              38  20.01.02  16:45 A2345678C_ARC.x<br>
+A2345~10 X              38  20.01.02  16:45 A2345678D_HID.x<br>
+A2345~12 X              38  20.01.02  16:45 A2345678E_SYS.x<br>
+A2345~14 X              38  20.01.02  16:45 A2345678F_NOR.x<br>
+VCX      BAT            38  20.01.02  16:45 VCX.BAT<br>
+VC       BAT            38  20.01.02  16:45 vc.bat<br>
+         7 Datei(en)                   266 Bytes<br>
+         0 Verzeichnis(se)               0 Bytes frei<br>
+<br>
+Ich vermute, daß hier die Angaben von Joliet kommen. WinOnCD erzeugt offenbar neue 8.3-Namen.<br>
+<br>
+Unter DOS (von der Notfalldiskette) erhalte ich folgendes:<br>
+<br>
+V:\X\TEST1&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk V: 0202012224<br>
+ Verzeichnis von V:\X\TEST1<br>
+<br>
+A23456~2 X              38  01-20-02  4:45p<br>
+A23456~3 X              38  01-20-02  4:45p<br>
+A23456~4 X              38  01-20-02  4:45p<br>
+A23456~5 X              38  01-20-02  4:45p<br>
+A23456~6 X              38  01-20-02  4:45p<br>
+VC       BAT            38  01-20-02  4:45p<br>
+VCX      BAT            38  01-20-02  4:45p<br>
+         7 Datei(en)                   266 Bytes<br>
+         0 Verzeichnis(se)               0 Bytes frei<br>
+<br>
+Die 8.3-Namen sehen hier GUT aus, d.h. wie ursprünglich auf der Harddisk, soweit ich das verstehe, sind das die ISO-Namen.<br>
+<br>
+Nach der Kopie mittels LCOPY /K .... von der CD auf die Harddisk erhalte ich folgende Namen:<br>
+<br>
+D:\NeuePCInfo\NotCD\x\x&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk D: 1L4_FAT16B <br>
+ Seriennummer des Datenträgers: 373C-8B69<br>
+ Verzeichnis von D:\neuePCInfo\NotCD\x\x<br>
+<br>
+LCOPY    EXE        66,853  12-12-01 10:19p LCOPY.EXE<br>
+A23456~6 X              38  01-20-02  4:45p A2345678B_REA.x<br>
+A23456~8 X              38  01-20-02  4:45p A2345678C_ARC.x<br>
+A2345~10 X              38  01-20-02  4:45p A2345678D_HID.x<br>
+A2345~12 X              38  01-20-02  4:45p A2345678E_SYS.x<br>
+A2345~14 X              38  01-20-02  4:45p A2345678F_NOR.x<br>
+VCX      BAT            38  01-20-02  4:45p VCX.BAT<br>
+VC       BAT            38  01-20-02  4:45p vc.bat<br>
+X        X               0  02-02-02  9:16p x.x<br>
+         9 Datei(en)                67,119 Bytes<br>
+         0 Verzeichnis(se)     180,191,232 Bytes frei<br>
+<br>
+Mein Problem: Der Weg von Harddisk auf CD mittels WinOnCD und zurück
+mittels LCOPY /K verändert die 8.3-Namen. Da das Windows-System in der
+Registry teilweise die 8.3-Namen notiert, ergibt sich ein Problem beim
+Zurücksichern von CD.<br>
+<br>
+Gibt es einen Switch für LCOPY, der mir die "richtigen" 8.3-Namen erzeugt?<br>
+<br>
+Über einen Hinweis werde ich mich sehr freuen.<br>
+<br>
+Klaus<ul><li><b>Re:  Kein Fehler</b> by <i>Odi</i> 02.02.02<br>
+Hallo Klaus<br>
+<br>
+Deine Wunsch ist: Bei einem Backup auf CD-R bleiben die 8.3 Namen erhalten.<br>
+<br>
+Ich muss dich enttäuschen - das wird mit Joliet nie möglich sein.<br>
+<br>
+Das hat einen einfachen Grund: <br>
++--------+<br>
+|Mangel 1|<br>
++--------+<br>
+Joliet merkt sich die ursprünglichen 8.3 Namen nicht.<br>
+<br>
+Joliet definiert selbst, wie die 8.3 Namen auf einer CD zu vergeben
+sind. Man hat beim Brennen also gar keine Wahl wie die 8.3-Datei
+nachher auf der CD heisst.<br>
+<br>
+Man fragt sich mit gutem Grund warum dieses Dateisystem ausgerechnet so
+spezifiziert wurde. Immerhin ist es eine Erfindung aus dem Hause
+Microsoft...<br>
+<br>
+[<br> Die Dateien werden im Directory fortlaufend in 2er Schritten
+nummeriert. Die Zählung beginnt bei 6. Verzeichnisse erhalten nochmal
+andere Nummern.<br>
+]<br>
+<br>
+<br>
+Was dir DIR in der DOS Box anzeigt sind die physikalisch gespeicherten Namen unter Joliet.<br>
+<br>
+Was dir DIR im DOS Modus anzeigt, ist etwas beschönigtes und entspricht nicht der Realität.<br>
+<br>
+Beim Kopieren auf die Harddisk passiert nun wieder eine Umbenennung
+(auch unter Windows): Der Alias wird im Zielverzeichnis neu generiert
+gemäss dem Microsoft-Algorithmus.<br>
+<br>
+LCOPY verhält sich hier seit 1.70 ein wenig anständiger. Es lässt 8.3
+Dateinamen von CD auf Wunsch (/K) unangetastet. Nur hilft dir das nix,
+weil die Dateinamen bereits beim Brennen verloren gingen.<br>
+<br>
+Welchen 8.3 Namen die Dateien nachher auf der Platte bekommen hängt von der Reihenfolge des Kopierens ab.<br>
+<br>
+Und warum stört uns das?<br>
+<br>
++--------+<br>
+|Mangel 2|<br>
++--------+<br>
+Windows benützt nicht durchgängig nur lange Dateinamen. Es schafft so Inkosistenzen.<br>
+<br>
+Tut mir leid dass ich nicht helfen kann.<br>
+<br>
+Odi<ul><li><b>Re:  Hilfe mittels ISO 9660 ?</b> by <i>Klaus</i> 03.02.02<br>
+Hallo Odi<br>
+<br>
+Deine Antwort erklärt mir vieles. Eine Hoffnung habe ich noch, nachdem
+ich eine CD mit nur ISO 9660 brannte. Nach dem Brennen zeigte die
+Windows DOS-Box folgendes: <br>
+<br>
+V:\X\TEST1&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk V: WIN98_NOTCD<br>
+ Seriennummer des Datenträgers: 8E93-6AD8<br>
+ Verzeichnis von V:\X\TEST1<br>
+<br>
+A23456~2 X              38  20.01.02  16:45 A23456~2.X<br>
+A23456~3 X              38  20.01.02  16:45 A23456~3.X<br>
+A23456~4 X              38  20.01.02  16:45 A23456~4.X<br>
+A23456~5 X              38  20.01.02  16:45 A23456~5.X<br>
+A23456~6 X              38  20.01.02  16:45 A23456~6.X<br>
+VC       BAT            38  20.01.02  16:45 VC.BAT<br>
+VCX      BAT            38  20.01.02  16:45 VCX.BAT<br>
+         7 Datei(en)                   266 Bytes<br>
+         0 Verzeichnis(se)               0 Bytes frei<br>
+<br>
+Unter Nur-DOS gebootet wurde gezeigt:<br>
+<br>
+V:\X\TEST1&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk V: WIN98_NOTCD<br>
+ Verzeichnis von V:\X\TEST1<br>
+<br>
+A23456~2 X              38  01-20-02  4:45p<br>
+A23456~3 X              38  01-20-02  4:45p<br>
+A23456~4 X              38  01-20-02  4:45p<br>
+A23456~5 X              38  01-20-02  4:45p<br>
+A23456~6 X              38  01-20-02  4:45p<br>
+VC       BAT            38  01-20-02  4:45p<br>
+VCX      BAT            38  01-20-02  4:45p<br>
+         7 Datei(en)                   266 Bytes<br>
+         0 Verzeichnis(se)               0 Bytes frei<br>
+<br>
+Das läßt hoffen, daß die 8.3-Namen im ISO 9660 nicht zufällig sind (wie
+ich aus Deiner Antwort herausgelesen habe), sondern eins zu eins.<br>
+<br>
+Dann kopierte ich mit LCOPY /K auf die Harddisk und erhielt angezeigt unter Nur-DOS:<br>
+<br>
+D:\NEUEPCIN\NOTCD\X\X&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk D: 1L4_FAT16B <br>
+ Seriennummer des Datenträgers: 373C-8B69<br>
+ Verzeichnis von D:\NEUEPCIN\NOTCD\X\X<br>
+<br>
+LCOPY    EXE        66,917  02-02-02  7:50p<br>
+ISODOS   DIR           494  02-03-02  1:37p<br>
+A23456~2 X              38  01-20-02  4:45p<br>
+A23456~3 X              38  01-20-02  4:45p<br>
+A23456~4 X              38  01-20-02  4:45p<br>
+A23456~5 X              38  01-20-02  4:45p<br>
+A23456~6 X              38  01-20-02  4:45p<br>
+VC       BAT            38  01-20-02  4:45p<br>
+VCX      BAT            38  01-20-02  4:45p<br>
+ISODOSN  DIR             0  02-03-02  1:39p<br>
+        10 Datei(en)                67,677 Bytes<br>
+         0 Verzeichnis(se)     178,618,368 Bytes frei<br>
+<br>
+Das gleiche Verzeichnis unter Windows DOS-Box sieht so aus:<br>
+<br>
+D:\neuePCInfo\NotCD\x\x&gt;dir /a-d<br>
+<br>
+ Datenträger in Laufwerk D: 1L4_FAT16B<br>
+ Seriennummer des Datenträgers: 373C-8B69<br>
+ Verzeichnis von D:\neuePCInfo\NotCD\x\x<br>
+<br>
+LCOPY    EXE        66.917  02.02.02  19:50 LCOPY.EXE<br>
+A23456~2 X              38  20.01.02  16:45 ______<br>
+A23456~3 X              38  20.01.02  16:45 _____________<br>
+A23456~4 X              38  20.01.02  16:45 _____________<br>
+A23456~5 X              38  20.01.02  16:45 _____________<br>
+A23456~6 X              38  20.01.02  16:45 _____________<br>
+VC       BAT            38  20.01.02  16:45 VC.BAT<br>
+VCX      BAT            38  20.01.02  16:45 VCX.BAT<br>
+         8 Datei(en)                67.183 Bytes<br>
+         0 Verzeichnis(se)     178.585.600 Bytes frei<br>
+<br>
+Meine Hoffnung: wenn LCOPY beim Lesen von CD die Langnamen von Joliet
+und die 8.3-Namen von ISO 9660 kombiniert, müßte mittels LCOPY das
+erste GUTE Backup/Restore Tool mit allen Freiheiten zum selektiven
+Restore ohne Probleme für die 8.3-Namen verfügbar sein!!!. Was spricht
+dagegen?<br>
+<br>
+Gruß, Klaus.<br>
+<br>
+N.B. LCOPY erzeugte Langnamen, die aus Unterstrichen bestehen (s.o.).
+Ich hatte erwartet, daß keine Langnamen erzeugt werden, da ja
+ursprünglich auch keine im ISO 9660 vorhanden waren.<br>
+<br>
+Auch hat Windows ein Problem mit diesen Langnamen. Ich konnte sie nicht mit einfachem DEL löschen.<ul></ul></li></ul></li></ul></li><li><b>Windows-Backup</b> by <i>Tobias</i> 31.01.02<br>
+Hallo!<br>
+<br>
+Ich habe gerade dieses perfekte Programm gefunden - vielen Dank an ODI :-))<br>
+<br>
+Ich weiß zwar, dass ich diese Frage erst NACH dem Ausprobieren stellen
+sollte, aber ich frage einfach mal vorher, da nichts im Manual steht:<br>
+<br>
+Wenn ich ein Backup meines Windows-Verzeichnisses machen möchte, liegen
+da ja VERSTECKTE, SCHREIBGESCHÜTZTE &amp; SYSTEM-Dateien &amp;
+Verzeichnisse drin.<br>
+<br>
+Wenn ich die Dateien jetzt auf CD brenne und nachher wieder auf eine
+Festplatte überspielen will, wird laut Manual der Schreibschutz NICHT
+mitkopiert ...<br>
+Was ist denn mit Dateien, die einen Schreibschutz haben?<br>
+<br>
+Werden System-Dateien mitkopiert und deren Attribut behalten?<br>
+<br>
+Vielen Dank<br>
+Tobias<ul><li><b>Re: Windows-Backup</b> by <i>Odi</i> 02.02.02<br>
+Joliet weist so viele Mängel auf dass es sich eigentlich überhaupt
+nicht eignet, Dateien aus einem Windows-Dateisystem zu speichern.<br>
+<br>
+<br>
++--------+<br>
+|Mangel 1|<br>
++--------+<br>
+Joliet kennt weder Read-Only noch System Attribut<br>
+<br>
+Es kennt nur Hidden.<br>
+<br>
+Weitere Mängel findest du im Follow-up zum Posting: Falsche 8.3 Namen<ul></ul></li></ul></li><li><b>Files with no extension cannot be copied from a CD</b> by <i>Anthony</i> 28.01.02<br>
+There is a bug when copying files from a CD when they have no suffix.<br>
+<br>
+When the destination file is created, a dot '.' is appended to the file name.<br>
+<br>
+Windows does not accept files with a dot at the end. So it does create an invalid entry and the file cannot be deleted.<br>
+<br>
+for example :<br>
+lcopy %cdrom%:\test\filewithnosuffix c:\test<br>
+<br>
+this file appear with the name 'filewithnosuffix.'<br>
+<br>
+Cordially, Anthony<ul><li><b>Re: Files with no extension cannot be copied from</b> by <i>Odi</i> 02.02.02<br>
+Although I have never seen this on my machine I have just implemented a fix for this specific issue.<br>
+<br>
+Before a file is written to disk trailing dots are stripped from its long name.<br>
+<br>
+Odi<ul><li><b>The problem is still there in the 1.73 but...</b> by <i>Anthony</i> 13.02.02<br>
+Hello,<br>
+<br>
+The problem is still there in the 1.73 but only when i burn the CD with CDRWin(I used v3.8b).<br>
+<br>
+I did a test with a CD burned with Nero, there is no problem.<br>
+<br>
+I tried every charater sets with Nero (ISO9660, ASCII and DOS), and there is no problem.<br>
+<br>
+Apparently with CDRWIN the character set cannot be chosen.<br>
+<br>
+Kind Regards,<br>
+Anthony Breneliere<ul></ul></li></ul></li></ul></li><li><b>Data saving after Windows crash</b> by <i>François</i> 25.01.02<br>
+Thank you Odi for your wonderfull tools!<br>
+<br>
+Maybe this will be usefull to others: after a windows crash, i transferred my*.doc, *.dbx etc as following:<br>
+<br>
+1) make a restore directory<br>
+2) lcopy all my *.doc etc in it<br>
+3) with lfndos (sorry) and pkzip 2.50, make a restore.zip<br>
+4) with fastlynx, transfer it on another PC (you need to zip it because fastlynx doesn't handle long filenames)<br>
+5) unzip it<br>
+ <br>
+By the way, is there a way to keep the directory structure only for matching files ?<br>
+<br>
+Thanks again for your work and sorry for my poor english<ul></ul></li><li><b>crazy partition</b> by <i>bartek</i> 25.01.02<br>
+hello everybody,<br>
+<br>
+cast: 1 hdd with 2 partitions &amp; myself<br>
+director: w95osr2<br>
+<br>
+scene 1. something hapend to my hdd. w95 is unable to access the second
+partition. it says "unformatted. do you want to format it now?"<br>
+<br>
+scene 2. when I boot in pure dos mode I can access the second
+partition, copy, delete etc. I backup all datas but without long
+filenames of course. <br>
+<br>
+scene 3. I find LCOPY and use it. my blood pressure goes higher. LCOPY
+terminates before it actually starts with a message: "Abnormal[50]" (or
+similar; I'm not at home and I can't cite it accurately, sorry).<br>
+<br>
+[rethoric?] question: is it possible to use your tool at situation like
+that? I described my problem on computernet forum and one person said
+that vfat table was damaged, which didn't influence at pure dos mode.
+I'm quite happy right now because I lost only long filenames actually.
+but I would like to know if there is any way to recover them also
+before I simply reformat my drive. do you have any ideas? or maybe you
+can suggest another tool that could manage with that partition?<br>
+<br>
+best wishes,<br>
+bartek<ul><li><b>Re: crazy partition</b> by <i>Odi</i> 27.01.02<br>
+No, you can not use LFN Tools on a<br>
+corrupted file system. LFN Tools are designed to trust in the data the file system provides. They are NOT a recovery tool.<br>
+<br>
+Odi<ul><li><b>Re: crazy partition</b> by <i>(unknown)</i> 29.01.02<br>
+ok, thanks<br>
+<br>
+bartek<ul></ul></li></ul></li></ul></li><li><b>NTFS</b> by <i>Paul</i> 23.01.02<br>
+Is LCOPY compatible with NTFSDOS? I'm trying to find a utility that
+will permit me to copy onto/from NTFS partitions using a DOS boot disk,
+and I'm wondering if this is it...<ul><li><b>Re: NTFS</b> by <i>Odi</i> 24.01.02<br>
+&gt; Is LCOPY compatible with NTFSDOS?<br>
+<br>
+I haven't tried. But people say it's not.<ul></ul></li></ul></li><li><b>Space</b> by <i>Nick</i> 21.01.02<br>
+Very useful tools you have here! Keep up the good work.<br>
+<br>
+One question:<br>
+How can we specify a directory name or a file name that contains the "space" character?<br>
+<br>
+ex.<br>
+lcd c:\My Documents<br>
+lcopy c:\My Documents<br>
+etc.<br>
+<br>
+I tried using the 8.3 file name but it doesn't work.<ul><li><b>Re: Space</b> by <i>Nick</i> 21.01.02<br>
+Sorry, oops...<br>
+I found it in the readme.txt<br>
+ <br>
+It works ok.<br>
+Thanks again for this utility.<br>
+<br>
+<br>
+<br>
+&gt; Very useful tools you have here! Keep up the good work.<br>
+&gt; <br>
+&gt; One question:<br>
+&gt; How can we specify a directory name or a file name that contains the "space" character?<br>
+&gt; <br>
+&gt; ex.<br>
+&gt; lcd c:\My Documents<br>
+&gt; lcopy c:\My Documents<br>
+&gt; etc.<br>
+&gt; <br>
+&gt; I tried using the 8.3 file name but it doesn't work.<ul></ul></li></ul></li><li><b>Joliet und ISO9660 Dateisysteme nicht synchronisie</b> by <i>Ghostbuster</i> 16.01.02<br>
+Nun leider kommt bei mir mit ldir immer die Meldung : "Joliet und ISO9660 Dateisysteme nicht synchronisiert" <br>
+Hat jemand ne Ahnung ?<br>
+<br>
+Danke.<ul></ul></li><li><b>Anmerkung zu LDEL</b> by <i>Eckhard</i> 11.01.02<br>
+Die Version 1.71 von LDEL kann ja auch Dateien in Unterverzeichnissen
+löschen. Die leeren Verzeichnisse und versteckten Dateien aber nicht.
+Also muß noch ein Deltree hinterhergeschoben werden. Ich mache mit
+LCopy einmal wöchentlich ein Komplettbackup des Windows-Verzeichnisses.
+Das sind ca 650MB bei mir in genau 7768 Dateien. Wenn ich gleich nach
+dem Backup das gerade erzeugte Verzeichnis mit LDEL 1.71 lösche, löscht
+er mir genau 5609 Dateien. Es bleiben also 2159 Dateien übrig, die
+nicht gelöscht wurden(ca. 75MB). <br>
+Ich habe folgenden Aufruf verwendet:<br>
+LDEL e:\win_Back\* /s /a<br>
+<br>
+Auch wenn einige von den 2159 versteckte Dateien sind, bleiben doch
+jede Menge Dateien übrig, die nicht gelöscht wurden. Bei kleineren
+Verzeichnissen kommt das übrigens nicht vor. Ansonsten finde ich LDEL
+Klasse, da das normale DELTREE ca. 2 Stunden (trotz Smartdrv) zum
+löschen braucht, LDEL jedoch nur 7 min, also genauso schnell wie
+Windows ist, aber unter DOS.<br>
+<br>
+Mit freundlichen Grüßen <br>
+Eckhard<ul><li><b>scheinbar Systemverzeichnisse</b> by <i>Eckhard</i> 11.01.02<br>
+Es scheinen sich um Systemverzeichnisse zu handeln die nicht gelöscht
+wurden. Worin besteht die Logik, die von der Löschaktion auszunehmen?
+Schließlich kopiert LCopy auch Systemdateien/versteckte Dateien.<br>
+mfg<br>
+Eckhard<ul><li><b>Re: scheinbar Systemverzeichnisse</b> by <i>Odi</i> 14.01.02<br>
+&gt; Worin besteht die Logik, die von der Löschaktion auszunehmen?
+Schließlich kopiert LCopy auch Systemdateien/versteckte Dateien.<br>
+<br>
+<br>
+Das habe ich mich eigentlich auch schon gefragt, als ich es so
+implementiert habe. Ich hab' nämlich nachgeschaut was DEL genau alles
+löscht. Damit bringt man auch keine System-Objekte weg. :-( Aber du
+hast recht. Man sollte es eigentlich erlauben per Schalter. Wäre was
+für die nächste Version.<br>
+<br>
+Danke<br>
+<br>
+Odi<ul><li><b>Re: scheinbar Systemverzeichnisse</b> by <i>Eckhard</i> 20.01.02<br>
+Mit LDEL Systemdateien und versteckte Dateien löschen wäre gut. Zur
+Zeit löscht LDEL auch keine normale Dateien, die in einem
+Systemverzeichnis (z.B. Temporary Internet Files) oder in einem
+versteckten Verzeichnis (z.B. Sysbckup) sind. Und zu guter letzt könnte
+LDEL die leeren Verzeichnisse löschen. <br>
+Ich hoffe, das war nicht zuviel des Guten? Dann wäre endgültig alles weg.<br>
+mfg :-))<br>
+Eckhard<ul></ul></li></ul></li></ul></li></ul></li><li><b>32-bit dpmi dos boot from floppy</b> by <i>mike risch</i> 08.01.02<br>
+whoa - this site is excellent. it enables long filename support under  dpmi dos in win9x. thanks! - a contribution is in order.<br>
+<br>
+i have found a way to boot from a single floppy to a 32-bit dpmi dos
+environment under windows me. for details visit my site at
+http://www.winimize.com and check out XDos Files.<ul></ul></li><li><b>Dateisysteme nicht synchronisiert (49)</b> by <i>Frank</i> 05.01.02<br>
+Wenn ich meine auf CD gebrannten Dateien und Verzeichnisse unter DOS
+mit LDIR anzeigen will erhalte ich die Meldung: Joliet und ISO 9660
+Dateisysteme nicht synchronisiert! (49). Wie erhalte ich beim brennen
+synchrone Dateisysteme.<ul><li><b>Re: Dateisysteme nicht synchronisiert (49)</b> by <i>Odi</i> 07.01.02<br>
+&gt; Wie erhalte ich beim brennen synchrone Dateisysteme.<br>
+<br>
+Eigentlich würde ich lieber fragen: Was tust du, dass die Dateisysteme NICHT synchron sind?<br>
+<br>
+Alle CD's die mir bis jetzt untergekommen sind, haben synchrone ISO und Joliet Systeme.<br>
+<br>
+Mit welcher Software brennst du? Was für ein Format? Achte besonders auf eventuelle Sortierfunktionen!<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>DPW Unglaubwürdig???</b> by <i>Tim</i> 04.01.02<br>
+Was bedeutet daS???<ul><li><b>Re: DPB Unglaubwürdig???</b> by <i>Odi</i> 07.01.02<br>
+DPB = Disk Parameter Block<br>
+<br>
+Mit LCHK kannst du feststellen was der enthält. Ich wäre an einer kopie interessiert. Bitte mailen an lfn@odi.ch.<br>
+<br>
+Die LFN Tool prüfen die Werte im Bootsektor auf Plausibilität. Seltsame
+Werte deuten auf ein defektes oder nicht-unterstützes Dateisystem hin.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>lcopy</b> by <i>Lawrence Schipper</i> 03.01.02<br>
+Do you have any plans to add a switch similar to the /d:mm-dd-yyyy,
+found in "xcopy" of DOS? This would permit "lcopy" to perform file
+synchronization between two computers. <br>
+<br>
+<br>
+I do this at least several times a year using a removeable hard drive
+(Syjet) as both a medium of exchange between my desktop and laptop, and
+as an archive/backup technique. <br>
+<br>
+I also want to express my appreciation for the effort that you put into developing these very useful tools.<ul><li><b>Re: lcopy</b> by <i>Odi</i> 07.01.02<br>
+&gt; /d:mm-dd-yyyy<br>
+<br>
+I hadn't thought of that one actually. This doesn't sound too hard. I will look into it and I promise it for the next release.<br>
+<br>
+Coming soon<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>CDROM und LCOPY</b> by <i>(unknown)</i> 29.12.01<br>
+ich stelle fest, dass folgendes mit LCOPY 1.71 unkompatibel ist, wenn die Source eine CDROM ist.<br>
+(a) DOSKEY<br>
+es gibt eine Fehlermeldung DISK FULL und ________________<br>
+Abhilfe: DOSKEY nicht verwenden.<br>
+<br>
+(b) SMARTDRV G<br>
+es gibt eine Fehlermeldung CDROM "Read Error" (13) und ______________<br>
+Abhilfe: SMARTDRV G-<br>
+Bemerkung: G- macht LCOPY sowieso schneller. (G: ist mein CDROM). <br>
+<br>
+SMARTDRV und noch ein paar smarties sind nötig, um das Kopieren schnell
+zu machen. Die geannten Dinger funktionieren hingegen, wenn die Source
+auf Disk ist.<ul><li><b>Re: CDROM und LCOPY</b> by <i>Odi</i> 03.01.02<br>
+Danke für die Hinweise.<br>
+<br>
+Ich rate sowieso dringend davon ab, Smartdrive oder andere DOS
+Disk-Caches mit den LFN Tools zu verwenden. Es kann sich eigentlich nur
+in die Quere kommen, da die LFN Tools einen eigenen sehr schnellen und
+grossen Cache verwenden. Am besten Smartdrive ganz weglassen!<ul><li><b>Re: CDROM und LCOPY</b> by <i>(unknown)</i> 03.01.02<br>
+&gt; Danke für die Hinweise.<br>
+&gt; <br>
+&gt; Ich rate sowieso dringend davon ab, Smartdrive oder andere DOS <br>
+<br>
+Hallo "odi", der DOSKEY Fehler hat nichts mit smartdrv usw. zu tun. Der
+andere Fehler hat damit zu tun, aber smartdrv macht das Kopieren sehr
+viel schneller. Nach meinen timings drückt smartdrv die Kopierzeit, mit
+LCOPY, für 200MByte von 12 Minuten auf 5 Minuten. Es muss aber passend
+parametriert werden, damit es schneller geht. Insbesondere braucht es
+smartdrv [] G- und LCOPY [] /V . <br>
+Mit Gruss<ul><li><b>Re: CDROM und LCOPY</b> by <i>Odi</i> 07.01.02<br>
+&gt; Nach meinen timings drückt smartdrv die Kopierzeit, mit LCOPY, für 200MByte von 12 Minuten auf 5 Minuten. <br>
+<br>
+Schön wenn's funktioniert... Ich werde das jedenfalls schön bleiben lassen. Da hab ich zu viel Angst :-)<br>
+<br>
+Odi<ul></ul></li></ul></li></ul></li><li><b>Re: CDROM und LCOPY</b> by <i>(unknown)</i> 30.12.01<br>
+Selbstverständlich möchte ich noch anfügen, dass mir LCOPY sehr dient.
+Es funktioniert sehr gut. Der obige Bericht ist eher dazu, dass es
+meine CDROM auch dann liest, wenn ich sie brauche...<ul></ul></li></ul></li><li><b>Backup Operating System</b> by <i>dspear</i> 28.12.01<br>
+LCOPY allows a quick way to backup your Windows operating system.<br>
+<br>
+First, clean up all the junk from your drive, such as <br>
+  windows\temp\<br>
+  windows\Temporary Internet Files\<br>
+  the recycle bin<br>
+There are plenty of programs that do this well.<br>
+<br>
+Next, reduce your swap file to say 20MB.  Key...<br>
+  Control Panel\System\Performance\Virtual Memory\<br>
+Make the minimium and maximium 20MB<br>
+Pass all the warnings and allow the reset.<br>
+<br>
+Now make a folder, preferable on a different drive or partition from C:  say<br>
+   d:\winold\<br>
+<br>
+Copy all folders you want to back up into winold, ie<br>
+   c:\Program Files\   to   d:\winold\Program Files\<br>
+<br>
+You can also copy folders from other drives here now. After you restore
+windows, you'll restore them to those drives, so keep track of where
+they came from.<br>
+<br>
+Do NOT copy the c:\windows or c: root files there yet. However make a folder d:\winold\windows\<br>
+<br>
+For safety, put LCOPY.EXE on your boot disk as well as in d:\winold\<br>
+<br>
+Now, here we go. With the boot disk in drive a: reset and boot to real-mode DOS. Make sure you can access your CD just in case.<br>
+<br>
+Now key...<br>
+    a:\lcopy   c:\    d:\winold    /a<br>
+    a:\lcopy  c:\windows\*   d:\winold\windows    /a /s<br>
+<br>
+The first line copies all the c: root files (but no folders) to <br>
+  d:\winold\<br>
+<br>
+The second line copies the entire c:\windows\ folder and subfolders to  <br>
+  d:\winold\windows\<br>
+<br>
+Now you can reboot back to windows and make sure everything was copied correctly. If you wish, you can burn d:\winold\ to a CD.<br>
+<br>
+The best part of this is how easy it is to restore the operating system. Reboot to the boot disk and type (Gulp)<br>
+   a:\FORMAT c:<br>
+<br>
+Important: Once you do this, everything on your c: drive will be lost forever. You did triple check before doing it.<br>
+<br>
+Now restore your original operating system with<br>
+  a:\lcopy  j:\winold\*  c:  /a /s<br>
+<br>
+That's it. This one command does the entire restore! When you reboot, you'll be back to where you backed up.<ul></ul></li><li><b>Updates</b> by <i>Odi</i> 12.12.01<br>
+The website was just updated. I made a few enhancements under the hood:<br>
+<br>
+- Information about new releases is now displayed automatically.<br>
+- A simple bug tracking database was added.<br>
+- Design supports skins now. I should provide some skins soon. :-)<br>
+<br>
+Enjoy and use my nitty gritty guestbook too!<br>
+<br>
+Odi<ul></ul></li><li><b>Thank you Odi</b> by <i>Toodles</i> 12.12.01<br>
+Just wanted to say thanks for the cool software. I found out about it
+from the Techw0rm bootdisk, and they have been a lifesaver, LCOPY in
+particular. Thanks and keep up the good work.<br>
+<br>
+Toodles<ul></ul></li><li><b>Keine langen Dateinamen mehr auf meine CD-ROM</b> by <i>Hans Abletshauser</i> 12.12.01<br>
+Sehr geehrte Damen und Herren, <br>
+<br>
+ich besitze einen Notebook Toshiba Satellite 100CS. Über die
+Docking-Station habe ich ein externes CD-ROM-Laufwerk von Noveca
+angeschlossen (8x). Den Treiber V2.29 lade ich in der CONFIG.SYS
+(DEVICEHIGH=C:\RAPCDATA\RAPCD.SYS /D:RAPCD001 /L:GR /Q:1). Beim
+Hochfahren des Rechners wird das CD-ROM-Laufwerk auf vom Bios erkannt.
+Außerdem ist der Rechner über eine PCMCIA-Karte mit einem Novell-Server
+verbunden.<br>
+<br>
+Wenn ich nun im Explorer das CD-ROM-Laufwerk aufmache, habe ich keine
+langen Dateinamen, obwohl solche auf der Festplatte richtig angezeigt
+werden. Von diesem Problem ist nur das CD-ROM-Laufwerk betroffen, nicht
+die Festplatte! Damit kann ich natürlich auch keine Software von einer
+CD laden, weil bei der Installation lange Dateinamen erwartet und nicht
+gefunden werden.<br>
+<br>
+Der neueste Treiber V2.29 von
+http://www.martin-roettgen.de/html/computer/rap/ brachte leider auch
+keinen Erfolg. Auch das Tool CD_RAW.EXE der Uni Hamburg
+http://www.stud.uni-hamburg.de/users/2kerse/sw/ konnte die langen
+Dateinamen nicht hervorzaubern.<br>
+<br>
+Wer kann mit helfen? Wer weiß einen Rat für mich?<br>
+<br>
+Mit freundlichen Grüßen <br>
+Johannes Abletshauser<br>
+hansable@web.de<ul><li><b>Re: Keine langen Dateinamen mehr auf meine CD-ROM</b> by <i>(unknown)</i> 29.12.01<br>
+Hans<br>
+keine Ahnung, aber ist MSCDEX auch irgendwo geladen?<br>
+Und welches Windows läuft auf dem Notebook?<br>
+Und gibt es keinen Windows-Treiber, anstatt dem realmode DOS-Treiber?
+Ist überhaupt ein Teiber nötig, oder würde das CD-Laufwerk nicht von
+Windows automatisch erkannt? Ich habe schon einige CDROM und CD-R
+angeschlossen und Windows hat das immer automatisch erkannt, ohne dass
+ein besonderer zugehöriger Treiber vorhanden war.<ul></ul></li></ul></li><li><b>LCOPY</b> by <i>OT1</i> 11.12.01<br>
+I have a problem with the last version LCOPY 1.70.<br>
+I copied a file from CD to a disk (D:). Long file name was OK but MS-DOS name was strange.<br>
+e.g.<br>
+On CD is a file with name: Long file name.txt (MS DOS name LONGFI~2.txt.<br>
+After copying I expected MS-DOS name LONGFI~1.txt but I got LONGFI~6.txt???<br>
+If I use LCOPY V.1.61 I got LONGFI~1.txt.<ul><li><b>Re: LCOPY</b> by <i>Odi</i> 12.12.01<br>
+As with version 1.71 this problem has been fixed.<br>
+<br>
+Regards<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>New Version 1.70 out</b> by <i>Odi</i> 02.12.01<br>
+The latest version fixes some minor problems and adds a couple of handy features.<br>
+<br>
+Please download it.<br>
+<br>
+Odi<ul></ul></li><li><b>Falsche lange Dateinamen mit LCOPY</b> by <i>K. Salentin</i> 12.11.01<br>
+Folgendes Problem tritt auf:<br>
+<br>
+Ich habe mit LCOPY Version 1.61 ein (funktionierendes) Win95-System von<br>
+Platte I nach Platte II kopiert. Alles folgende bezieht sich auf Platte II.<br>
+Das System auf der neuen Platte ist vollständig und funktioniert. SCANDISK meldet keine Fehler.<br>
+<br>
+LCHK-Ausgabe (Platte 2):<br>
+<br>
+------------------------------------------------------------------------<br>
+Version 1.61<br>
+Copyright (C) 1999 Ortwin Glück<br>
+Dies ist freie Software unter der GPL. Siehe readme Datei für Details.<br>
+<br>
+DOS Version: FF-7.10<br>
+Laufwerk: 2<br>
+Bytes pro Sektor: 512<br>
+Sektoren pro Cluster: 64<br>
+Anzahl Clusters: 64001<br>
+Anzahl FATs: 2   Anzahl Root Einträge: 512<br>
+Media Descriptor: f8<br>
+Sektoren pro FAT: 250<br>
+Sektoren / reserviert: 4096512 / 1<br>
+Erster Datensektor: 533<br>
+Erster Root Sektor/Cluster: 501/0<br>
+Root Sektoren: 32<br>
+FAT-Einträge pro Sektor: 256<br>
+Bezeichnung: BIGDOS      menu  <br>
+Dateisystem: FAT16<br>
+FAT32 kompatibler Zugriffsmodus wird benützt<br>
+Laufwerkssperrung wird benützt<br>
+----------------------------------------------------------------------<br>
+<br>
+DIR in der DOS-Box von Win95 gibt für C:\ folgendes aus:<br>
+<br>
+----------------------------------------------------------------------<br>
+ Volume in drive C is BIGDOS     <br>
+ Volume Serial Number is 1651-0808<br>
+ Directory of C:\<br>
+<br>
+ARBEIT         &lt;DIR&gt;        09-10-98 10:50p ARBEIT<br>
+BACKUP         &lt;DIR&gt;        09-26-00  6:43p BACKUP<br>
+BAT            &lt;DIR&gt;        09-05-98  8:18p BAT<br>
+COMMPRO        &lt;DIR&gt;        01-17-99  2:30p COMMPRO<br>
+COREL          &lt;DIR&gt;        01-16-00  2:23p Corel<br>
+CUWRITER       &lt;DIR&gt;        11-11-98 10:22p CUWRITER<br>
+DNEU           &lt;DIR&gt;        09-06-98  3:34p DNEU<br>
+DOS            &lt;DIR&gt;        09-05-98  5:43p DOS<br>
+EIGENE~1       &lt;DIR&gt;        02-13-99  3:44p Eigene Dateien<br>
+EINBETT        &lt;DIR&gt;        09-11-98 10:44p EINBETT<br>
+HPLASER        &lt;DIR&gt;        01-04-01  8:37p HPLASER<br>
+INSTALL  W95   &lt;DIR&gt;        11-09-01 12:13a INSTALL.W95<br>
+IOMEGA         &lt;DIR&gt;        09-05-98  8:09p IOMEGA<br>
+LEXIKA         &lt;DIR&gt;        03-14-99 10:05a LEXIKA<br>
+LJ825          &lt;DIR&gt;        01-04-01  8:41p lj825<br>
+MULTIM~1       &lt;DIR&gt;        01-19-99  8:19p Multimedia Files<br>
+MYFILES        &lt;DIR&gt;        09-18-98  9:51p MyFiles<br>
+MYMUSI~1       &lt;DIR&gt;        05-03-01  9:00p My Music<br>
+NAVISW         &lt;DIR&gt;        12-06-98 11:18a NAVISW<br>
+PR             &lt;DIR&gt;        09-10-98 10:26p PR<br>
+PROG           &lt;DIR&gt;        09-17-98  7:08p PROG<br>
+PROGRA~1       &lt;DIR&gt;        09-16-98 10:34p Program Files<br>
+PROGRA~2       &lt;DIR&gt;        10-01-98  9:13p Programme<br>
+STEPUP         &lt;DIR&gt;        09-16-98  8:50p STEPUP<br>
+SYSTEM         &lt;DIR&gt;        02-11-01  8:09p SYSTEM<br>
+TEAC           &lt;DIR&gt;        09-08-98  4:41p TEAC<br>
+TESTDIR        &lt;DIR&gt;        11-10-01  9:05p TESTDIR<br>
+TMP            &lt;DIR&gt;        10-19-98  6:34p TMP<br>
+UTIL           &lt;DIR&gt;        09-15-98  9:24p UTIL<br>
+W95            &lt;DIR&gt;        09-16-98 10:34p W95<br>
+WP51           &lt;DIR&gt;        09-05-98  8:21p WP51<br>
+XTG            &lt;DIR&gt;        09-05-98  8:16p XTG<br>
+AUTOEXEC BAK           443  01-16-00  2:15p AUTOEXEC.BAK<br>
+AUTOEXEC BAT           456  11-07-01  9:10a AutoExec.Bat<br>
+AUTOEXEC BA~           443  01-16-00  2:15p AUTOEXEC.BA~<br>
+AUTOEXEC DOS           353  09-08-98  4:48p AUTOEXEC.DOS<br>
+COMMAND  COM        93,812  08-24-96 10:11a COMMAND.COM<br>
+COMMAND  DOS        57,377  05-31-94  6:22a COMMAND.DOS<br>
+CONFIG   BAK           479  09-17-99  7:56p CONFIG.BAK<br>
+CONFIG   DOS           483  04-27-00  9:49p CONFIG.DOS<br>
+CONFIG   SYS           450  11-07-01  9:10a CONFIG.SYS<br>
+MSDOS    BAK         1,634  09-18-98  8:55p MSDOS.BAK<br>
+MSDOS    SYS         1,646  11-07-01  9:36a MSDOS.SYs<br>
+MSDOS    SY_         1,646  11-07-01  9:00a MSDOS.SY_<br>
+MSDOS    SY~         1,646  04-14-99  8:47a MSDOS.SY~<br>
+NETLOG   TXT           547  09-16-98 10:34p NETLOG.TXT<br>
+PDOXUSRS NET        13,030  01-17-00  7:52p PDOXUSRS.NET<br>
+SCANDISK LOG           955  10-26-01  9:38a SCANDISK.LOG<br>
+SMART                   39  09-17-99  7:55p SMART<br>
+SUMMARY  DAT             0  04-09-00  9:19p summary.dat<br>
+        18 file(s)        175,439 bytes<br>
+        32 dir(s)     303,235,072 bytes free<br>
+---------------------------------------------------------------<br>
+<br>
+Kurze und lange Dateinamen stimmen hiernach überein. SCANDISK meldet
+für das Laufwerk keine Fehler. Soweit ist noch alles beruhigend.<br>
+<br>
+ABER:<br>
+=====<br>
+<br>
+LDIR Version 1.61 unter reinem DOS zeigt nun an:<br>
+<br>
+--------------------------------------------------------------------------<br>
+Datenträger in Laufwerk C: mit Namen BIGDOS     <br>
+ Verzeichnis C:\<br>
+<br>
+BIGDOS       &lt;LABEL&gt;     11.08.2001  00:55  BIGDOS<br>
+MSDOS   .SY~       1646  04.14.1999  08:47  MSDOS.SY~<br>
+COMMAND .COM      93812  08.24.1996  10:11  COMMAND.COM<br>
+TESTDIR .    &lt;DIR&gt;       11.10.2001  21:05  TESTDIR<br>
+DOS     .    &lt;DIR&gt;       09.05.1998  17:43  IO.DOS<br>
+STEPUP  .    &lt;DIR&gt;       09.16.1998  20:50  MSDOS.DOS<br>
+SYSTEM  .    &lt;DIR&gt;       02.11.2001  20:09  COMMAND.DOS<br>
+DNEU    .    &lt;DIR&gt;       09.06.1998  15:34  BOOTLOG.TXT<br>
+IOMEGA  .    &lt;DIR&gt;       09.05.1998  20:09  SUHDLOG.DAT<br>
+XTG     .    &lt;DIR&gt;       09.05.1998  20:16  SCANDISK.LOG<br>
+BAT     .    &lt;DIR&gt;       09.05.1998  20:18  AUTOEXEC.BA~<br>
+TEAC    .    &lt;DIR&gt;       09.08.1998  16:41  PDOXUSRS.NET<br>
+WP51    .    &lt;DIR&gt;       09.05.1998  20:21  CONFIG.DOS<br>
+PR      .    &lt;DIR&gt;       09.10.1998  22:26  AUTOEXEC.DOS<br>
+ARBEIT  .    &lt;DIR&gt;       09.10.1998  22:50  CONFIG.SYS<br>
+EINBETT .    &lt;DIR&gt;       09.11.1998  22:44  MSDOS.---<br>
+UTIL    .    &lt;DIR&gt;       09.15.1998  21:24  CONFIG.BAK<br>
+W95     .    &lt;DIR&gt;       09.16.1998  22:34  W95<br>
+BACKUP  .    &lt;DIR&gt;       09.26.2000  18:43  MSDOS.BAK<br>
+CUWRITER.    &lt;DIR&gt;       11.11.1998  22:22  NETLOG.TXT<br>
+PROG    .    &lt;DIR&gt;       09.17.1998  19:08  BOOTLOG.PRV<br>
+COMMPRO .    &lt;DIR&gt;       01.17.1999  14:30  SYSTEM.1ST<br>
+NAVISW  .    &lt;DIR&gt;       12.06.1998  11:18  logo.sys<br>
+TMP     .    &lt;DIR&gt;       10.19.1998  18:34  ffastun.ffl<br>
+LEXIKA  .    &lt;DIR&gt;       03.14.1999  10:05  AUTOEXEC.BAK<br>
+HPLASER .    &lt;DIR&gt;       01.04.2001  20:37  DETLOG.OLD<br>
+MSDOS   .SY_       1646  11.07.2001  09:00  MSDOS.SY_<br>
+CONFIG  .SYS        450  11.07.2001  09:10  os ztwdt. fs<br>
+COMMAND .DOS      57377  05.31.1994  06:22  COMMAND.DOS<br>
+AUTOEXEC.BAT        456  11.07.2001  09:10  AutoExec.Bat<br>
+SCANDISK.LOG        955  10.26.2001  09:38  SCANDISK.LOG<br>
+AUTOEXEC.BA~        443  01.16.2000  14:15  AUTOEXEC.BA~<br>
+PDOXUSRS.NET      13030  01.17.2000  19:52  PDOXUSRS.NET<br>
+CONFIG  .DOS        483  04.27.2000  21:49  CONFIG.DOS<br>
+AUTOEXEC.DOS        353  09.08.1998  16:48  AUTOEXEC.DOS<br>
+CONFIG  .BAK        479  09.17.1999  19:56  CONFIG.BAK<br>
+MSDOS   .BAK       1634  09.18.1998  20:55  MSDOS.BAK<br>
+NETLOG  .TXT        547  09.16.1998  22:34  NETLOG.TXT<br>
+MSDOS   .SYS       1646  11.07.2001  09:36  MSDOS.SYs<br>
+AUTOEXEC.BAK        443  01.16.2000  14:15  AUTOEXEC.BAK<br>
+SMART   .            39  09.17.1999  19:55  SMART<br>
+SUMMARY .DAT          0  04.09.2000  21:19  summary.dat<br>
+INSTALL .W95 &lt;DIR&gt;       11.09.2001  00:13  INSTALL.W95<br>
+PROGRA~1.    &lt;DIR&gt;       09.16.1998  22:34  Program Files<br>
+MYFILES .    &lt;DIR&gt;       09.18.1998  21:51  MyFiles<br>
+PROGRA~2.    &lt;DIR&gt;       10.01.1998  21:13  Programme<br>
+MULTIM~1.    &lt;DIR&gt;       01.19.1999  20:19  Multimedia Files<br>
+EIGENE~1.    &lt;DIR&gt;       02.13.1999  15:44  Eigene Dateien<br>
+COREL   .    &lt;DIR&gt;       01.16.2000  14:23  Corel<br>
+LJ825   .    &lt;DIR&gt;       01.04.2001  20:41  lj825<br>
+MYMUSI~1.    &lt;DIR&gt;       05.03.2001  21:00  My Music<br>
+        18 Dateien        175439 Bytes<br>
+        32 Verzeichnisse<br>
+--------------------------------------------------------------------<br>
+<br>
+Man beachte, daß den Verzeichnissen im oberen Teil falsche lange Dateinamen zugeordnet werden. Z.B. <br>
+TEAC    .    &lt;DIR&gt;       09.08.1998  16:41  PDOXUSRS.NET<br>
+<br>
+Versuche ich nun erneut, eines der Verzeichnisse, etwa \TEAC, mit LCOPY
+zu kopieren, erhalte ich die Meldung "Quellpfad nicht gefunden!".<br>
+<br>
+Was ist hier passiert?<br>
+<br>
+Noch ein Hinweis: nach langem Probieren habe ich folgendes Workaround
+gefunden: Wenn ich das fragliche (mit LCOPY nicht kopierbare)
+Verzeichnis unter Win95 mit einem langen Dateinamen (jenseits der
+8.3-Konvention) umbenenne und ihm danach wieder seinen alten Namen
+gebe, z.B. <br>
+"TEAC" -&gt; "TEACjkhsgakjs dkjsdkjhsd kjdbjk  kbd" -&gt; "TEAC",<br>
+dann wird es von LDIR richtig angezeigt und läßt sich auch von LCOPY wieder kopieren.<ul><li><b>Re: Falsche lange Dateinamen mit LCOPY</b> by <i>Odi</i> 02.12.01<br>
+The problems have been fixed with the latest version 1.70<ul></ul></li><li><b>Alle sind gut, aber verstehe ich nicht</b> by <i>multilingual</i> 02.12.01<br>
+ein bischen english ist gut fur alle!<br>
+danke for your attention.<br>
+Viedersehen<ul></ul></li></ul></li><li><b>Lcopy</b> by <i>Hello</i> 08.11.01<br>
+I used lcopy under DOS enviornment to copy my whole c drive to my d
+drive. the command is "lcopy c:\*.* d:\ /y /r /a /s", the LCOPY copied
+with 21140 files. I tried to boot up the windows from my d drive. It
+works properly. <br>
+<br>
+I checked the total file on the orginal hard disk is 21181 files and
+found 41 files are missing. the 41 missing files are in different
+directory and without the extension name. Your help appreciated!<ul><li><b>Re: Lcopy</b> by <i>Odi</i> 08.11.01<br>
+USE SINGLE ASTERIX!<br>
+<br>
+If you had read the manual you would not have needed to ask.<br>
+<br>
+wrong: lcopy c:\*.* d:\ /y /r /a /s<br>
+<br>
+right: lcopy c:\* d:\ /y /r /a /s<br>
+<br>
+*grrrr*<br>
+<br>
+Odi<ul><li><b>Re: Lcopy</b> by <i>hello</i> 09.11.01<br>
+Thanks<br>
+<br>
+&gt; USE SINGLE ASTERIX!<br>
+&gt; <br>
+&gt; If you had read the manual you would not have needed to ask.<br>
+&gt; <br>
+&gt; wrong: lcopy c:\*.* d:\ /y /r /a /s<br>
+&gt; <br>
+&gt; right: lcopy c:\* d:\ /y /r /a /s<br>
+&gt; <br>
+&gt; *grrrr*<br>
+&gt; <br>
+&gt; Odi<ul></ul></li></ul></li></ul></li><li><b>lcopy says: not enough memory</b> by <i>Hans-Jürgen</i> 27.10.01<br>
+Lcopy ist really a great tool. But because of this desease<br>
+called MS-DOS memory doesn't suffice for copying<br>
+really big amounts of data. Dear Odi, perhaps memory <br>
+would suffice, if you would take out the data accumulating check-routines out of your  software? But I don't know, <br>
+I'm not a programmer.<ul><li><b>Re: lcopy says: not enough memory</b> by <i>Odi</i> 31.10.01<br>
+&gt; data accumulating check-routines <br>
+<br>
+I did not even know that I put them in.... what is it? :-)<br>
+<br>
+/v disables XMS<br>
+<br>
+Odi<ul></ul></li><li><b>Re: lcopy says: not enough memory</b> by <i>Hans-Jürgen</i> 29.10.01<br>
+My task was to get running LCOPY from DOS-boot-<br>
+floppy. I solved the memory-problem as follows:<br>
+<br>
+config.sys:<br>
+[menu]<br>
+menuitem=NOCD, MS-DOS 7.1 without CD-ROM-Driver<br>
+(max. memory f. LCOPY)<br>
+menuitem=CD, MS-DOS 7.1 with CD-ROM-Driver <br>
+menudefault=NOCD,30<br>
+menucolor=7,0<br>
+<br>
+[NOCD]<br>
+device=himem.sys /testmem:off<br>
+device=emm386.exe RAM<br>
+devicehigh=display.sys con=(ega,,1) <br>
+<br>
+[CD]<br>
+device=himem.sys /testmem:off<br>
+device=emm386.exe RAM<br>
+devicehigh=display.sys con=(ega,,1) <br>
+devicehigh=oakcdrom.sys /D:CD000<br>
+<br>
+[COMMON]<br>
+country=049,850,country.sys<br>
+files=60<br>
+buffers=20<br>
+dos=high,umb<br>
+stacks=9,256<br>
+lastdrive=z<br>
+<br>
+<br>
+autoexec.bat:<br>
+path=a:\;c:\WINDOWS\;c:\WINDOWS\COMMAND<br>
+mode.com con cp prepare=((850) ega.cpi)<br>
+mode.com con cp select=850<br>
+LH keyb.com gr,,keyboard.sys<br>
+IF "%config%"=="NOCD" GOTO QUIT<br>
+LH MSCDEX.EXE /D:CD000<br>
+:QUIT<br>
+<br>
+This way LCOPY copied ca. 7GB data between two<br>
+harddrives.<br>
+<br>
+Hans-Jürgen Bittner<ul></ul></li></ul></li><li><b>Error Message: Disk Full</b> by <i>Thorsten</i> 21.10.01<br>
+Hi,<br>
+i´m getting the error<br>
+message "disk full: can´t copy file ..."<br>
+although there is enough space<br>
+on the destination drive.<br>
+System: Win98SE<br>
+<br>
+Thanks in advance.<br>
+Thorsten<ul><li><b>Re: Error Message: Disk Full</b> by <i>(unknown)</i> 29.12.01<br>
+&gt; Hi,<br>
+&gt; i´m getting the error<br>
+&gt; message "disk full: can´t copy file ..."<br>
+&gt; although there is enough space<br>
+&gt; on the destination drive.<br>
+&gt; System: Win98SE<br>
+&gt; <br>
+&gt; Thanks in advance.<br>
+&gt; Thorsten<br>
+<br>
+Ich bekomme die gleiche Meldung, wenn ich von CDROM auf Disk kopiere, und DOSKEY geladen habe.<br>
+Peter<ul></ul></li></ul></li><li><b>Great Tools</b> by <i>Happy</i> 17.10.01<br>
+Shit, I DO NOT HAVE ANY PROBLEM TO POST HERE!!!<br>
+LFN Tools just work excellent, I was just able to clone my full-blown
+Win98 installation from plain DOS. Took me 5 minutes. New partition
+booted flawlessly.<br>
+<br>
+Great stuff!<br>
+<br>
+Tell me if you want to have my clone script.<br>
+<br>
+web_smurf@hotmail.com<ul><li><b>Re: Great Tools</b> by <i>Jeff Wells</i> 23.02.02<br>
+Yes Please post your clone script, I would like to do the <br>
+same with my Win98.<br>
+Thanks<br>
+<br>
+&gt; LFN Tools just work excellent, I was just able to clone my
+full-blown Win98 installation from plain DOS. Took me 5 minutes. New
+partition booted flawlessly.<br>
+&gt; <br>
+&gt; Great stuff!<br>
+&gt; <br>
+&gt; Tell me if you want to have my clone script.<br>
+&gt; <br>
+&gt; web_smurf@hotmail.com<ul></ul></li></ul></li><li><b>LFN's on a mapped drive</b> by <i>brandon</i> 14.10.01<br>
+from what I gather these toosl work by going around the o/s and
+accesing the hardware directly. IS there a way to use LFN's on a mapped
+network drive? (using msdos lanman)<ul><li><b>Re: LFN's on a mapped drive</b> by <i>Odi</i> 17.10.01<br>
+no<ul></ul></li></ul></li><li><b>Is there a 16 bit version?</b> by <i>Chris</i> 10.10.01<br>
+I tried using ldir in MSDOS 6.22 running on an 80186 emulator running
+on Windows CE and it hung the emulation. I can run PC Magazine's lfndir
+but it fails when trying to read CE's directories reporting that FAT32
+is not supported.<ul><li><b>Re: Is there a 16 bit version?</b> by <i>Odi</i> 10.10.01<br>
+LFN tools actually ARE 16-bit code.<br>
+Running it on an emulator seems quite of queer... The code was
+optimized for 80286 though. So it won't run on your 186 emu. But if you
+like I can recompile you a version that runs on 80186 too. Just send
+email.<ul><li><b>Re: Is there a 16 bit version?</b> by <i>(unknown)</i> 10.12.01<br>
+I'm also interested in an 16bit<br>
+version of LFNtools.<br>
+<br>
+I'm an HP 200LX Palmtop user<br>
+an 80186 CGA MSDOS5 in ROM 2Mb<br>
+ramdisk PCcard slot) and i'm<br>
+looking for manage LFNs at<br>
+64Mb CompactFlash card (FAT16)<br>
+that I use as hardisk and transport<br>
+to/from a WindowsCE machine for<br>
+backup purposes.<br>
+<br>
+I'm aware of differences between<br>
+286 and 186 are only the lack of<br>
+protected mode. Most (if not all)<br>
+other opcodes are compatible.<br>
+<br>
+Also be aware of: Most emulators for<br>
+WindowsCE machines are 8086 and<br>
+not 80186 emulation (no POPA or PUSHA<br>
+opcodes, often used especialy at any ISR).<br>
+<br>
+I have just downloaded your<br>
+LFNtools but no time to test it at<br>
+palmtop. When I test it, I'll post<br>
+results.<br>
+<br>
+Regards<br>
+J.Belmonte (jbmbhs@eresmas.com)<ul></ul></li></ul></li></ul></li><li><b>Copy LFN hidden files?</b> by <i>Theddy</i> 08.10.01<br>
+I want copy my whole c-drive under DOS whith Win98 and programs installed, to an new harddisk.<br>
+Normal xcopy does not copy hidden and system files.<br>
+Does LFN that?<ul><li><b>Re: Copy LFN hidden files?</b> by <i>Odi</i> 10.10.01<br>
+XCOPY does as well as LCOPY.<br>
+You should consider to look at the command line options.<br>
+XCOPY /H<br>
+or<br>
+LCOPY /A<ul></ul></li></ul></li><li><b>LCOPY enq</b> by <i>Gary Moore</i> 04.10.01<br>
+Am trying to copy contents of a whole CD onto hard disk whilst under
+DOS6.22 to circumvent a Windows boot problem. Both D: and C: obviously
+feature lots of LFN stuff. Tried the following syntax:<br>
+<br>
+c:&gt;  LCOPY D:\* C:\STUFF\   /S<br>
+<br>
+Keep getting "Ambiguous DPB!(50)"<br>
+<br>
+Have tried lots of combinations of command line stuff inside and outside quotes (yes, have RTFM), always same reply. <br>
+<br>
+Help...?<ul><li><b>Re: LCOPY enq</b> by <i>Odi</i> 06.10.01<br>
+&gt; Keep getting "Ambiguous DPB!(50)"<br>
+<br>
+Your Filesystem is probably bad. LCOPY checks the Disk Parameter Block (DPB) aka the boot sector for stupid values.<br>
+<br>
+You get this error if one of the following conditions is true:<br>
+- Bytes per Sector &lt; 256 bytes<br>
+- Bytes per Sector &gt; 64 KB<br>
+- Bytes per Sector is not a multiple of 256<br>
+- Sectors per Cluster &gt; 1024 or = 0<br>
+- Number of FATs &gt; 8<br>
+<br>
+Please send output from LCHK on both drives to: lfn@odi.ch<br>
+<br>
+HTH<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>CD-ROM Copy woes...</b> by <i>CD-MAN</i> 14.09.01<br>
+I am trying to find a utility that will allow me to copy lfn files from
+a cdr to my local c-drive. "lfn tools (lcopy)" seems to work great,
+until I try to read the copied directory on the C-drive (with LDir).
+All of the long file names look like long lines of underscore
+characters followed by a dot and more underscores for the extension
+(the dos side of the directory looks ok). If I then boot up to Win9x
+and view the files they appear the same "_______.___" or something like
+that. HELP!<ul><li><b>Re: CD-ROM Copy woes...</b> by <i>Odi</i> 24.09.01<br>
+It seems that the Unicode Translation did not work properly. Try and
+force ISO9660 (/i). Is it a ...erm... Chineese CD or what? Did you burn
+it yourself? I assume that it uses a strange Unicode page.<br>
+<br>
+Odi<ul><li><b>Re: CD-ROM Copy woes...</b> by <i>CD-MAN</i> 28.09.01<br>
+I will try the /i option, I hadn't tried it before.<br>
+<br>
+It is a cd-r created by a commercial cd-burner package, if you would like to know which one, I would be glad to check for you.<br>
+<br>
+Thanks!<br>
+<br>
+CD-MAN<ul></ul></li></ul></li></ul></li><li><b>Newbie Alert</b> by <i>John</i> 06.09.01<br>
+OK I'm more then a newbie and feel like a duck out of water when I'm in DOS, so please bear with me.<br>
+<br>
+I want to boot from a Windows98SE boot disk into a dos prompt I will
+then want to copy my documents, Favs etc (on c partition) etc over to a
+second physical HDD (j partition) so my question is do I just install
+the LFN tools into it's own directory (c:\lfn) or do they get shoved
+into windows folder somewhere? Also how do I copy all of my
+document/Favs to the j drive? I have tried the following 1: changing to
+c:\lfn and then typing "lcopy c:\ mydocu~1 *.* j:\ but this did not
+work, I am running my main HDD on IDE3 (highpoint controller) and my
+back up drive is on IDE4 the mainboard is a KT7A-Raid, any help or
+suggestions would be helpful<ul><li><b>Re: Newbie Alert</b> by <i>Odi</i> 24.09.01<br>
+&gt; the LFN tools into it's own directory (c:\lfn) or do they get shoved into &gt; windows folder somewhere?<br>
+<br>
+Doesn't matter. Put them where you like them to be.<br>
+<br>
+&gt; I have tried typing "lcopy c:\ mydocu~1 *.* j:\ but this did not work<br>
+<br>
+Arrgh... RTFM !!!<ul></ul></li></ul></li><li><b>Lcopy</b> by <i>phil olsen</i> 22.08.01<br>
+Here is what I am trying to do:<br>
+<br>
+I used xcopy32 under windows to copy my whole c drive to my d drive.
+Unfortunately I now need to do the reverse but I am stuck in a DOS
+enviornment. LCOPY seems to be the tool but I'm not sure what the
+swithc combo would be to get d: copied EXACTLY to c: Anyone know the
+right command?<br>
+<br>
+I was gonna try lcopy d:\*.* c:\ /s /a /r but this is A LOT of stuff
+and I want to be sure everything ends up in the right directory. Your
+help appreciated!<ul><li><b>Re: Lcopy</b> by <i>Odi</i> 30.09.01<br>
+lcopy d:\* c:\ /s /a /r<br>
+<br>
+Mind the SINGLE asterix !<br>
+<br>
+And: The mapping between DOS-Filenames and long filenames ist not guaranteed to be the same afterwards!<br>
+<br>
+MICHAE~1.MP3    -&gt;   Michael Jackson - Bad.mp3<br>
+MICHAE~2.MP3    -&gt;   Michael Jackson - Dangerous.mp3<br>
+<br>
+could be reversed so that:<br>
+<br>
+MICHAE~2.MP3    -&gt;   Michael Jackson - Bad.mp3<br>
+MICHAE~1.MP3    -&gt;   Michael Jackson - Dangerous.mp3<br>
+<br>
+This will be fixed in future versions.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Direct ZIP creation.</b> by <i>Mike Duffy</i> 14.08.01<br>
+Is there an easy way to use the LFN tools in conjunction with PKZIP or
+Infozip in order to create a .zip file that can be used later from
+Win32? (i.e. create and / or restore a backup of C:\ from "boot to dos"
+or diskette bootup.)<ul><li><b>Re: Direct ZIP creation.</b> by <i>J.Tigchelaar</i> 02.09.01<br>
+Try LDZip. http://ldzip.freeservers.com<br>
+<br>
+J.Tigchelaar<br>
+Author of LDZip<br>
+<br>
+&gt;Is there an easy way to use the LFN tools in conjunction with PKZIP
+or Infozip in order to create a .zip file that can be used later from
+Win32? (i.e. create and / or restore a backup of C:\ from "boot to dos"
+or diskette bootup.)<ul></ul></li></ul></li><li><b>OT - Mailody</b> by <i>duke</i> 13.08.01<br>
+Sorry for OT post.<br>
+Need to talk to you about Mailody.<br>
+Can you reply w/ email address? TIA...<ul><li><b>Re: OT - Mailody</b> by <i>Odi</i> 17.08.01<br>
+write to odi at odi DOT ch<ul></ul></li></ul></li><li><b>LCOPY copies directories, not files</b> by <i>Jonathan</i> 07.08.01<br>
+First of all Thank You Odi for you excellent coding of this essential
+utility. Now bear with me as I'm a DOS newbie (ver 7.10). I've been
+attempting to backup "MY DOCUMENTS"<br>
+directory using this syntax: LCOPY<br>
+ "C:\MY DOCUMENTS" "E:\MYDOCBCK" /S<br>
+I assumed that I could use the same syntax as XCOPY. The result is a
+mirrored copy of the C:\ root directory structure in the E:\MYDOCBCK
+directory with no files in any of the directories. So tell me what I'm
+doing wrong so I can feel foolish, yet wiser.<ul><li><b>Re: LCOPY copies directories, not files</b> by <i>Odi</i> 08.08.01<br>
+LCOPY  "C:\MY DOCUMENTS\*" "E:\MYDOCBCK" /S<br>
+<br>
+Mind the asterix (*) at the end - it selects actual files.<br>
+Please read the manual carefully.<ul></ul></li></ul></li><li><b>Ambigous DPB!(50)</b> by <i>Patrick</i> 06.08.01<br>
+Hi,<br>
+<br>
+i would like to get some files from a remote computer to mine, using netbeui.<br>
+So, i create a virtual drive (with net use). And then, i copy the wanted files with this command:<br>
+c:\&gt;LCOPY Z:\* D:\*<br>
+But it doesn't work, i have the following message:<br>
+AMBIGOUS DPB!(50)<br>
+<br>
+Do you know what it means? How to sort out the situation?<br>
+<br>
+Cheers, Patrick.<br>
+<br>
+pjedor@hotmail.com<ul><li><b>Re: Ambigous DPB!(50)</b> by <i>Odi</i> 08.08.01<br>
+LFN Tools do not work with network drives.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>LFN reports more files and dirs than norm?</b> by <i>Brian</i> 03.08.01<br>
+I cataloged a drive with the standard dir /a /s &gt; filename and again
+with ldir. I get reports of two different totals for number of files
+and directories, what is LDIR counting that dir doesn't? I need to be
+accurate because I am doing forensic processing.<br>
+<br>
+Thanks.<ul><li><b>Re: LFN reports more files and dirs than norm?</b> by <i>Odi</i> 08.08.01<br>
+Which DOS Version do you have?<ul><li><b>Re: LFN reports more files and dirs than norm?</b> by <i>Brian</i> 10.08.01<br>
+&gt;Which DOS Version do you have?<br>
+<br>
+7.10<ul></ul></li></ul></li></ul></li><li><b>LCD not work with networked drives!</b> by <i>john</i> 28.07.01<br>
+I'm running Win98SE. I have a small network with mapped drives to other
+Win98SE machines. LCD did not work when attempting to switch from a
+local disk to a mapped drive.<ul><li><b>Re: LCD not work with networked drives!</b> by <i>Odi</i> 08.08.01<br>
+That is correct.<br>
+<br>
+&gt;From the latest  FAQ:<br>
+Q: Can LFN Tools access a network drive?<br>
+A: No. LFN Tools need physical access to individual sectors of the drive. This is not <br>
+supported by DOS network drives.<br>
+<br>
+Regards<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Danke</b> by <i>Peter</i> 25.07.01<br>
+Hi Odi,<br>
+<br>
+ich habe gerade ganz einfach mit lcopy die Installation meiner alten
+Festplatte auf die neue überspielen können (der "übliche" Weg über
+xcopy klappte aus unerfindlichen Gründen nicht).<br>
+<br>
+Auch sonst nutze ich deine Tools immer wieder mal wenn ich im reinen DOS-Modus was machen will/muss.<br>
+<br>
+Vielen Dank für *die* Tools auf die wir schon lange gewartet haben.
+DOSLFNBK ist dagegen umständlicher in der Handhabung (das hab' ich
+vorher für Backups unter DOS genutzt).<br>
+<br>
+Oh, eine Frage fällt mir gerade ein. Kennt jemand eine Möglichkeit von
+DOS aus eine CD zu brennen (ähnlich wie mit UDF), so daß man LCOPY für
+Backups auf CD nutzen kann?<br>
+<br>
+Nicht zuletzt ein dickes DANKE an Odi!!<br>
+<br>
+Viele Grüße<br>
+Peter<ul></ul></li><li><b>not enough cache memory</b> by <i>meinereiner</i> 13.07.01<br>
+Congratulation to your good work! These tools are very useful. But
+sometimes i became the errormessage "not enough cache memory (4)" and
+the LFN tools worked not any longer. What does it mean?<ul><li><b>Re: not enough cache memory</b> by <i>W0rm</i> 23.07.01<br>
+This means that the system you're using doesn't have enough EMS/XMS
+memory in order to complete it's copying...I'm sure that if you shut
+off the EMS/XMS cache (one of the options) that you'll no longer get
+this error.<br>
+<br>
+If you have no XMS manager installed (himem.sys) - then install one.<br>
+ - W0rm<br>
+ - http://dos.li5.org<ul><li><b>Re: not enough cache memory</b> by <i>meinereiner</i> 25.07.01<br>
+Thanks for the answer!<br>
+<br>
+The advice "...install XMS manager (himem.sys)" was helpful and now the error message is not longer present.<br>
+<br>
+meinereiner<ul></ul></li></ul></li></ul></li><li><b>LFNFTP</b> by <i>W0rm</i> 27.06.01<br>
+hrmmm, I was thinking - I've never really seen any good FTP client for
+DOS...they're mostly command line interfaces (if at all)...heck, it's
+hard just to find one that's any good at all.<br>
+<br>
+I figure you could port one from *nix and add LFN support (since one
+would need it, sending stuff like index.htm to a *nix server, not
+INDEX.HTM) - maybe even add a GUI someday :)<br>
+ - W0rm<ul></ul></li><li><b>Long File Names in Dos</b> by <i>Vishal Bansal</i> 26.06.01<br>
+I am making a Windows Explorer like program for Dos. I don't know how
+to work with Long File names in Dos. I am using Turbo C v3.0. Also tell
+me the links where i can find useful source code in C and where i can
+ask my programming related questions?<br>
+<br>
+My email address is: vishalbansal2000@rediffmail.com<ul></ul></li><li><b>Cannot copy from CD-rom (Err13)</b> by <i>Tibi</i> 24.06.01<br>
+I do not know why i'm getting this, in a 5-th level subdir, when i try to restore my Program files Directory to c:\ from CROM E:<br>
+If I run lcopy "E:\Program Files\*"<br>
+ "C:\Program Files" /S /A /R /Y<br>
+then i run into (13) error after a couple of minutes.<br>
+But if I try to copy only the subdir: Lcopy "E:\Program Files\Common Files\*"<br>
+ "C:\Program Files\Common Files" /S /A /R /Y, bang, no more errors!!<br>
+Please, tell me what is the problem?<br>
+I use hymem and smartdrv to speed up things.<br>
+Thanks!!<ul><li><b>Re: Cannot copy from CD-rom (Err13)</b> by <i>Odi</i> 30.09.01<br>
+LFN Tools seem to have timing problems with certain CD-ROMs sometimes.<br>
+<br>
+Moreover I do NOT recommend using SmartDrive along with LFN Tools!<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Cannot copy from CD-rom (Err13)</b> by <i>Tibi</i> 24.06.01<br>
+I do not know why i'm getting this, in a 5-th level subdir, when i try to restore my Program files Directory to c:\ from CROM E:<br>
+If I run lcopy "E:\Program Files\*"<br>
+ "C:\Program Files" /S /A /R /Y<br>
+then i run into (13) error after a couple of minutes.<br>
+But if I try to copy only the subdir: Lcopy "E:\Program Files\Common Files\*"<br>
+ "C:\Program Files\Common Files" /S /A /R /Y, bang, no more errors!!<br>
+Please, tell me what is the problem?<br>
+I use hymem and smartdrv to speed up things.<br>
+Thanks!!<ul></ul></li><li><b>scandisk error</b> by <i>Goose</i> 09.06.01<br>
+nach dem kopieren von c nach d, kann ich unter windows me nicht mehr
+auf d zugreifen. beim nächsten systemstart stürzt auch scandisk ab. die
+diskid datei von c habe ich nicht auf d kopiert.<br>
+<br>
+bitte um hilfe<br>
+<br>
+danke<ul></ul></li><li><b>Re-Synchronizing Longfilenames and DOS Short names</b> by <i>Phil</i> 08.06.01<br>
+Are you aware of any tools to help re-synchronize short and long filenames?<br>
+The problem is that short filenames are allocated sequentially ie.
+abcde~1.txt abcde~2.txt and the order bears no relationship to the sort
+order of the longfilename. Tools like LFNSORT can order the directory
+on the long name, but I am looking for a tool to create new SHORT names
+that follow the Long filename sort order.<br>
+I currently work around this by using a tool that can do multiple
+renames with wildcards e.g. it can rename a*.* to 0*.* which renames
+bot long and short filenames and then rename them back with 0*.* to
+a*.*. This is a really clunky way of doing it, and I need to automate
+the process. Any ideas?<ul></ul></li><li><b>how work with russian names?</b> by <i>Roman</i> 06.06.01<br>
+no russian names.<br>
+At all can not find LFN with support<br>
+ of russian names :-(<br>
+<br>
+romans@ukrpost.net<br>
+please, send answer<ul></ul></li><li><b>LFN Tools works with 2d Portable Drive</b> by <i>ComputerSmith</i> 22.05.01<br>
+I just completed successful testing of LCOPY to save the "My<br>
+Documents" folder to an external Castlewood ORB 2.2 GB portable drive (parallel port). <br>
+<br>
+The test used a "Windows 98 Startup Diskette" to boot a new system
+(built in 2000) "without CDROM support" - Pure DOS Mode. The ORB
+"Traveler" driver was then loaded. All Long FileNamed sub folders and
+files were then copied and the directory structure was preserved.<br>
+<br>
+NOTE:  This drive is the follow-on to the SyQuest line.  More info at www.castlewood.com<ul></ul></li><li><b>LFN Tools works with Portable Drive!</b> by <i>ComputerSmith</i> 21.05.01<br>
+I just completed successful testing of LCOPY to save the "My Documents"
+folder to an external Syquest EZ-135 drive (parallel port).<br>
+<br>
+The test used a "Windows 98 Startup Diskette" to boot an old (1993)
+system without CDROM support. The Syquest "Visit" driver was then
+loaded. All 35 MB of Long FileNamed sub folders and files were <br>
+then copied and the directory structure was preserved.<br>
+<br>
+Decent!<ul></ul></li><li><b>merci</b> by <i>Peter aus Hannover</i> 20.05.01<br>
+Hallo Odi, <br>
+Deine Tools sind wirklich klasse. Endlich kann ich <br>
+auf einfachem Wege mit einer DOS-Startdiskette <br>
+auch Win9x-Dateien auf mein MOD-Laufwerk sichern. <br>
+Das ist besondes hilfreich wenn man bei Freunden <br>
+ein neues System aufspielen will und die vorher die <br>
+Daten nicht gesichert haben.  <br>
+<br>
+Danke <br>
+<br>
+P.S. Bin ueber die CT -Shareware-CD´s auf Deine <br>
+Tools gestossen.<ul></ul></li><li><b>nt and lren</b> by <i>kruger@nortelnetworks.com</i> 01.05.01<br>
+I need to ren a group files in nt that have long file names.<br>
+I have a batch script that processes .ps files into _ps.pdf<br>
+unfortunate ly I cannot rename these files within the script because
+the file names are very long. I cannot rename them in dos because
+because the _ps portion is truncated.<br>
+any ideas on how to remove this?<br>
+thanks<br>
+Kruger@nortelnetworks.com<ul><li><b>Re: nt and lren</b> by <i>Odi</i> 18.05.01<br>
+What File System?<br>
+<br>
+NTFS: not with LFN-Tools.<br>
+<br>
+Maybe use Scripting Host and the FileSystem Object. Quite straight forward to use.<ul></ul></li></ul></li><li><b>LFN with Diskette?</b> by <i>Manabu</i> 28.04.01<br>
+Hi.<br>
+<br>
+Let me explain my situations:<br>
+<br>
+I installed Win98 into the c: drive of the harddrive on one of<br>
+my PC's, and also installed good deal of software (apps &amp; <br>
+programs).<br>
+Then I copied all the directories &amp; files except for the swap file<br>
+to the d: drive on the same physical harddrive, because <br>
+I could restore the system by copying  the files back to the<br>
+c: drive even though the system were to gronk out.<br>
+Yes, the proceedures are simple: I could and can format<br>
+the c: drive with a dos diskette like a Win98 startup diskette,<br>
+and then I only have to do copying the files to the c: drive<br>
+formatted.<br>
+The point is that I want to do the copying only with a diskette!<br>
+I copied xcopy32.exe, xcopy.exe and one more file into<br>
+the Win98 startup diskette and tried an xcopy32 command <br>
+with options for long filenames and so on, and with no success.<br>
+Specifically, none of the files with a long filename or none of<br>
+the ones downstream the root was copied because any of<br>
+the options typed did not work!  I have verified these options<br>
+work fine with a dos under Win98 (dos box).<br>
+<br>
+My question is:<br>
+<br>
+Does LFN work on a dos booted from a diskette (like a Win98<br>
+startup disk) to copy files/directories with a complexed tree,<br>
+say like xcopy32 under Windows?<br>
+<br>
+Thanks in advance.<ul><li><b>Re: LFN with Diskette?</b> by <i>Odi</i> 29.04.01<br>
+&gt;Does LFN work on a dos booted from a diskette (like a Win98<br>
+&gt;startup disk) to copy files/directories with a complexed tree,<br>
+&gt;say like xcopy32 under Windows?<br>
+<br>
+That's its single purpose!<ul><li><b>Thanks Odi!</b> by <i>Manabu</i> 30.04.01<br>
+Thank you for these cute things.<br>
+<br>
+I copied them to the second disk of the Win98 bootup disk set.<ul></ul></li></ul></li><li><b>Dees</b> by <i>Manabu</i> 29.04.01<br>
+Wow great, did the trick!<br>
+It helped me.<br>
+<br>
+Thanks alot!<ul></ul></li></ul></li><li><b>LFN TSR driver</b> by <i>florianx</i> 21.04.01<br>
+Hi!<br>
+<br>
+Maybe this site will interest you:<br>
+http://www-user.tu-chemnitz.de/~heha/hs_freeware/freew.html<br>
+<br>
+<br>
+http://www-user.tu-chemnitz.de/~heha/hs_freeware/doslfn.zip<br>
+<br>
+bye, flox<br>
+www.drdos.org<br>
+www.seal.de.vu<ul><li><b>Re: LFN TSR driver</b> by <i>Andy</i> 23.04.01<br>
+Hi. Is there an English readme for that doslfn?<br>
+<br>
+&gt;Hi!<br>
+&gt;<br>
+&gt;Maybe this site will interest you:<br>
+&gt;http://www-user.tu-chemnitz.de/~heha/hs_freeware/freew.html<br>
+&gt;<br>
+&gt;<br>
+&gt;http://www-user.tu-chemnitz.de/~heha/hs_freeware/doslfn.zip<br>
+&gt;<br>
+&gt;bye, flox<br>
+&gt;www.drdos.org<br>
+&gt;www.seal.de.vu<ul><li><b>Re: LFN TSR driver</b> by <i>Laust Rud Jensen</i> 28.04.01<br>
+The bottom of the Doslfn.txt file is in English. Gives a bit of information.<br>
+&gt;Hi. Is there an English readme for that doslfn?<br>
+&gt;<br>
+&gt;&gt;Hi!<br>
+&gt;&gt;<br>
+&gt;&gt;Maybe this site will interest you:<br>
+&gt;&gt;http://www-user.tu-chemnitz.de/~heha/hs_freeware/freew.html<ul></ul></li></ul></li></ul></li><li><b>Danke</b> by <i>Peter</i> 10.04.01<br>
+Hi Odi,<br>
+<br>
+vielen Dank für deine tollen Tools! Die sind extrem hilfreich!!!<br>
+<br>
+ Viel Spaß und Erfolg weiterhin!<ul></ul></li><li><b>lcopy under DOS Client</b> by <i>Pieter</i> 09.04.01<br>
+When copying files between devices on the same machine, lcopy works
+fantastic! When trying to copy a file from one machine to another under
+DOS client (mapped drive), I get the following message:<br>
+<br>
+Error reading drive 5 sector 0 &amp;#8211; 0!(0)<br>
+Could not read BPB!(16)<br>
+<br>
+I have no clue what this means, other than that lcopy or ldir or any
+other of the ltools can not find or access the mapped drive.<br>
+<br>
+Should this work?<ul><li><b>Re: lcopy under DOS Client</b> by <i>Odi</i> 14.04.01<br>
+&gt; (mapped drive), I get the following message:<br>
+&gt;<br>
+&gt;Error reading drive 5 sector 0 – 0!(0)<br>
+&gt;Could not read BPB!(16)<br>
+<br>
+<br>
+LFN Tools do not work on network drives. Reason: No hardware access is possible over network.<br>
+<br>
+Odi<ul><li><b>Re: lcopy under DOS Client</b> by <i>Patrick</i> 06.08.01<br>
+That's a pity... Is it totally impossible to develop or not?<br>
+<br>
+&gt;&gt; (mapped drive), I get the following message:<br>
+&gt;&gt;<br>
+&gt;&gt;Error reading drive 5 sector 0 &amp;#8211; 0!(0)<br>
+&gt;&gt;Could not read BPB!(16)<br>
+&gt;<br>
+&gt;<br>
+&gt;LFN Tools do not work on network drives. Reason: No hardware access is possible over network.<br>
+&gt;<br>
+&gt;Odi<ul><li><b>Re: lcopy under DOS Client</b> by <i>Odi</i> 08.08.01<br>
+&gt;That's a pity... Is it totally impossible to develop or not?<br>
+<br>
+Nothing is impossible of course.... <br>
+<br>
+But putting the network stuff into my code would be an architectural
+disaster. It would be better to (someone else) write a driver that can
+access remote drives physically i.e. provide the exact same interface
+via DOS interrupt 0x25h and 0x26h for remote drives. This would be
+clean. Then the LFN Tools would not need to be changed. Moreover every
+other software could use the drives as well. Even DOS itself!<br>
+<br>
+Odi<ul></ul></li></ul></li></ul></li></ul></li><li><b>LDeltree?</b> by <i>Denis</i> 02.04.01<br>
+There is no equivalent of Deltree in LFNTools!<br>
+<br>
+It caould be implemented in lrd, like in WinNT: rd /S!<br>
+<br>
+BTW, M$ deltree has a nice feature:<br>
+deltree c:\temp removes the whole c:\temp tree and<br>
+deltree c:\temp\ acts like the above but leaves the c:\temp directory<br>
+--<br>
+Denis<ul><li><b>Re: LDeltree?</b> by <i>ComputerSmith</i> 28.05.01<br>
+&gt;There is no equivalent of Deltree in LFNTools!<br>
+&gt;<br>
+&gt;It caould be implemented in lrd, like in WinNT: rd /S!<br>
+&gt;<br>
+&gt;BTW, M$ deltree has a nice feature:<br>
+&gt;deltree c:\temp removes the whole c:\temp tree and<br>
+&gt;deltree c:\temp\ acts like the above but leaves the c:\temp directory<br>
+&gt;--<br>
+&gt;Denis<br>
+<br>
+Since the Deltree version must match the DOS version you're working with, its better that LFNTools does NOT include it!<ul><li><b>Re: LDeltree?</b> by <i>PackMule</i> 31.05.01<br>
+&gt;&gt;There is no equivalent of Deltree in LFNTools!<br>
+&gt;&gt;<br>
+&gt;&gt;It caould be implemented in lrd, like in WinNT: rd /S!<br>
+&gt;&gt;<br>
+&gt;&gt;BTW, M$ deltree has a nice feature:<br>
+&gt;&gt;deltree c:\temp removes the whole c:\temp tree and<br>
+&gt;&gt;deltree c:\temp\ acts like the above but leaves the c:\temp directory<br>
+&gt;&gt;--<br>
+&gt;&gt;Denis<br>
+&gt;<br>
+&gt;Since the Deltree version must match the DOS version you're working with, its better that LFNTools does NOT include it!<br>
+<br>
+There's a freeware utility called tdel that might do what you're looking for - http://tutils.cjb.net/tdel.htm<br>
+<br>
+Luck, PM<ul><li><b>Re: LDeltree?</b> by <i>Odi</i> 04.03.02<br>
+As of version 1.75 you can use<br>
+<br>
+LDEL C:\Temp\* /s /f<br>
+<br>
+Regards<br>
+<br>
+Odi<ul></ul></li></ul></li></ul></li></ul></li><li><b>LCOPY</b> by <i>Charlie</i> 29.03.01<br>
+Works great on directories<br>
+with 8.3 names such as Windows<br>
+however, its giving me fits<br>
+on<br>
+lcopy c:\Program Files\* "D:\Program Foofs" /a/s/b<br>
+I've tried "C:\Program Files\*"<br>
+&amp; "C:\Program Files\"*<br>
+&amp; c:\"Program Files"\*<br>
+what if anything am I doing wrong here?<ul><li><b>Re: LCOPY</b> by <i>Odi</i> 02.04.01<br>
+&gt;lcopy c:\Program Files\* "D:\Program Foofs" /a/s/b<br>
+&gt;what if anything am I doing wrong here?<br>
+<br>
+The correct syntax would be:<br>
+lcopy "c:\Program Files\*" "D:\Program Foofs" /a/s/b<br>
+<br>
+BUT: make sure that the target directory exists! (even with the /s option)<br>
+<br>
+Odi<ul><li><b>Re: LCOPY</b> by <i>Don van McSon</i> 14.06.01<br>
+BUT: make sure that the target directory exists! (even with the /s option)<br>
+&gt;<br>
+&gt;Odi<br>
+<br>
+Warum muss das Ziel den schon vorhanden sein.. wenn ich z.B. Windows
+sichern möchte, möchte mann doch nicht vorher jeden einelnen Ordner
+anlegen.. ?!?<ul></ul></li></ul></li></ul></li><li><b>scandisk report error after finished copying</b> by <i>dionicio</i> 25.03.01<br>
+Dear Odi:<br>
+<br>
+Before anything<br>
+Thanks a Lot for LFN..<br>
+The Best of the Best in tools.<br>
+<br>
+There is a small situation<br>
+with the copying of the<br>
+long filename portion<br>
+of files containing the<br>
+right accent marked i character,<br>
+when copying is replaced with<br>
+a left accent marked a character,<br>
+it does not happen on the<br>
+8.3 portion of the name...<br>
+<br>
+I cincunvent this event <br>
+making a seach of filenames<br>
+containing this left accent marked<br>
+a character and replacing it<br>
+by hand...<br>
+<br>
+Thanks a lot.<ul><li><b>Re: scandisk report error after finished copying</b> by <i>Odi</i> 27.03.01<br>
+&gt;right accent marked i character,<br>
+&gt;when copying is replaced with<br>
+&gt;a left accent marked a character,<br>
+&gt;it does not happen on the<br>
+&gt;8.3 portion of the name...<br>
+<br>
+This is probably due to an unappropritate codepage setting in<br>
+your autoexec.bat<br>
+<br>
+mode con codepage prepare=((437) C:\WINDOWS\COMMAND\ega.cpi)<br>
+mode con codepage select=437<br>
+<br>
+should produce the correct codes.<br>
+<br>
+unicode 0x00EC is mapped to 0x8D ASCII<br>
+<br>
+Odi<ul><li><b>CP 437 Boot Disk test completed</b> by <i>dionicio</i> 29.03.01<br>
+Dear Odi:<br>
+<br>
+I re-run the imaging of my<br>
+win 98 system using a<br>
+CP 437 boot disk incluiding<br>
+emm386.exe with all of Odi's Tools<br>
+and got same result.<br>
+As the OS does not include<br>
+any foregein character<br>
+on his filename lists<br>
+no problem on it.<br>
+Just some files<br>
+on MS Office gives me <br>
+a little extra work.<br>
+<br>
+Just thinking in perfection.<br>
+Not quite a difficult<br>
+situation to overcome.<br>
+<br>
+Using Odi's Tools forever.<br>
+:)<ul><li><b>Re: CP 437 Boot Disk test completed</b> by <i>Odi</i> 02.04.01<br>
+You are terribly right.<br>
+And I am terribly sorry.<br>
+There WAS a bug - in the reverse look-up codepage. It's fixed now.<br>
+Get Version 1.61 <br>
+<br>
+Regards<br>
+<br>
+Odi<ul><li><b>Re: Smootly mirroring now, thanks Odi!  :)</b> by <i>dionicio</i> 30.04.01<br>
+The startup disk with Odi's Tools<br>
+works perfectly now...<br>
+<br>
+No need for CP or regionalitation<br>
+files¡...<br>
+<br>
+Thanks a lot, Odi¡<ul></ul></li></ul></li></ul></li></ul></li></ul></li><li><b>TSR driver</b> by <i>florianx</i> 25.03.01<br>
+Hi!<br>
+<br>
+Maybe it will interest you, I found another LFN TSR driver for DOS (not LFNDOS)(I haven't test it).<br>
+<br>
+It's name is<br>
+<br>
+DOSLFN.COM v1.0 - DOS Long Filename Support<br>
+Copyright (c) 1997 Network Associates, Inc.<br>
+ALL RIGHTS RESERVED.<br>
+<br>
+It is include into the NDN package...<br>
+<br>
+Bye, florian<br>
+<br>
+BTW: Schöne Grüße aus Wien :)<ul><li><b>Re: TSR driver</b> by <i>Odi</i> 27.03.01<br>
+&gt;DOSLFN.COM v1.0 - DOS Long Filename Support<br>
+&gt;Copyright (c) 1997 Network Associates, Inc.<br>
+&gt;ALL RIGHTS RESERVED.<br>
+&gt;<br>
+&gt;It is include into the NDN package...<br>
+<br>
+Hey cheers<br>
+<br>
+but what the heck is NDN ???<br>
+<br>
+Odi<ul><li><b>Re: TSR driver</b> by <i>Vitali</i> 31.03.01<br>
+&gt;&gt;DOSLFN.COM v1.0 - DOS Long Filename Support<br>
+&gt;&gt;Copyright (c) 1997 Network Associates, Inc.<br>
+&gt;&gt;ALL RIGHTS RESERVED.<br>
+&gt;&gt;<br>
+&gt;&gt;It is include into the NDN package...<br>
+&gt;<br>
+&gt;Hey cheers<br>
+&gt;<br>
+&gt;but what the heck is NDN ???<br>
+&gt;<br>
+&gt;Odi<br>
+http://ndnv.narod.ru/archives/NDNV210B.RAR<ul></ul></li></ul></li></ul></li><li><b>Thanks Odi</b> by <i>Don C. (Australia)</i> 23.03.01<br>
+Hi Odi et. al.,<br>
+Just a quick note of thanks for these great little utilities. I'll
+certainly be informing my fellow IT workers of these tools. I use the
+DJGPP tools for DOS/Win9x quite a lot, but these tools really add some
+much needed functionality to the digital toolkit!<br>
+regards,<br>
+Don<br>
+<br>
+P.S.  Nice to see something coming out of Switzerland.<ul></ul></li><li><b>ldir options</b> by <i>chris</i> 18.03.01<br>
+hi forum, hi odi<br>
+<br>
+I quiet often use your precoius tools for backing up and saved a lot of time (and money?) using them.<br>
+<br>
+But theres one thing which would be very useful (i think):<br>
+If the "ldir"-Tool whould have some more options. Maybe something like /on or /os and /ad (directorys only).<br>
+Its nothing absolutely necassary<br>
+but an idea.<br>
+<br>
+CU &amp; <br>
+Keep up your good work !<br>
+<br>
+CHris<ul><li><b>Re: ldir options</b> by <i>Odi</i> 27.03.01<br>
+&gt;Maybe something like /on or /os and /ad (directorys only).<br>
+&gt;Its nothing absolutely necassary<br>
+&gt;but an idea.<br>
+<br>
+/on = order by name<br>
+/os = order by size<br>
+/ad = attribute directory<br>
+, I suppose<br>
+<br>
+Well. I MIGHT include that for SMALL directories whereas in long
+directories (like the windows\system) this won't work because of<br>
+memory space. I would have to load the whole directory into memory
+first then sort it and print it out afterwards. With 640K of memory
+only a few hundred file entries fit into memory... I had that in
+version 1.0 but soon dicovered that this does not scale.<br>
+Even DOS reports an "out of memory" failure when trying to sort huge directories.<br>
+<br>
+Odi<ul></ul></li></ul></li><li><b>Welcome</b> by <i>Odi</i> 17.03.01<br>
+Discuss issues regarding the LFN Tools here. Ask questions, exchange oppinions, share your ideas. Give feedback.<br>
+<br>
+It's up to you!<br>
+<br>
+Regards<br>
+<br>
+Odi<ul></ul></li></ul>
+</body></html>
