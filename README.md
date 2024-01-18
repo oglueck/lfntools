@@ -97,7 +97,7 @@ This can improve performance on huge directories like the Windows\System directo
 However for the extended memory to be used you need to load a memory manager like 
 EMM386 in your config.sys. The simplest way to do so is to include the following line 
 in your config.sys file:
-device=c:\windows\emm386.exe RAM
+    device=c:\windows\emm386.exe RAM
 If no memory manager is installed LCOPY can not use extended memory and so uses its 
 standard cache method. Use the /V switch with LCOPY to turn off use of extended 
 memory.
@@ -109,8 +109,8 @@ too big and performance would not necessarily be better.
 Note: When working with long filenames files do not need to have any extension or can 
 have more than one. For example: "Mailbox", "Mail from Mama.txt", "Book.doc.zip". 
 Thus wildcards do behave slightly different. (Microsoft's DOS Box instead keeps the 
-behaviour compatible to DOS.) To select all files use a single * instead of *.*. 
-Because *.* would select all files containing a dot - and most of the directory names 
+behaviour compatible to DOS.) To select all files use a single ``*`` instead of ``*.*``. 
+Because ``*.*`` would select all files containing a dot - and most of the directory names 
 don't!
 
 Switches need not be separated by spaces anymore. However when using /Tnn it must be 
@@ -121,7 +121,7 @@ followed by a space if additional switches are specified. Otherwise they are ign
 This command displays the specified directory if supplied a long directory name. 
 Without parameters it displays the current directory. If the path or filename 
 contains spaces double quotes are required (see example). You can use the common 
-wildcards (?,*) to restrict the output to certain files. Use asterix to abreviate a 
+wildcards ``(?,*)`` to restrict the output to certain files. Use asterix to abreviate a 
 long directory name. The /a switch displays hidden files too. The /b switch displays 
 only long file names; no date/time information. The /s switch displays all 
 subdirectories. When viewing large directories use the /p switch to pause listing 
@@ -135,10 +135,12 @@ recorded is used. Use LCHK to display valid track numbers.
 Note: When using quotation marks never put a backslash at the end! (See "Known Bugs & 
 Features" for details)
 
-Syntax:  LDIR [drive:][path][filename] [/?] [/A][/B][/S][/P]
-	[/C][/I][/Tn]
+Syntax:
+    LDIR [drive:][path][filename] [/?] [/A][/B][/S][/P]
+    [/C][/I][/Tn]
 
-Example: D:\WINDOZE>LDIR "C:\new folder\*.txt"
+Example:
+         D:\WINDOZE>LDIR "C:\new folder\*.txt"
 
          .       .    <DIR>       13.01.1999  19:49  .
          ..      .    <DIR>       13.01.1999  19:49  ..
@@ -168,9 +170,11 @@ by the number of a data track. The track number identifies which session to use.
 numbers.
 
 
-Syntax:  LCD [drive:]pathmask [/?][/I][/Tn]
+Syntax:
+    LCD [drive:]pathmask [/?][/I][/Tn]
 
-Example: D:\WINDOZE>LCD "C:\new folder"
+Example:
+         D:\WINDOZE>LCD "C:\new folder"
 
          C:\NEWFOL~1>LCD ..
 
@@ -180,7 +184,7 @@ Example: D:\WINDOZE>LCD "C:\new folder"
 
 2.3 LDEL
 --------
-This command deletes the specified file(s). You can use the common wildcards (?,*) to 
+This command deletes the specified file(s). You can use the common wildcards ``(?,*)`` to 
 select more than one file. The /s switch also deletes files found in subdirectories. 
 Empty subdirectories are deleted automatically. The /a switch also deletes files with 
 the read-only attribute set. If combined with the /s switch also read-only 
@@ -188,13 +192,15 @@ directories are processed. Hidden, system etc. files / directories are NOT affec
 by /a. To remove even those use /f. /f automatically includes /a. The /p switch asks 
 you before deleting each file wheter to proceed or not. With the /c switch you can 
 turn off the cache. This will slow down the whole thing a bit, but consumes less 
-memory (~128 KB). To delete all files in a directory use "LDEL *" istead of "LDEL 
-*.*".
+memory (~128 KB). To delete all files in a directory use ``LDEL *`` istead of ``LDEL 
+*.*``.
 
 
-Syntax:  LDEL [drive:][path\]file [/A][/F][/S][/P][/C][/?]
+Syntax:
+     LDEL [drive:][path\]file [/A][/F][/S][/P][/C][/?]
 
-Example: C:\TEMP>LDEL *.txt
+Example:
+         C:\TEMP>LDEL *.txt
          Letter from Al.txt deleted
          My memories.txt deleted
 
@@ -203,28 +209,30 @@ Example: C:\TEMP>LDEL *.txt
          Trash 2.file deleted
 
 Use /s with extreme care!
-LDEL D:\* /s /f          Deletes everything on drive D:
-LDEL d:\temp /s          Removes all files called temp from all directories on D:
-LDEL d:\temp\* /s        Removes all files from directory D:\TEMP and down
+    LDEL D:\* /s /f          Deletes everything on drive D:
+    LDEL d:\temp /s          Removes all files called temp from all directories on D:
+    LDEL d:\temp\* /s        Removes all files from directory D:\TEMP and down
 
 
 2.4 LREN
 --------
 This command assigns a new long name to a file or directory. Do not use any wildcards 
-(?,*); rename only a single file or directory. You will not be able to rename a file 
+``(?,*)``; rename only a single file or directory. You will not be able to rename a file 
 to a name containing unicode characters such as the Euro Symbol. Renaming to a short 
 name does not remove the long name; its case is stored in this place for example. 
 
-Syntax: LREN [drive:][path\]filename newfilename [/?]
+Syntax:
+    LREN [drive:][path\]filename newfilename [/?]
 
-Example: C:\TEMP>LREN "An important file.txt" "Not so important any more.txt"
+Example:
+         C:\TEMP>LREN "An important file.txt" "Not so important any more.txt"
 
          C:\TEMP>
 
 
 2.5 LCOPY
 ---------
-This command copies one or more files to any destination. You can use wildcards (?,*) 
+This command copies one or more files to any destination. You can use wildcards ``(?,*)`` 
 to select more than one file. If files already exist in the destination directory the 
 user is prompted if to proceed. This prompting can be turned off with the /Y switch. 
 If the targetfile is read-only, hidden or system the file is not copied by default. 
@@ -252,10 +260,12 @@ is used. Use LCHK to display valid track numbers.
 Note: When copying files from CD-ROM to hard drive, read-only attribute is NOT set by 
 default. 
 
-Syntax: LCOPY [drive:][path\]sourcefile [drive:][destination] 
-[/?][/S [/D]][/E][/A][/C][/V][/R][/Y][/B][/I][/Tn]
+Syntax:
+    LCOPY [drive:][path\]sourcefile [drive:][destination] 
+    [/?][/S [/D]][/E][/A][/C][/V][/R][/Y][/B][/I][/Tn]
 
-Example: C:\TEMP>LCOPY "*.text" A:\BACKUP\
+Example:
+         C:\TEMP>LCOPY "*.text" A:\BACKUP\
          A Secret.text
          An important.text
          2 file(s) copied
@@ -269,12 +279,12 @@ Example: C:\TEMP>LCOPY "*.text" A:\BACKUP\
 The last line would copy the entire operating system to another directory. You are 
 not allowed to abort the operation.
 
-C:>LCOPY . D:\ /S
+    C:>LCOPY . D:\ /S
 
 The last line would copy the directory structure only (no files). With switches /S 
 LCOPY always mirrors the directory structure, even if no matching file is found.
 
-C:\>LCOPY *.ZIP C:\ARCHIVES /S /D
+    C:\>LCOPY *.ZIP C:\ARCHIVES /S /D
 
 The last line would copy all zip files on drive C to the directory \ARCHIVES. No 
 subdirectories are created.
@@ -283,9 +293,11 @@ subdirectories are created.
 -------
 This command creates a new subdirectory (folder).
 
-Syntax: LMD [drive:][path\]newdir [/?]
+Syntax:
+    LMD [drive:][path\]newdir [/?]
 
-Example: C:\>LMD "Backup Folder"
+Example:
+         C:\>LMD "Backup Folder"
          Ok.
          C:\>LCD Backup*
          C:\BACKUP~1>D:
@@ -298,9 +310,11 @@ This creates a new Folder called "Apr 1,1999" in "Backup Folder" on drive C.
 -------
 This command removes a subdirectory (folder).
 
-Syntax: LRD [drive:][path\]dirname [/?]
+Syntax:
+     LRD [drive:][path\]dirname [/?]
 
-Example: C:\>LRD "Backup Folder"
+Example:
+         C:\>LRD "Backup Folder"
          Ok.
 
 2.8 LCHK
@@ -310,33 +324,35 @@ disk's boot sector. This command works on CD-ROMs as well. It displays detailed
 information on how many tracks (sessions) are on the CD-ROM. Use the track numbers 
 displayed for the /T switch of LCOPY, LDIR and LCD.
 
-Syntax: LCHK [drive:]
+Syntax: 
+    LCHK [drive:]
 
-Example: C:\>LCHK D:
-Version 1.41
-Copyright (C) 1999 Ortwin Glueck
-This is free software under GPL. See the readme file for details.
-
-DOS Version: FF-7.10
-Drive: 3
-Bytes per Sector: 512
-Sectors per Cluster: 8
-Reserved Sectors: 32
-Number of Clusters: 917916
-Number of FATs: 2
-Number of Root entries: 0
-Media Descriptor: f8
-Sectors per FAT: 7179
-Sectors: 7357707
-First Data Sector: 14390
-First Root Sector: 14390
-First Root Cluster: 2
-Root Sectors: 0
-Fat entries per Sector: 128
-Label:
-File System: FAT32
-FAT32 compatible disk access enabled
-Volume locking enabled
+Example: 
+        C:\>LCHK D:
+        Version 1.41
+        Copyright (C) 1999 Ortwin Glueck
+        This is free software under GPL. See the readme file for details.
+        
+        DOS Version: FF-7.10
+        Drive: 3
+        Bytes per Sector: 512
+        Sectors per Cluster: 8
+        Reserved Sectors: 32
+        Number of Clusters: 917916
+        Number of FATs: 2
+        Number of Root entries: 0
+        Media Descriptor: f8
+        Sectors per FAT: 7179
+        Sectors: 7357707
+        First Data Sector: 14390
+        First Root Sector: 14390
+        First Root Cluster: 2
+        Root Sectors: 0
+        Fat entries per Sector: 128
+        Label:
+        File System: FAT32
+        FAT32 compatible disk access enabled
+        Volume locking enabled
 
 ### 3. Known bugs and features
 
@@ -348,7 +364,7 @@ directories). Even batch file command lines will only pass 126 characters!
 drive's root directory. This is a DOS limitation. The LABEL command of DOS prior to 
 6.22 can destroy long filenames. [MS KB Q118493]
 - Only Unicode characters from codepages 00h and 25h are translated. Unknown 
-characters are converted to underscore (_). May cause non-unique filenames!
+characters are converted to underscore ``(_)``. May cause non-unique filenames!
 - LRD: You can remove the current working directory without notice.
 - If a disk's boot record reports a wrong FAT format, FAT is corrupted (lcopy, lmd, 
 lrd). This can especialy happen on (old) wrong formatted floppy disks. Check the 
@@ -368,11 +384,8 @@ EMM386.
 
 
 ### 4. Where can I report bugs and get an updated version?
-Any comment is to be sent to the e-mail address supplied on my homepage. I speak 
-German and English.
-Odi's LFN Tools are still under light development. So be sure to check for a newer 
-version every 6 months or so. Type LCHK to find out what version you have.
-Get the latest version from WWW: http://www.odi.ch/
+Not. This is historic unmaintained code from 1999 or earlier when I was a student.
+It's purely there for nostalgy.
 
 ### 5. FAQ
 Q: Can LFN Tools access a network drive?
@@ -408,15 +421,13 @@ software works always and everywhere. Please let me know what EXACTLY you did. S
 section 4.
 
 ### 6. Donations
-You can support LFN Tools by donating a small amount of money. Please log on to 
-http://www.paypal.com/ and create an account. Send your donation to the following 
-Email Adress: odi@odi.ch
+Thanks, very kind of you. But no, thanks.
 
 
 ### 7. License
 This is free software under the GNU General Public License. No warranty. Source code 
-(MS-C++) available on http://www.odi.ch/. If you can not compile the code with your 
-favourite compiler this is YOUR problem. I can not help you compile the code.
+(MS-C++) available on https://github.com/oglueck/lfntools. If you can not compile the code with your 
+favourite compiler this I can not help you. Also I don't even own a build environment anymore.
 See the license.txt file included in the ZIP archive.
 
 ### 8. Acknowledgements
@@ -437,7 +448,7 @@ I would like to say thank you to:
 - Isy for two bug reports
 - 64.245.58.28 for cool sound (R.I.P.)
 - H. Ellenberger for the bug report in 1.42
-- Benjamin Wells for his note on LCOPY *.TXT C:\FUN /S
+- Benjamin Wells for his note on ``LCOPY *.TXT C:\FUN /S``
 - Mark Marinac for his hints on ZIP drives and compression
 - Michael Marquart for the hint on DOS 6 and extensive testing
 - Leanne & Walt Smith for the IBM PC-DOS testing
